@@ -1,0 +1,1672 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+a:link, a:visited, a:active {
+  color: white;
+  text-decoration: none;
+}
+
+/* CODIGO CSS INDEX */
+
+.ella img {
+  z-index: -1;
+  position: fixed;
+  max-width: 50%;
+  min-width: 50%;
+  height: auto;
+}
+
+.el img {
+  z-index: -1;
+  position: fixed;
+  max-width: 50%;
+  min-width: 50%;
+  margin-left: 50%;
+  height: auto;
+}
+
+.menu {
+  position: fixed;
+  min-width: 51%;
+  margin: 3% 35%;
+}
+
+.menu button {
+  display: inline-block;
+  text-align: center;
+  padding: 1%;
+  margin: 1%;
+  background-color: white;
+  border-radius: 5px;
+  width: 17.3%;
+  font-size: medium;
+}
+
+.menu button:hover {
+  background-color: black;
+  color: white;
+  transition-duration: 0.2s;
+  font-weight: bold;
+}
+
+@keyframes rotate3d {
+  0% {transform: rotateY(0deg);}
+  10% {transform: rotateY(36deg);}
+  20% {transform: rotateY(72deg);}
+  30% {transform: rotateY(108deg);}
+  40% {transform: rotateY(144deg);}
+  50% {transform: rotateY(180deg);}
+  60% {transform: rotateY(216deg);}
+  70% {transform: rotateY(252deg);}
+  80% {transform: rotateY(288deg);}
+  90% {transform: rotateY(324deg);}
+  100% {transform: rotateY(360deg);}
+}
+
+.logoIndex img {
+  position: fixed;
+  width: 30%;
+  border-radius: 50%;
+  margin-left: 35%;
+  margin-top: 8%;
+/*   box-shadow: 0px 0px 25px 10px; */
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px 5px #222);
+  animation-name: rotate3d;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+}
+
+.logoIndex:hover {
+/*   transform: rotateY(360deg); */
+  transition-duration: 2.5s;
+}
+
+.paraEllas {
+  position: fixed;
+  color: white;
+  width: 23%;
+  height: 25%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2%;
+  margin-top: 20%;
+  margin-left: 4%;
+}
+
+.paraEllas:hover {
+  transition-duration: 1s;
+  width: 25%;
+  height: 30%;
+  font-size: 110%;
+}
+
+.paraEllas p {
+  margin-top: 20px;
+}
+
+.buttonEllas {
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 30px;
+  padding: 2%;
+  background-color: #4c0033;
+}
+
+.paraEllos {
+  position: fixed;
+  color: white;
+  width: 23%;
+  height: 25%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2%;
+  margin-top: 20%;
+  margin-left: 69%;
+  text-align: right;
+}
+
+.paraEllos:hover {
+  transition-duration: 1s;
+  width: 25%;
+  height: 30%;
+  margin-left: 67%;
+  font-size: 110%;
+}
+
+.paraEllos p {
+  margin-top: 20px;
+}
+
+.buttonEllos {
+  position: absolute;
+  margin-right: 50%;
+  margin-top: 30px;
+  padding: 2%;
+  background-color: #142850;
+}
+
+.footerIndex {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  margin-top: 41.3%;
+  text-align: center;
+  color: rgb(171, 171, 171);
+  height: 13.1%;
+}
+
+.redesSociales img {
+  width: 2%;
+  margin: 0.5%;
+  margin-top: 1%;
+}
+
+.derechos p {
+  margin-top: 0.5%;
+}
+
+/* CODIGO CSS TIENDA FEMENINA */
+
+.cabecera {
+  position: fixed;
+  top: 0;
+  display: block;
+  height: 140px;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+}
+
+.cabecera .logo img {
+  margin-top: 15px;
+  margin-left: 30px;
+  position: absolute;
+  width: 110px;
+  z-index: -1;
+}
+
+.cabecera .logo h3 {
+  position: absolute;
+  left: 145px;
+  top: 40px;
+  font-size: 220%;
+  font-weight: 200;
+  color: black;
+}
+
+.cabecera .logo h4 {
+  position: absolute;
+  left: 215px;
+  top: 80px;
+  font-size: 120%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #790252;
+}
+
+.menu1 {
+  position: relative;
+  display: inline;
+  top: 15px;
+  left: 500px;
+}
+
+.menu1 button {
+  padding: 15px 40px;
+  margin: 0px 10px 0px 0px;
+  border-radius: 15px;
+  border-width: 0px;
+  background-color: #142850;
+  color: white;
+  font-weight: bolder;
+}
+
+.menu1 button:hover {
+  transition-duration: 0.3s;
+  background-color: #00A8CC;
+  color: black;
+}
+
+.menu3 {
+  position: relative;
+  display: inline;
+  top: 15px;
+  left: 500px;
+}
+
+.menu3 button {
+  padding: 15px 100px;
+  margin: 0px 10px;
+  border-radius: 15px;
+  border-width: 0px;
+  background-color: #4c0033;
+  color: white;
+  font-weight: bold;
+}
+
+.menu3 button:hover {
+  transition-duration: .3s;
+  background-color: #E80F88;
+  color: black;
+  font-weight: bold;
+}
+
+.buscar {
+  position: absolute;
+  top: 80px;
+  left: 500px;
+}
+
+.buscar input {
+  position: absolute;
+  width: 800px;
+  height: 35px;
+  border-radius: 20px;
+  border-width: 1px;
+  border-color: #d9d9d9;
+  padding-left: 80px;
+  padding-right: 10px;
+}
+
+.buscar button {
+  border-radius: 20px 0px 0px 20px;
+  position: absolute;
+  width: 70px;
+  height: 35px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+.buscar button:hover {
+  transition-duration: 1s;
+  font-size: 101%;
+}
+
+.carrito {
+  position: absolute;
+  left: 1325px;
+  top: 82px;
+}
+
+.carrito img {
+  position: absolute;
+  width: 30px;
+}
+
+.carrito img:hover {
+  transition-duration: 1s;
+  rotate: 360deg;
+}
+
+a:link .carrito {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited .carrito {
+  color: black;
+  text-decoration: none;
+}
+
+a:active .carrito {
+  color: black;
+  text-decoration: none;
+}
+
+.carrito h3 {
+  font-size: 15px;
+  margin-left: 50px;
+  margin-top: 7px;
+}
+
+.separacion1 {
+  position: absolute;
+  background-color: #790252;
+  height: 15px;
+  width: 100%;
+  top: 140px;
+}
+
+/* CARRUSEL */
+
+.carrusel {
+  position: relative;
+  scrollbar-color: black;
+}
+
+.slider-container {
+  margin-top: 170px;
+  display: flex;
+  width: 100%;
+  height: 500px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.slider-container img {
+  flex: 0 0 100%;
+  width: 100%;
+  object-fit: cover;
+  scroll-snap-align: center;
+}
+
+.separacion2 {
+  position: relative;
+  background-color: #790252;
+  height: 15px;
+  width: 100%;
+}
+
+/* CATEGORIAS */
+
+.categorias {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 600px;
+}
+
+.categorias h6 {
+  position: absolute;
+  top: 50px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+}
+
+.categoriasGrid {
+  position: absolute;
+  top: 115px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  place-items: center;
+}
+
+.categoriasImg {
+  position: relative;
+  justify-content: center;
+}
+
+.categoriasImg h5 {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.categoriasGrid img {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  width: 250px;
+}
+
+.categoriasGrid img:hover {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 260px;
+  transition-duration: 1s;
+  border-radius: 5px;
+}
+
+.separacion3 {
+  position: relative;
+  background-color: #790252;
+  height: 15px;
+  width: 100%;
+  top: 585px;
+}
+
+/* IMAGEN - TEXTO */
+
+.imagenTexto {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 400px;
+  background-color: rgb(225, 225, 225);
+}
+
+.imagenTexto iframe {
+  position: absolute;
+  width: 50%;
+  left: 30px;
+  top: 25px;
+}
+
+.imagenTexto .texto {
+  width: 40%;
+  position: absolute;
+  top: 95px;
+  left: 55%;
+}
+
+.imagenTexto h2 {
+  margin-bottom: 30px;
+  font-size: xx-large;
+}
+
+.imagenTexto p {
+  font-size: large;
+}
+
+.separacion4 {
+  position: relative;
+  background-color: #790252;
+  height: 15px;
+  width: 100%;
+  top: 400px;
+}
+
+/* NUEVOS INGRESOS */
+
+.ingresos {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 1455px;
+}
+
+.ingresos h6 {
+  position: absolute;
+  top: 65px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+}
+
+.ingresosGrid {
+  width: 100%;
+  top: 130px;
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  column-gap: 0px;
+  row-gap: 50px;
+}
+
+.ingresosGrid img {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  height: 500px;
+}
+
+.ingresosGrid img:hover {
+  height: 520px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-radius: 10px;
+  transition-duration: 1s;
+}
+
+.ingresos h5 {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.separacion5 {
+  position: relative;
+  background-color: #790252;
+  height: 15px;
+  width: 100%;
+  top: 1455px;
+}
+
+/* FORMAS DE PAGO */
+
+.pagos {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 465px;
+}
+
+.pagos h6 {
+  position: absolute;
+  top: 65px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+}
+
+.pagosGrid {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 0px;
+  width: 70%;
+  place-items: center;
+  top: 130px;
+}
+
+.pagosGrid img {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  width: 200px;
+}
+
+.pagosGrid img:hover {
+  margin: 0px;
+  width: 210px;
+  transition-duration: 1s;
+}
+
+.pagosImg h5 {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+}
+
+/* FOOTER */
+
+.footer {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  background-color: #4c0033;
+}
+
+.clientes {
+  position: absolute;
+  width: 20%;
+  margin-left: 10%;
+  margin-right: 70%;
+  top: 46px;
+}
+
+.listaClientes {
+  position: absolute;
+  top: 80px;
+}
+
+.listaClientes a {
+  color: #AF0171;
+  display: block;
+  margin-top: 7px;
+}
+
+.logoFooter h3 {
+  position: absolute;
+  font-size: small;
+  font-weight: 100;
+  color: white;
+  left: 70px;
+  top: 28px;
+}
+
+.logoFooter img {
+  position: absolute;
+  width: 75px;
+}
+
+.listaClientes a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+}
+
+.servicio {
+  position: absolute;
+  width: 20%;
+  margin-left: 40%;
+  margin-right: 40%;
+  top: 70px;
+}
+
+.servicioTitulo {
+  color: white;
+  font-weight: 100;
+}
+
+.servicioLista {
+  position: absolute;
+  margin-top: 23px;
+  margin-left: 50px;
+}
+
+.servicioLista a:hover {
+  text-decoration: underline;
+}
+
+.servicio a, .servicio li {
+  color: #AF0171;
+  display: block;
+  margin-bottom: 29px;
+}
+
+.servicioLogo img {
+  margin-top: 20px;
+  margin-left: 0px;
+  width: 10%;
+}
+
+.footerRedesSociales {
+  position: absolute;
+  width: 20%;
+  margin-left: 70%;
+  margin-right: 10%;
+  top: 70px;
+}
+
+.footerRedesSocialesTitulo {
+  color: white;
+  font-weight: 100;
+}
+
+.footerRedesSociales img {
+  display: inline;
+  width: 15%;
+  margin: 15px 10px 0 0;
+}
+
+.footerRedesSocialesNewsletter {
+  margin-top: 30px;
+}
+
+.footerRedesSocialesNewsletterTitulo {
+  color: white;
+  font-weight: 100;
+}
+
+.footerRedesSocialesNewsletterInput {
+  margin-top: 15px;
+}
+
+.footerRedesSocialesNewsletterInput input {
+  border: 2px solid #E80F88;
+  height: 40px;
+  padding-left: 10px;
+}
+
+.footerRedesSocialesNewsletterInput a {
+  height: 40px;
+  width: 40px;
+  background-color: #E80F88;
+  border: 2px solid #E80F88;
+  position: absolute;
+}
+
+.footerRedesSocialesNewsletterInput img {
+  width: 30px;
+  margin: 5px 5px 5px 5px;
+}
+
+.footerDerechos h3 {
+  position: absolute;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #790252;
+  bottom: 0;
+  width: 100%;
+  font-size: smaller;
+  font-weight: 100;
+}
+
+/* CODIGO CSS TIENDA MASCULINA */
+
+.cabeceraM {
+  position: fixed;
+  top: 0;
+  display: block;
+  height: 140px;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+}
+
+.cabeceraM .logoM img {
+  margin-top: 15px;
+  margin-left: 30px;
+  position: absolute;
+  width: 110px;
+  z-index: -1;
+}
+
+.cabeceraM .logoM h3 {
+  position: absolute;
+  left: 145px;
+  top: 40px;
+  font-size: 220%;
+  font-weight: 200;
+  color: black;
+}
+
+.cabeceraM .logoM h4 {
+  position: absolute;
+  left: 215px;
+  top: 80px;
+  font-size: 120%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #27496D;
+}
+
+.menu1M {
+  position: relative;
+  display: inline;
+  top: 15px;
+  left: 500px;
+}
+
+.menu1M button {
+  padding: 15px 40px;
+  margin: 0px 10px 0px 0px;
+  border-radius: 15px;
+  border-width: 0px;
+  background-color: #4C0033;
+  color: white;
+  font-weight: bolder;
+}
+
+.menu1M button:hover {
+  transition-duration: 0.3s;
+  background-color: #E80F88;
+  color: black;
+}
+
+.menu3M {
+  position: relative;
+  display: inline;
+  top: 15px;
+  left: 500px;
+}
+
+.menu3M button {
+  padding: 15px 100px;
+  margin: 0px 10px;
+  border-radius: 15px;
+  border-width: 0px;
+  background-color: #142850;
+  color: white;
+  font-weight: bold;
+}
+
+.menu3M button:hover {
+  transition-duration: .3s;
+  background-color: #00A8CC;
+  color: black;
+  font-weight: bold;
+}
+
+.buscarM {
+  position: absolute;
+  top: 80px;
+  left: 500px;
+}
+
+.buscarM input {
+  position: absolute;
+  width: 800px;
+  height: 35px;
+  border-radius: 20px;
+  border-width: 1px;
+  border-color: #d9d9d9;
+  padding-left: 80px;
+  padding-right: 10px;
+}
+
+.buscarM button {
+  border-radius: 20px 0px 0px 20px;
+  position: absolute;
+  width: 70px;
+  height: 35px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+.buscarM button:hover {
+  transition-duration: 1s;
+  font-size: 101%;
+}
+
+.carritoM {
+  position: absolute;
+  left: 1325px;
+  top: 82px;
+}
+
+.carritoM img {
+  position: absolute;
+  width: 30px;
+}
+
+.carritoM img:hover {
+  transition-duration: 1s;
+  rotate: 360deg;
+}
+
+a:link .carritoM {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited .carritoM {
+  color: black;
+  text-decoration: none;
+}
+
+a:active .carritoM {
+  color: black;
+  text-decoration: none;
+}
+
+.carritoM h3 {
+  font-size: 15px;
+  margin-left: 50px;
+  margin-top: 7px;
+}
+
+.separacion1M {
+  position: absolute;
+  background-color: #27496D;
+  height: 15px;
+  width: 100%;
+  top: 140px;
+}
+
+/* CARRUSEL */
+
+.carruselM {
+  position: relative;
+  scrollbar-color: black;
+}
+
+.slider-containerM {
+  margin-top: 170px;
+  display: flex;
+  width: 100%;
+  height: 500px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.slider-containerM img {
+  flex: 0 0 100%;
+  width: 100%;
+  object-fit: cover;
+  scroll-snap-align: center;
+}
+
+.separacion2M {
+  position: relative;
+  background-color: #27496D;
+  height: 15px;
+  width: 100%;
+}
+
+/* CATEGORIAS */
+
+.categoriasM {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 600px;
+}
+
+.categoriasM h6 {
+  position: absolute;
+  top: 50px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+}
+
+.categoriasGridM {
+  position: absolute;
+  top: 115px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  place-items: center;
+}
+
+.categoriasImgM {
+  position: relative;
+  justify-content: center;
+}
+
+.categoriasImgM h5 {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.categoriasGridM img {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  width: 250px;
+}
+
+.categoriasGridM img:hover {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 260px;
+  transition-duration: 1s;
+  border-radius: 5px;
+}
+
+.separacion3M {
+  position: relative;
+  background-color: #27496D;
+  height: 15px;
+  width: 100%;
+  top: 585px;
+}
+
+/* IMAGEN - TEXTO */
+
+.imagenTextoM {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 400px;
+  background-color: rgb(225, 225, 225);
+}
+
+.imagenTextoM iframe {
+  position: absolute;
+  width: 50%;
+  left: 30px;
+  top: 25px;
+}
+
+.imagenTextoM .textoM {
+  width: 40%;
+  position: absolute;
+  top: 95px;
+  left: 55%;
+}
+
+.imagenTextoM h2 {
+  margin-bottom: 30px;
+  font-size: xx-large;
+}
+
+.imagenTextoM p {
+  font-size: large;
+}
+
+.separacion4M {
+  position: relative;
+  background-color: #27496D;
+  height: 15px;
+  width: 100%;
+  top: 400px;
+}
+
+/* NUEVOS INGRESOS */
+
+.ingresosM {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 1455px;
+}
+
+.ingresosM h6 {
+  position: absolute;
+  top: 65px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+}
+
+.ingresosGridM {
+  width: 100%;
+  top: 130px;
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  column-gap: 0px;
+  row-gap: 50px;
+}
+
+.ingresosGridM img {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  height: 500px;
+}
+
+.ingresosGridM img:hover {
+  height: 520px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-radius: 10px;
+  transition-duration: 1s;
+}
+
+.ingresosM h5 {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.separacion5M {
+  position: relative;
+  background-color: #27496D;
+  height: 15px;
+  width: 100%;
+  top: 1455px;
+}
+
+/* FORMAS DE PAGO */
+
+.pagosM {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 465px;
+}
+
+.pagosM h6 {
+  position: absolute;
+  top: 65px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+}
+
+.pagosGridM {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 0px;
+  width: 70%;
+  place-items: center;
+  top: 130px;
+}
+
+.pagosGridM img {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  width: 200px;
+}
+
+.pagosGridM img:hover {
+  margin: 0px;
+  width: 210px;
+  transition-duration: 1s;
+}
+
+.pagosImgM h5 {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+}
+
+/* FOOTER */
+
+.footerM {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  background-color: #142850;
+}
+
+.clientesM {
+  position: absolute;
+  width: 20%;
+  margin-left: 10%;
+  margin-right: 70%;
+  top: 46px;
+}
+
+.listaClientesM {
+  position: absolute;
+  top: 80px;
+}
+
+.listaClientesM a {
+  color: #0C7B93;
+  display: block;
+  margin-top: 7px;
+}
+
+.logoFooterM h3 {
+  position: absolute;
+  font-size: small;
+  font-weight: 100;
+  color: white;
+  left: 70px;
+  top: 28px;
+}
+
+.logoFooterM img {
+  position: absolute;
+  width: 75px;
+}
+
+.listaClientesM a:hover {
+  text-decoration: underline;
+}
+
+.footerM ul {
+  list-style: none;
+}
+
+.servicioM {
+  position: absolute;
+  width: 20%;
+  margin-left: 40%;
+  margin-right: 40%;
+  top: 70px;
+}
+
+.servicioTituloM {
+  color: white;
+  font-weight: 100;
+}
+
+.servicioListaM {
+  position: absolute;
+  margin-top: 23px;
+  margin-left: 50px;
+}
+
+.servicioListaM a:hover {
+  text-decoration: underline;
+}
+
+.servicioM a, .servicioM li {
+  color: #0C7B93;
+  display: block;
+  margin-bottom: 29px;
+}
+
+.servicioLogoM img {
+  margin-top: 20px;
+  margin-left: 0px;
+  width: 10%;
+}
+
+.footerRedesSocialesM {
+  position: absolute;
+  width: 20%;
+  margin-left: 70%;
+  margin-right: 10%;
+  top: 70px;
+}
+
+.footerRedesSocialesTituloM {
+  color: white;
+  font-weight: 100;
+}
+
+.footerRedesSocialesM img {
+  display: inline;
+  width: 15%;
+  margin: 15px 10px 0 0;
+}
+
+.footerRedesSocialesNewsletterM {
+  margin-top: 30px;
+}
+
+.footerRedesSocialesNewsletterTituloM {
+  color: white;
+  font-weight: 100;
+}
+
+.footerRedesSocialesNewsletterInputM {
+  margin-top: 15px;
+}
+
+.footerRedesSocialesNewsletterInputM input {
+  border: 2px solid #00A8CC;
+  height: 40px;
+  padding-left: 10px;
+}
+
+.footerRedesSocialesNewsletterInputM a {
+  height: 40px;
+  width: 40px;
+  background-color: #00A8CC;
+  border: 2px solid #00A8CC;
+  position: absolute;
+}
+
+.footerRedesSocialesNewsletterInputM img {
+  width: 30px;
+  margin: 5px 5px 5px 5px;
+}
+
+.footerDerechosM h3 {
+  position: absolute;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #27496D;
+  bottom: 0;
+  width: 100%;
+  font-size: smaller;
+  font-weight: 100;
+}
+
+/* CODIGO CSS TIENDA OUTLET */
+
+.cabeceraO {
+  position: relative;
+  display: block;
+  height: auto;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.cabeceraO .logoO img {
+  margin: 0 auto 0 auto;
+  padding: 15px 0 15px 0;
+  position: relative;
+  width: 20%;
+  display: block;
+}
+
+.separacion1O {
+  position: relative;
+  background-color: black;
+  height: 15px;
+  width: 100%;
+}
+
+.menu3O {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.menu3O button {
+  margin: 5px 0 5px 0;
+  padding: 15px 100px;
+  border-radius: 15px;
+  border-width: 0px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+.menu3O button:hover {
+  transition-duration: .3s;
+  background-color: #B6B6B6;
+  color: black;
+  font-weight: bold;
+}
+
+.buscarO {
+  position: absolute;
+  height: 40px;
+  width: 100%;
+  z-index: 1;
+}
+
+.buscarO input {
+  position: absolute;
+  width: 40%;
+  height: 35px;
+  border-radius: 20px;
+  border-width: 1px;
+  border-color: #d9d9d9;
+  padding-left: 80px;
+  padding-right: 10px;
+  margin-left: 30%;
+}
+
+.buscarO button {
+  border-radius: 20px 0px 0px 20px;
+  position: absolute;
+  width: 70px;
+  height: 35px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  margin-left: 30%;
+}
+
+.buscarO button:hover {
+  transition-duration: 1s;
+  font-size: 101%;
+}
+
+.tituloO {
+  margin-top: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.tituloO h1 {
+  font-size: 100px;
+}
+
+.tituloO h6 {
+  font-size: 20px;
+}
+
+.outletImg {
+  position: relative;
+  width: 100%;
+}
+
+.outletImg img {
+  margin: 0 15% 0 15%;
+  width: 70%;
+}
+
+.menu1O {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 90px;
+  flex-wrap: wrap;
+}
+
+.menu1O h6 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.menu1O button {
+  margin: 5px 0 5px 0;
+  padding: 15px 100px;
+  border-radius: 15px;
+  border-width: 0px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+.menu1O button:hover {
+  transition-duration: .3s;
+  background-color: #B6B6B6;
+  color: black;
+  font-weight: bold;
+}
+
+/* FOOTER */
+
+.footerO {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  background-color: black;
+  
+}
+
+.clientesO {
+  position: absolute;
+  width: 20%;
+  margin-left: 10%;
+  margin-right: 70%;
+  top: 46px;
+}
+
+.listaClientesO {
+  position: absolute;
+  top: 80px;
+}
+
+.listaClientesO a {
+  color: #666666;
+  display: block;
+  margin-top: 7px;
+}
+
+.logoFooterO h3 {
+  position: absolute;
+  font-size: small;
+  font-weight: 100;
+  color: white;
+  left: 70px;
+  top: 28px;
+}
+
+.logoFooterO img {
+  position: absolute;
+  width: 75px;
+}
+
+.listaClientesO a:hover {
+  text-decoration: underline;
+}
+
+.footerO ul {
+  list-style: none;
+}
+
+.servicioO {
+  position: absolute;
+  width: 20%;
+  margin-left: 40%;
+  margin-right: 40%;
+  top: 70px;
+}
+
+.servicioTituloO {
+  color: white;
+  font-weight: 100;
+}
+
+.servicioListaO {
+  position: absolute;
+  margin-top: 23px;
+  margin-left: 50px;
+}
+
+.servicioListaO a:hover {
+  text-decoration: underline;
+}
+
+.servicioO a, .servicioM li {
+  color: #666666;
+  display: block;
+  margin-bottom: 29px;
+}
+
+.servicioLogoO img {
+  margin-top: 20px;
+  margin-left: 0px;
+  width: 10%;
+}
+
+.footerRedesSocialesO {
+  position: absolute;
+  width: 20%;
+  margin-left: 70%;
+  margin-right: 10%;
+  top: 70px;
+}
+
+.footerRedesSocialesTituloO {
+  color: white;
+  font-weight: 100;
+}
+
+.footerRedesSocialesO img {
+  display: inline;
+  width: 15%;
+  margin: 15px 10px 0 0;
+}
+
+.footerRedesSocialesNewsletterO {
+  margin-top: 30px;
+}
+
+.footerRedesSocialesNewsletterTituloO {
+  color: white;
+  font-weight: 100;
+}
+
+.footerRedesSocialesNewsletterInputO {
+  margin-top: 15px;
+}
+
+.footerRedesSocialesNewsletterInputO input {
+  border: 2px solid #373737;
+  height: 40px;
+  padding-left: 10px;
+}
+
+.footerRedesSocialesNewsletterInputO a {
+  height: 40px;
+  width: 40px;
+  background-color: #373737;
+  border: 2px solid #373737;
+  position: absolute;
+}
+
+.footerRedesSocialesNewsletterInputO img {
+  width: 30px;
+  margin: 5px 5px 5px 5px;
+}
+
+.footerDerechosO h3 {
+  position: absolute;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #373737;
+  bottom: 0;
+  width: 100%;
+  font-size: smaller;
+  font-weight: 100;
+  }
+
+/*   CODIGO CSS 404 */
+
+.Img404 {
+  position: relative;
+  width: 100%;
+}
+
+.Img404 img {
+  margin: 200px 15% 300px 15%;
+  width: 70%;
+}
+
+/* CODIGO CSS MARCAS */
+
+.marcasMain {
+  display: flex;
+  flex-flow: column;
+  width: 90%;
+  margin: 50px auto 50px auto;
+}
+
+.marca {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.marca .marcaTexto {
+  width: 40%;
+}
+
+/* CODIGO CSS CONTACTO */
+
+.tarjetasContacto {
+  display: flex;
+  flex-flow: row;
+  width: 80%;
+  margin: 100px auto 150px auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.tarjetaContacto {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 30%;
+}
+
+.tarjetaContacto img {
+  width: 70%;
+  margin-bottom: 50px;
+}
+
+.tarjetaContactoTexto {
+
+  text-align: center;
+}
+
+.tarjetaContactoTexto h2 {
+  margin-bottom: 20px;
+}
+
+.mapaContacto {
+  display: flex;
+  flex-flow: row;
+  padding: 50px 0px 50px 0px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.formContacto {
+  display: flex;
+  flex-flow: column;
+  width: 30%;
+  margin: 0 20px 0 20px;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.nombreContacto {
+  height: 10%;
+  border-radius: 10px;
+  padding-left: 5px;
+}
+
+.emailContacto {
+  height: 10%;
+  border-radius: 10px;
+  padding-left: 5px;
+}
+
+.comentarioContacto {
+  height: 50%;
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.botonContacto {
+  text-align: center;
+  color: white;
+  background-color: #666666;
+  border-radius: 10px;
+  height: 10%;
+  width: 30%;
+  font-size: medium;
+}
+
+.botonContacto:active {
+  background-color: rgb(53, 53, 53);
+}
