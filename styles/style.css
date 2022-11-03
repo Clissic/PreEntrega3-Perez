@@ -1,7 +1,8 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 a:link, a:visited, a:active {
@@ -9,164 +10,175 @@ a:link, a:visited, a:active {
   text-decoration: none;
 }
 
-/* CODIGO CSS INDEX */
+/* ------------------ CODIGO CSS INDEX ------------------ */
 
-.ella img {
-  z-index: -1;
-  position: fixed;
-  max-width: 50%;
-  min-width: 50%;
-  height: auto;
-}
-
-.el img {
-  z-index: -1;
-  position: fixed;
-  max-width: 50%;
-  min-width: 50%;
-  margin-left: 50%;
-  height: auto;
-}
-
-.menu {
-  position: fixed;
-  min-width: 51%;
-  margin: 3% 35%;
-}
-
-.menu button {
-  display: inline-block;
-  text-align: center;
-  padding: 1%;
-  margin: 1%;
-  background-color: white;
-  border-radius: 5px;
-  width: 17.3%;
-  font-size: medium;
-}
-
-.menu button:hover {
+.indexMenu {
   background-color: black;
-  color: white;
-  transition-duration: 0.2s;
-  font-weight: bold;
+  height: 12vh;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr 1fr 1fr 2fr;
+  grid-template-areas: "nadaIzq tienda marcas logo faq contacto nadaDer";
+  align-items: center;
+  text-align: center;
 }
 
-@keyframes rotate3d {
-  0% {transform: rotateY(0deg);}
-  10% {transform: rotateY(36deg);}
-  20% {transform: rotateY(72deg);}
-  30% {transform: rotateY(108deg);}
-  40% {transform: rotateY(144deg);}
-  50% {transform: rotateY(180deg);}
-  60% {transform: rotateY(216deg);}
-  70% {transform: rotateY(252deg);}
-  80% {transform: rotateY(288deg);}
-  90% {transform: rotateY(324deg);}
-  100% {transform: rotateY(360deg);}
+.hoverAnimationMenu {
+  text-decoration: none;
 }
 
-.logoIndex img {
-  position: fixed;
-  width: 30%;
-  border-radius: 50%;
-  margin-left: 35%;
-  margin-top: 8%;
-/*   box-shadow: 0px 0px 25px 10px; */
-  -webkit-filter: drop-shadow(5px 5px 5px #222);
-  filter: drop-shadow(5px 5px 5px 5px #222);
-  animation-name: rotate3d;
-  animation-iteration-count: infinite;
-  animation-duration: 5s;
-  animation-timing-function: linear;
-  animation-delay: 0s;
-}
-
-.logoIndex:hover {
-/*   transform: rotateY(360deg); */
-  transition-duration: 2.5s;
-}
-
-.paraEllas {
-  position: fixed;
-  color: white;
-  width: 23%;
-  height: 25%;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 2%;
-  margin-top: 20%;
-  margin-left: 4%;
-}
-
-.paraEllas:hover {
+.hoverAnimationMenu:hover {
+  font-size: larger;
+  font-weight: bolder;
   transition-duration: 1s;
-  width: 25%;
-  height: 30%;
-  font-size: 110%;
 }
 
-.paraEllas p {
-  margin-top: 20px;
+.indexMenuLogo {
+  width: 50%;
+  grid-area: logo;
+  margin: auto;
+  min-width: 100px;
 }
 
-.buttonEllas {
-  position: absolute;
-  margin-left: 50%;
-  margin-top: 30px;
-  padding: 2%;
-  background-color: #4c0033;
+.indexMenuLogo:hover {
+  width: 60%;
+  transition-duration: 2s;
+  z-index: 1;
 }
 
-.paraEllos {
-  position: fixed;
+.indexMenuTienda {
+  grid-area: tienda;
   color: white;
-  width: 23%;
-  height: 25%;
-  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.indexMenuMarcas {
+  grid-area: marcas;
+  color: white;
+}
+
+.indexMenuFaq {
+  grid-area: faq;
+  color: white;
+}
+
+.indexMenuContacto {
+  grid-area: contacto;
+  color: white;
+}
+
+.indexFondo {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.indexFondo a {
+  text-decoration: none;
+  color: white;
+}
+
+.indexFondoElla {
+  background-image: url(../assets/images/ella.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+.indexFondoEl {
+  background-image: url(../assets/images/el.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+.indexFondoElla,
+.indexFondoEl {
+  width: 50%;
+  height: 78vh;
+}
+
+.indexFondoEllaContenedor {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 50%;
+  margin: 50vh auto auto 5vw;
+  padding: 3%;
+  transition-duration: 1s;
+  text-align: left;
+}
+
+.indexFondoEllaContenedor:hover {
+  transition-duration: 1s;
+  width: 55%;
+  background-color: black;
+}
+
+.indexFondoEllaBoton {
+  background-color: #af0171;
   padding: 2%;
-  margin-top: 20%;
-  margin-left: 69%;
+  border-radius: 5px;
+}
+
+.indexFondoElContenedor {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 50%;
+  margin: 50vh 5vw auto auto;
+  padding: 3%;
+  transition-duration: 1s;
   text-align: right;
 }
 
-.paraEllos:hover {
+.indexFondoElContenedor:hover {
   transition-duration: 1s;
-  width: 25%;
-  height: 30%;
-  margin-left: 67%;
-  font-size: 110%;
+  width: 55%;
+  background-color: black;
 }
 
-.paraEllos p {
-  margin-top: 20px;
-}
-
-.buttonEllos {
-  position: absolute;
-  margin-right: 50%;
-  margin-top: 30px;
+.indexFondoElBoton {
+  background-color: #0c7b93;
   padding: 2%;
-  background-color: #142850;
+  border-radius: 5px;
 }
 
-.footerIndex {
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 1;
-  margin-top: 41.3%;
+.indexFondoEllaContenedor,
+.indexFondoElContenedor {
+  color: white;
+  animation: fadeIn 5s;
+  font-size: 90%;
+  max-height: 40%;
+  overflow-y: auto;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.indexFondoEllaContenedor p,
+.indexFondoElContenedor p {
+  margin: 3vh 0 3vh 0;
+}
+
+.indexFooter {
+  background-color: black;
+  height: 10vh;
+  color: rgb(199, 199, 199);
   text-align: center;
-  color: rgb(171, 171, 171);
-  height: 13.1%;
+  font-size: small;
 }
 
-.redesSociales img {
-  width: 2%;
-  margin: 0.5%;
-  margin-top: 1%;
+.indexFooterRRSS {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.derechos p {
-  margin-top: 0.5%;
+.indexFooterRS {
+  width: 1.6vw;
+  min-width: 20px;
+  margin: 1.5vh 0.4vw 0.5vh 0.4vw;
 }
 
 /* CODIGO CSS TIENDA FEMENINA */
