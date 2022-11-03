@@ -313,36 +313,28 @@ a:link, a:visited, a:active {
   transform: rotate(360deg);
 }
 
+/* ------------------ CODIGO CSS CARRUSEL ------------------ */
 
-/* CARRUSEL */
-
-.carrusel {
+.storeCarrusel {
   position: relative;
   scrollbar-color: black;
 }
 
-.slider-container {
-  margin-top: 170px;
+.storeCarruselSliderContainer {
+  margin-top: 18vh;
   display: flex;
   width: 100%;
-  height: 500px;
+  height: 60vh;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
 }
 
-.slider-container img {
+.storeCarruselSliderContainer img {
   flex: 0 0 100%;
   width: 100%;
   object-fit: cover;
   scroll-snap-align: center;
-}
-
-.separacion2 {
-  position: relative;
-  background-color: #790252;
-  height: 15px;
-  width: 100%;
 }
 
 /* CATEGORIAS */
