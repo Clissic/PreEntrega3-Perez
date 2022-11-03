@@ -5,6 +5,10 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+body {
+  position: absolute;
+}
+
 a:link, a:visited, a:active {
   color: white;
   text-decoration: none;
@@ -183,165 +187,132 @@ a:link, a:visited, a:active {
 
 /* CODIGO CSS TIENDA FEMENINA */
 
-.cabecera {
-  position: fixed;
-  top: 0;
-  display: block;
-  height: 140px;
-  width: 100%;
-  background-color: white;
+/* ------------------ CODIGO CSS HEADER ------------------ */
+
+.header {
   z-index: 1;
+  position: fixed;
+  width: 100%;
+  height: 14vh;
+  padding: 2vh 0 2vh 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 7vh 8vh;
+  grid-template-areas:
+    "nadai logo logo logo logo menu menu menu menu menu menu nadad"
+    "nadai logo logo logo logo buscar buscar buscar buscar carrito carrito nadad";
+  background-color: black;
+  text-align: center;
+  align-items: center;
 }
 
-.cabecera .logo img {
-  margin-top: 15px;
-  margin-left: 30px;
-  position: absolute;
-  width: 110px;
-  z-index: -1;
+.headerALogo {
+  grid-area: logo;
 }
 
-.cabecera .logo h3 {
-  position: absolute;
-  left: 145px;
-  top: 40px;
-  font-size: 220%;
-  font-weight: 200;
+.headerALogo img {
+  height: auto;
+  width: 70%;
+  min-width: 100px;
+}
+
+.headerMenu {
+  grid-area: menu;
+  list-style: none;
+  width: 100%;
+}
+
+.headerMenu li {
+  background-color: white;
   color: black;
+  padding: 1vh 2vw 1vh 2vw;
+  width: 8vw;
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 50px;
 }
 
-.cabecera .logo h4 {
-  position: absolute;
-  left: 215px;
-  top: 80px;
-  font-size: 120%;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #790252;
-}
-
-.menu1 {
-  position: relative;
-  display: inline;
-  top: 15px;
-  left: 500px;
-}
-
-.menu1 button {
-  padding: 15px 40px;
-  margin: 0px 10px 0px 0px;
-  border-radius: 15px;
-  border-width: 0px;
-  background-color: #142850;
+.headerMenu li:hover {
+  background-color: rgb(60, 60, 60);
   color: white;
   font-weight: bolder;
 }
 
-.menu1 button:hover {
-  transition-duration: 0.3s;
-  background-color: #00A8CC;
+.headerMenu li:active {
   color: black;
 }
 
-.menu3 {
-  position: relative;
-  display: inline;
-  top: 15px;
-  left: 500px;
-}
-
-.menu3 button {
-  padding: 15px 100px;
-  margin: 0px 10px;
-  border-radius: 15px;
-  border-width: 0px;
-  background-color: #4c0033;
-  color: white;
-  font-weight: bold;
-}
-
-.menu3 button:hover {
-  transition-duration: .3s;
-  background-color: #E80F88;
-  color: black;
-  font-weight: bold;
-}
-
-.buscar {
-  position: absolute;
-  top: 80px;
-  left: 500px;
-}
-
-.buscar input {
-  position: absolute;
-  width: 800px;
-  height: 35px;
-  border-radius: 20px;
-  border-width: 1px;
-  border-color: #d9d9d9;
-  padding-left: 80px;
-  padding-right: 10px;
-}
-
-.buscar button {
-  border-radius: 20px 0px 0px 20px;
-  position: absolute;
-  width: 70px;
-  height: 35px;
-  background-color: black;
-  color: white;
-  font-weight: bold;
-}
-
-.buscar button:hover {
-  transition-duration: 1s;
-  font-size: 101%;
-}
-
-.carrito {
-  position: absolute;
-  left: 1325px;
-  top: 82px;
-}
-
-.carrito img {
-  position: absolute;
-  width: 30px;
-}
-
-.carrito img:hover {
-  transition-duration: 1s;
-  rotate: 360deg;
-}
-
-a:link .carrito {
-  color: black;
+.headerMenu a {
   text-decoration: none;
-}
-
-a:visited .carrito {
   color: black;
-  text-decoration: none;
 }
 
-a:active .carrito {
-  color: black;
-  text-decoration: none;
-}
-
-.carrito h3 {
-  font-size: 15px;
-  margin-left: 50px;
-  margin-top: 7px;
-}
-
-.separacion1 {
-  position: absolute;
-  background-color: #790252;
-  height: 15px;
+.headerBuscar {
   width: 100%;
-  top: 140px;
+  grid-area: buscar;
+  align-content: center;
 }
+
+.headerBuscar input {
+  width: 24vw;
+  height: 6vh;
+  padding-left: 0.5vw;
+  border-radius: 0 50px 50px 0;
+  margin-left: -0.5vw;
+  border: none;
+}
+
+.headerBuscar button {
+  width: 5vw;
+  min-width: 60px;
+  height: 6vh;
+  background-color: rgb(60, 60, 60);
+  color: white;
+  border-radius: 50px 0 0 50px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 80%;
+  border: none;
+}
+
+.headerBuscar button:hover {
+  background-color: rgb(130, 130, 130);
+}
+
+.headerBuscar button:active {
+  color: black;
+}
+
+.headerCarrito {
+  display: flex;
+  width: 100%;
+  grid-area: carrito;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+}
+
+.headerCarrito p {
+  margin: 0 1vw 0 1vw;
+}
+
+.headerCarrito p:hover {
+  text-decoration: underline;
+}
+
+.headerCarrito img {
+  width: 1.8vw;
+  transition-duration: 1s;
+}
+
+.headerCarrito img:hover {
+  transition-duration: 1s;
+  transform: rotate(360deg);
+}
+
 
 /* CARRUSEL */
 
@@ -577,694 +548,153 @@ a:active .carrito {
   font-size: 15px;
 }
 
-/* FOOTER */
+/* ------------------ CODIGO CSS FOOTER ------------------ */
 
 .footer {
-  position: relative;
-  width: 100%;
-  height: 340px;
-  background-color: #4c0033;
-}
-
-.clientes {
-  position: absolute;
-  width: 20%;
-  margin-left: 10%;
-  margin-right: 70%;
-  top: 46px;
-}
-
-.listaClientes {
-  position: absolute;
-  top: 80px;
-}
-
-.listaClientes a {
-  color: #AF0171;
-  display: block;
-  margin-top: 7px;
-}
-
-.logoFooter h3 {
-  position: absolute;
-  font-size: small;
-  font-weight: 100;
   color: white;
-  left: 70px;
-  top: 28px;
+  background-color: black;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 320px 30px;
+  grid-template-areas:
+    "clientes servicios redesSociales"
+    "derechos derechos derechos";
+  justify-items: center;
+  align-items: center;
 }
 
-.logoFooter img {
-  position: absolute;
-  width: 75px;
+.footer a {
+  color: #666666;
+  text-decoration: none;
 }
 
-.listaClientes a:hover {
+.footer a:hover {
   text-decoration: underline;
 }
 
-ul {
+.footerClientes {
+  height: 200px;
+  display: grid;
+  grid-area: clientes;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "logo"
+    "lista";
+  padding-left: 30%;
+}
+
+.footerALogo img {
+  width: 50%;
+  min-width: 100px;
+}
+
+.footerClientes ul {
+  grid-area: lista;
   list-style: none;
 }
 
-.servicio {
-  position: absolute;
-  width: 20%;
-  margin-left: 40%;
-  margin-right: 40%;
-  top: 70px;
+.footerClientes li {
+  margin-top: 2%;
 }
 
-.servicioTitulo {
-  color: white;
-  font-weight: 100;
+.footerServicio {
+  display: grid;
+  grid-area: servicios;
+  align-items: center;
+  height: 200px;
+  padding: 0 15% 0 15%;
 }
 
-.servicioLista {
-  position: absolute;
-  margin-top: 23px;
-  margin-left: 50px;
+.footerServicioGrid {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  grid-template-rows: 30px 30px 30px;
+  column-gap: 10px;
+  row-gap: 20px;
+  align-items: center;
+  margin-top: 10px;
 }
 
-.servicioLista a:hover {
-  text-decoration: underline;
+.footerServicioGrid ul {
+  list-style: none;
 }
 
-.servicio a, .servicio li {
-  color: #AF0171;
-  display: block;
-  margin-bottom: 29px;
-}
-
-.servicioLogo img {
-  margin-top: 20px;
-  margin-left: 0px;
-  width: 10%;
+.footerServicio img {
+  width: 80%;
+  min-width: 20px;
 }
 
 .footerRedesSociales {
-  position: absolute;
-  width: 20%;
-  margin-left: 70%;
-  margin-right: 10%;
-  top: 70px;
-}
-
-.footerRedesSocialesTitulo {
-  color: white;
-  font-weight: 100;
+  height: 200px;
+  display: grid;
+  grid-area: redesSociales;
+  grid-template-columns: 1fr 1fr 1fr 1fr 40px;
+  grid-template-rows: auto auto auto 40px;
+  padding-right: 30%;
+  grid-template-areas:
+    "titulo titulo titulo titulo titulo"
+    "ig     fb     tw    pt      nada"
+    "tituloB tituloB tituloB tituloB tituloB"
+    "buscar buscar buscar buscar botonB";
+  row-gap: 5%;
 }
 
 .footerRedesSociales img {
-  display: inline;
-  width: 15%;
-  margin: 15px 10px 0 0;
+  width: 50%;
 }
 
-.footerRedesSocialesNewsletter {
-  margin-top: 30px;
+.footerRedesSocialesTitulo {
+  grid-area: titulo;
+}
+
+.footerIgLogo {
+  grid-area: ig;
+  min-width: 40px;
+}
+
+.footerFbLogo {
+  grid-area: fb;
+  min-width: 40px;
+}
+
+.footerTwLogo {
+  grid-area: tw;
+  min-width: 40px;
+}
+
+.footerPtLogo {
+  grid-area: pt;
+  min-width: 40px;
 }
 
 .footerRedesSocialesNewsletterTitulo {
-  color: white;
-  font-weight: 100;
+  grid-area: tituloB;
 }
 
 .footerRedesSocialesNewsletterInput {
-  margin-top: 15px;
+  grid-area: buscar;
+  border: solid 2px #373737;
+  padding-left: 2%;
 }
 
-.footerRedesSocialesNewsletterInput input {
-  border: 2px solid #E80F88;
-  height: 40px;
-  padding-left: 10px;
+.footerEnviarLogo {
+  grid-area: botonB;
+  background-color: #373737;
+  border: #373737 solid 2px;
 }
 
-.footerRedesSocialesNewsletterInput a {
-  height: 40px;
-  width: 40px;
-  background-color: #E80F88;
-  border: 2px solid #E80F88;
-  position: absolute;
+.footerEnviarLogo img {
+  width: 100%;
 }
 
-.footerRedesSocialesNewsletterInput img {
-  width: 30px;
-  margin: 5px 5px 5px 5px;
-}
-
-.footerDerechos h3 {
-  position: absolute;
+.footerDerechos {
+  grid-area: derechos;
+  color: #373737;
   text-align: center;
-  margin-bottom: 10px;
-  color: #790252;
-  bottom: 0;
-  width: 100%;
   font-size: smaller;
-  font-weight: 100;
-}
-
-/* CODIGO CSS TIENDA MASCULINA */
-
-.cabeceraM {
-  position: fixed;
-  top: 0;
-  display: block;
-  height: 140px;
-  width: 100%;
-  background-color: white;
-  z-index: 1;
-}
-
-.cabeceraM .logoM img {
-  margin-top: 15px;
-  margin-left: 30px;
-  position: absolute;
-  width: 110px;
-  z-index: -1;
-}
-
-.cabeceraM .logoM h3 {
-  position: absolute;
-  left: 145px;
-  top: 40px;
-  font-size: 220%;
-  font-weight: 200;
-  color: black;
-}
-
-.cabeceraM .logoM h4 {
-  position: absolute;
-  left: 215px;
-  top: 80px;
-  font-size: 120%;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #27496D;
-}
-
-.menu1M {
-  position: relative;
-  display: inline;
-  top: 15px;
-  left: 500px;
-}
-
-.menu1M button {
-  padding: 15px 40px;
-  margin: 0px 10px 0px 0px;
-  border-radius: 15px;
-  border-width: 0px;
-  background-color: #4C0033;
-  color: white;
-  font-weight: bolder;
-}
-
-.menu1M button:hover {
-  transition-duration: 0.3s;
-  background-color: #E80F88;
-  color: black;
-}
-
-.menu3M {
-  position: relative;
-  display: inline;
-  top: 15px;
-  left: 500px;
-}
-
-.menu3M button {
-  padding: 15px 100px;
-  margin: 0px 10px;
-  border-radius: 15px;
-  border-width: 0px;
-  background-color: #142850;
-  color: white;
-  font-weight: bold;
-}
-
-.menu3M button:hover {
-  transition-duration: .3s;
-  background-color: #00A8CC;
-  color: black;
-  font-weight: bold;
-}
-
-.buscarM {
-  position: absolute;
-  top: 80px;
-  left: 500px;
-}
-
-.buscarM input {
-  position: absolute;
-  width: 800px;
-  height: 35px;
-  border-radius: 20px;
-  border-width: 1px;
-  border-color: #d9d9d9;
-  padding-left: 80px;
-  padding-right: 10px;
-}
-
-.buscarM button {
-  border-radius: 20px 0px 0px 20px;
-  position: absolute;
-  width: 70px;
-  height: 35px;
-  background-color: black;
-  color: white;
-  font-weight: bold;
-}
-
-.buscarM button:hover {
-  transition-duration: 1s;
-  font-size: 101%;
-}
-
-.carritoM {
-  position: absolute;
-  left: 1325px;
-  top: 82px;
-}
-
-.carritoM img {
-  position: absolute;
-  width: 30px;
-}
-
-.carritoM img:hover {
-  transition-duration: 1s;
-  rotate: 360deg;
-}
-
-a:link .carritoM {
-  color: black;
-  text-decoration: none;
-}
-
-a:visited .carritoM {
-  color: black;
-  text-decoration: none;
-}
-
-a:active .carritoM {
-  color: black;
-  text-decoration: none;
-}
-
-.carritoM h3 {
-  font-size: 15px;
-  margin-left: 50px;
-  margin-top: 7px;
-}
-
-.separacion1M {
-  position: absolute;
-  background-color: #27496D;
-  height: 15px;
-  width: 100%;
-  top: 140px;
-}
-
-/* CARRUSEL */
-
-.carruselM {
-  position: relative;
-  scrollbar-color: black;
-}
-
-.slider-containerM {
-  margin-top: 170px;
-  display: flex;
-  width: 100%;
-  height: 500px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none;
-}
-
-.slider-containerM img {
-  flex: 0 0 100%;
-  width: 100%;
-  object-fit: cover;
-  scroll-snap-align: center;
-}
-
-.separacion2M {
-  position: relative;
-  background-color: #27496D;
-  height: 15px;
-  width: 100%;
-}
-
-/* CATEGORIAS */
-
-.categoriasM {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  height: 600px;
-}
-
-.categoriasM h6 {
-  position: absolute;
-  top: 50px;
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 15px;
-}
-
-.categoriasGridM {
-  position: absolute;
-  top: 115px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  place-items: center;
-}
-
-.categoriasImgM {
-  position: relative;
-  justify-content: center;
-}
-
-.categoriasImgM h5 {
-  color: black;
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-.categoriasGridM img {
-  margin-top: 10px;
-  margin-bottom: 5px;
-  width: 250px;
-}
-
-.categoriasGridM img:hover {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  width: 260px;
-  transition-duration: 1s;
-  border-radius: 5px;
-}
-
-.separacion3M {
-  position: relative;
-  background-color: #27496D;
-  height: 15px;
-  width: 100%;
-  top: 585px;
-}
-
-/* IMAGEN - TEXTO */
-
-.imagenTextoM {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  height: 400px;
-  background-color: rgb(225, 225, 225);
-}
-
-.imagenTextoM iframe {
-  position: absolute;
-  width: 50%;
-  left: 30px;
-  top: 25px;
-}
-
-.imagenTextoM .textoM {
-  width: 40%;
-  position: absolute;
-  top: 95px;
-  left: 55%;
-}
-
-.imagenTextoM h2 {
-  margin-bottom: 30px;
-  font-size: xx-large;
-}
-
-.imagenTextoM p {
-  font-size: large;
-}
-
-.separacion4M {
-  position: relative;
-  background-color: #27496D;
-  height: 15px;
-  width: 100%;
-  top: 400px;
-}
-
-/* NUEVOS INGRESOS */
-
-.ingresosM {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  height: 1455px;
-}
-
-.ingresosM h6 {
-  position: absolute;
-  top: 65px;
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 15px;
-}
-
-.ingresosGridM {
-  width: 100%;
-  top: 130px;
-  position: absolute;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  place-items: center;
-  column-gap: 0px;
-  row-gap: 50px;
-}
-
-.ingresosGridM img {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  height: 500px;
-}
-
-.ingresosGridM img:hover {
-  height: 520px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  border-radius: 10px;
-  transition-duration: 1s;
-}
-
-.ingresosM h5 {
-  color: black;
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-.separacion5M {
-  position: relative;
-  background-color: #27496D;
-  height: 15px;
-  width: 100%;
-  top: 1455px;
-}
-
-/* FORMAS DE PAGO */
-
-.pagosM {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  height: 465px;
-}
-
-.pagosM h6 {
-  position: absolute;
-  top: 65px;
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 15px;
-}
-
-.pagosGridM {
-  position: absolute;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 0px;
-  width: 70%;
-  place-items: center;
-  top: 130px;
-}
-
-.pagosGridM img {
-  margin-top: 10px;
-  margin-bottom: 5px;
-  width: 200px;
-}
-
-.pagosGridM img:hover {
-  margin: 0px;
-  width: 210px;
-  transition-duration: 1s;
-}
-
-.pagosImgM h5 {
-  margin-top: 40px;
-  margin-bottom: 60px;
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 15px;
-}
-
-/* FOOTER */
-
-.footerM {
-  position: relative;
-  width: 100%;
-  height: 340px;
-  background-color: #142850;
-}
-
-.clientesM {
-  position: absolute;
-  width: 20%;
-  margin-left: 10%;
-  margin-right: 70%;
-  top: 46px;
-}
-
-.listaClientesM {
-  position: absolute;
-  top: 80px;
-}
-
-.listaClientesM a {
-  color: #0C7B93;
-  display: block;
-  margin-top: 7px;
-}
-
-.logoFooterM h3 {
-  position: absolute;
-  font-size: small;
-  font-weight: 100;
-  color: white;
-  left: 70px;
-  top: 28px;
-}
-
-.logoFooterM img {
-  position: absolute;
-  width: 75px;
-}
-
-.listaClientesM a:hover {
-  text-decoration: underline;
-}
-
-.footerM ul {
-  list-style: none;
-}
-
-.servicioM {
-  position: absolute;
-  width: 20%;
-  margin-left: 40%;
-  margin-right: 40%;
-  top: 70px;
-}
-
-.servicioTituloM {
-  color: white;
-  font-weight: 100;
-}
-
-.servicioListaM {
-  position: absolute;
-  margin-top: 23px;
-  margin-left: 50px;
-}
-
-.servicioListaM a:hover {
-  text-decoration: underline;
-}
-
-.servicioM a, .servicioM li {
-  color: #0C7B93;
-  display: block;
-  margin-bottom: 29px;
-}
-
-.servicioLogoM img {
-  margin-top: 20px;
-  margin-left: 0px;
-  width: 10%;
-}
-
-.footerRedesSocialesM {
-  position: absolute;
-  width: 20%;
-  margin-left: 70%;
-  margin-right: 10%;
-  top: 70px;
-}
-
-.footerRedesSocialesTituloM {
-  color: white;
-  font-weight: 100;
-}
-
-.footerRedesSocialesM img {
-  display: inline;
-  width: 15%;
-  margin: 15px 10px 0 0;
-}
-
-.footerRedesSocialesNewsletterM {
-  margin-top: 30px;
-}
-
-.footerRedesSocialesNewsletterTituloM {
-  color: white;
-  font-weight: 100;
-}
-
-.footerRedesSocialesNewsletterInputM {
-  margin-top: 15px;
-}
-
-.footerRedesSocialesNewsletterInputM input {
-  border: 2px solid #00A8CC;
-  height: 40px;
-  padding-left: 10px;
-}
-
-.footerRedesSocialesNewsletterInputM a {
-  height: 40px;
-  width: 40px;
-  background-color: #00A8CC;
-  border: 2px solid #00A8CC;
-  position: absolute;
-}
-
-.footerRedesSocialesNewsletterInputM img {
-  width: 30px;
-  margin: 5px 5px 5px 5px;
-}
-
-.footerDerechosM h3 {
-  position: absolute;
-  text-align: center;
-  margin-bottom: 10px;
-  color: #27496D;
-  bottom: 0;
-  width: 100%;
-  font-size: smaller;
-  font-weight: 100;
+  padding-bottom: 5px;
 }
 
 /* CODIGO CSS TIENDA OUTLET */
@@ -1417,154 +847,6 @@ a:active .carritoM {
   color: black;
   font-weight: bold;
 }
-
-/* FOOTER */
-
-.footerO {
-  position: relative;
-  width: 100%;
-  height: 340px;
-  background-color: black;
-  
-}
-
-.clientesO {
-  position: absolute;
-  width: 20%;
-  margin-left: 10%;
-  margin-right: 70%;
-  top: 46px;
-}
-
-.listaClientesO {
-  position: absolute;
-  top: 80px;
-}
-
-.listaClientesO a {
-  color: #666666;
-  display: block;
-  margin-top: 7px;
-}
-
-.logoFooterO h3 {
-  position: absolute;
-  font-size: small;
-  font-weight: 100;
-  color: white;
-  left: 70px;
-  top: 28px;
-}
-
-.logoFooterO img {
-  position: absolute;
-  width: 75px;
-}
-
-.listaClientesO a:hover {
-  text-decoration: underline;
-}
-
-.footerO ul {
-  list-style: none;
-}
-
-.servicioO {
-  position: absolute;
-  width: 20%;
-  margin-left: 40%;
-  margin-right: 40%;
-  top: 70px;
-}
-
-.servicioTituloO {
-  color: white;
-  font-weight: 100;
-}
-
-.servicioListaO {
-  position: absolute;
-  margin-top: 23px;
-  margin-left: 50px;
-}
-
-.servicioListaO a:hover {
-  text-decoration: underline;
-}
-
-.servicioO a, .servicioM li {
-  color: #666666;
-  display: block;
-  margin-bottom: 29px;
-}
-
-.servicioLogoO img {
-  margin-top: 20px;
-  margin-left: 0px;
-  width: 10%;
-}
-
-.footerRedesSocialesO {
-  position: absolute;
-  width: 20%;
-  margin-left: 70%;
-  margin-right: 10%;
-  top: 70px;
-}
-
-.footerRedesSocialesTituloO {
-  color: white;
-  font-weight: 100;
-}
-
-.footerRedesSocialesO img {
-  display: inline;
-  width: 15%;
-  margin: 15px 10px 0 0;
-}
-
-.footerRedesSocialesNewsletterO {
-  margin-top: 30px;
-}
-
-.footerRedesSocialesNewsletterTituloO {
-  color: white;
-  font-weight: 100;
-}
-
-.footerRedesSocialesNewsletterInputO {
-  margin-top: 15px;
-}
-
-.footerRedesSocialesNewsletterInputO input {
-  border: 2px solid #373737;
-  height: 40px;
-  padding-left: 10px;
-}
-
-.footerRedesSocialesNewsletterInputO a {
-  height: 40px;
-  width: 40px;
-  background-color: #373737;
-  border: 2px solid #373737;
-  position: absolute;
-}
-
-.footerRedesSocialesNewsletterInputO img {
-  width: 30px;
-  margin: 5px 5px 5px 5px;
-}
-
-.footerDerechosO h3 {
-  position: absolute;
-  text-align: center;
-  margin-bottom: 10px;
-  color: #373737;
-  bottom: 0;
-  width: 100%;
-  font-size: smaller;
-  font-weight: 100;
-  }
 
 /*   CODIGO CSS 404 */
 
