@@ -439,15 +439,13 @@ a:link, a:visited, a:active {
 /* ------------------ NUEVOS INGRESOS ------------------ */
 
 .ingresos {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  height: 140vh;
+  padding-top: 5vh;
+  height: 150vh;
 }
 
 .ingresos h6 {
-  position: absolute;
-  top: 5vh;
+  text-align: center;
+  margin-bottom: 5vh;
   color: rgba(0, 0, 0, 0.5);
   font-size: 15px;
 }
@@ -455,7 +453,6 @@ a:link, a:visited, a:active {
 .ingresosGrid {
   width: 100%;
   top: 15vh;
-  position: absolute;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 65vh 65vh;
@@ -488,46 +485,38 @@ a:link, a:visited, a:active {
 /* FORMAS DE PAGO */
 
 .pagos {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  height: 465px;
-}
-
-.pagos h6 {
-  position: absolute;
-  top: 65px;
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 15px;
+  background-color: rgb(225, 225, 225);
+  padding-top: 5vh;
+  height: 55vh;
 }
 
 .pagosGrid {
-  position: absolute;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 0px;
-  width: 70%;
-  place-items: center;
-  top: 130px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.pagosGrid img {
-  margin-top: 10px;
-  margin-bottom: 5px;
-  width: 200px;
-}
-
-.pagosGrid img:hover {
-  margin: 0px;
-  width: 210px;
-  transition-duration: 1s;
-}
-
-.pagosImg h5 {
-  margin-top: 40px;
-  margin-bottom: 60px;
+.pagos h6 {
+  margin-bottom: 5vh;
   color: rgba(0, 0, 0, 0.5);
   font-size: 15px;
+  text-align: center;
+}
+
+.pagosImg img{
+  width: 15vw;
+  margin-bottom: 5vh;
+}
+
+.pagosGrid a {
+  margin-bottom: 10vh;
+  color: black;
+}
+
+.pagosImg img:hover {
+  width: 15.5vw;
+  transition-duration: 1s;
 }
 
 /* ------------------ CODIGO CSS FOOTER ------------------ */
