@@ -337,64 +337,69 @@ a:link, a:visited, a:active {
   scroll-snap-align: center;
 }
 
-/* CATEGORIAS */
+/* ------------------ CODIGO CSS CATEGORIAS ------------------ */
 
-.categorias {
+.storeCategorias {
   position: relative;
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
-  height: 600px;
+  height: 80vh;
+  background-color: white;
 }
 
-.categorias h6 {
+.storeCategorias a {
+  color: black;
+  text-decoration: none;
+}
+
+.storeCategorias a:hover {
+  text-decoration: underline;
+}
+
+.storeCategorias h6 {
   position: absolute;
-  top: 50px;
+  top: 5vh;
   color: rgba(0, 0, 0, 0.5);
   font-size: 15px;
 }
 
-.categoriasGrid {
+.storeCategoriasFlex {
   position: absolute;
-  top: 115px;
+  top: 10vh;
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  place-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  justify-content: space-evenly;
 }
 
-.categoriasImg {
+.storeCategoriasImg {
   position: relative;
   justify-content: center;
 }
 
-.categoriasImg h5 {
+.storeCategoriasImg h5 {
   color: black;
   font-size: 20px;
   font-weight: bold;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 4vh;
 }
 
-.categoriasGrid img {
-  margin-top: 10px;
+.storeCategoriasImg img {
+  margin-top: 2vh;
   margin-bottom: 5px;
-  width: 250px;
+  width: 35vh;
 }
 
-.categoriasGrid img:hover {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  width: 260px;
+.storeCategoriasImg img:hover {
+  margin-top: 1vh;
+  margin-bottom: 0.2vh;
+  width: 36vh;
   transition-duration: 1s;
   border-radius: 5px;
-}
-
-.separacion3 {
-  position: relative;
-  background-color: #790252;
-  height: 15px;
-  width: 100%;
-  top: 585px;
 }
 
 /* IMAGEN - TEXTO */
