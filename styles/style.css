@@ -398,7 +398,7 @@ a:link, a:visited, a:active {
   margin-top: 1vh;
   margin-bottom: 0.2vh;
   width: 36vh;
-  transition-duration: 1s;
+  transition-duration: .5s;
   border-radius: 5px;
 }
 
@@ -471,7 +471,7 @@ a:link, a:visited, a:active {
   margin-top: 0px;
   margin-bottom: 0px;
   border-radius: 10px;
-  transition-duration: 1s;
+  transition-duration: .5s;
 }
 
 .ingresos h5 {
@@ -512,11 +512,6 @@ a:link, a:visited, a:active {
 .pagosGrid a {
   margin-bottom: 10vh;
   color: black;
-}
-
-.pagosImg img:hover {
-  width: 15.5vw;
-  transition-duration: 1s;
 }
 
 /* ------------------ CODIGO CSS FOOTER ------------------ */
