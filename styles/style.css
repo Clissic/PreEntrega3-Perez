@@ -193,7 +193,7 @@ a:link, a:visited, a:active {
   z-index: 1;
   position: fixed;
   width: 100%;
-  height: 14vh;
+  height: 18vh;
   padding: 2vh 0 2vh 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -315,26 +315,14 @@ a:link, a:visited, a:active {
 
 /* ------------------ CODIGO CSS CARRUSEL ------------------ */
 
-.storeCarrusel {
-  position: relative;
-  scrollbar-color: black;
-}
-
-.storeCarruselSliderContainer {
+.carousel, .slide {
   margin-top: 18vh;
-  display: flex;
-  width: 100%;
   height: 60vh;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none;
+  justify-content: center;
 }
 
-.storeCarruselSliderContainer img {
-  flex: 0 0 100%;
-  width: 100%;
+.carousel-item {
   object-fit: cover;
-  scroll-snap-align: center;
 }
 
 /* ------------------ CODIGO CSS CATEGORIAS ------------------ */
@@ -487,7 +475,7 @@ a:link, a:visited, a:active {
 .pagos {
   background-color: rgb(225, 225, 225);
   padding-top: 5vh;
-  height: 55vh;
+  height: 60vh;
 }
 
 .pagosGrid {
