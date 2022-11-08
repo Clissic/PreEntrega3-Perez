@@ -154,7 +154,6 @@ a:active {
     animation: fadeIn 5s;
     font-size: 90%;
     max-height: 40%;
-    overflow-y: auto;
   }
 
   @keyframes fadeIn {
@@ -2775,6 +2774,7 @@ a:active {
   }
 
   .indexMenuLogo {
+    z-index: -2;
     width: 70%;
     grid-area: logo;
     margin: auto;
