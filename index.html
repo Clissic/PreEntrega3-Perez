@@ -6,44 +6,152 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A Exclusive - Tienda Online</title>
     <link rel="shortcut icon" href="./assets/images/Logo favicon.png" />
+    <link rel="stylesheet" href="./styles/bootstrap.min.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <header>
-        <menu class="indexMenu">
-            <img class="indexMenuLogo" src="./assets/images/Logo A Exclusive Completo Blanco.png" alt="logo a exclusive" srcset="">
-            <a class="indexMenuTienda hoverAnimationMenu" href="./pages/tienda.html">TIENDA</a>
-            <a class="indexMenuMarcas hoverAnimationMenu" href="./pages/marcas.html">MARCAS</a>
-            <a class="indexMenuFaq hoverAnimationMenu" href="./pages/faq.html">FAQ</a>
-            <a class="indexMenuContacto hoverAnimationMenu" href="./pages/contacto.html">CONTACTO</a>
-        </menu>
+      <menu class="indexMenu">
+        <img
+          class="indexMenuLogo dropdown-toggle"
+          src="./assets/images/Logo A Exclusive Completo Blanco.png"
+          alt="logo a exclusive"
+        />
+        <img
+          class="indexMenuLogoMobile"
+          src="./assets/images/Logo A Exclusive Blanco.png"
+          alt="logo a exclusive"
+        />
+        <a class="indexMenuTienda hoverAnimationMenu" href="./pages/tienda.html"
+          >TIENDA</a
+        >
+        <a class="indexMenuMarcas hoverAnimationMenu" href="./pages/marcas.html"
+          >MARCAS</a
+        >
+        <a class="indexMenuFaq hoverAnimationMenu" href="./pages/faq.html"
+          >FAQ</a
+        >
+        <a
+          class="indexMenuContacto hoverAnimationMenu"
+          href="./pages/contacto.html"
+          >CONTACTO</a
+        >
+      </menu>
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="navbar-display container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img
+              class="indexMenuLogo"
+              src="./assets/images/Logo A Exclusive Completo Blanco.png"
+              alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDarkDropdown"
+            aria-controls="navbarNavDarkDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  MENU
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li>
+                    <a class="dropdown-item" href="./pages/tienda.html"
+                      >TIENDA</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/marcas.html"
+                      >MARCAS</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/faq.html">FAQ</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/contacto.html"
+                      >CONTACTO</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <div class="indexFondo">
-            <div class="indexFondoElla">
-                <div class="indexFondoEllaContenedor">
-                    <h2>Lorem ipsum</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, assumenda!</p>
-                    <a class="indexFondoEllaBoton" href="./pages/tiendaFemenina.html"><b>PARA ELLAS</b></a>
-                </div>
-            </div>
-            <div class="indexFondoEl">
-                <div class="indexFondoElContenedor">
-                    <h2>Lorem ipsum</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, assumenda!</p>
-                    <a class="indexFondoElBoton" href="./pages/tiendaMasculina.html"><b>PARA ELLOS</b></a>
-                </div>
-            </div>
+      <div class="indexFondo">
+        <div class="indexFondoElla">
+          <div class="indexFondoEllaContenedor">
+            <h2>Moda femenina:</h2>
+            <p>
+              Encuentra las prendas femeninas de las marcas más exclusivas del
+              múndo para llamar más que la atención
+            </p>
+            <a class="indexFondoEllaBoton" href="./pages/tiendaFemenina.html"
+              ><b>PARA ELLAS</b></a
+            >
+          </div>
         </div>
+        <div class="indexFondoEl">
+          <div class="indexFondoElContenedor">
+            <h2>Lorem ipsum</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim,
+              assumenda!
+            </p>
+            <a class="indexFondoElBoton" href="./pages/tiendaMasculina.html"
+              ><b>PARA ELLOS</b></a
+            >
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="indexFooter">
-        <div class="indexFooterRRSS">
-            <a href="./pages/404.html"><img class="indexFooterRS" src="./assets/images/icono facebook.png" alt="facebook"></a>
-            <a href="./pages/404.html"><img class="indexFooterRS" src="./assets/images/icono instagram.png" alt="instagram"></a>
-            <a href="./pages/404.html"><img class="indexFooterRS" src="./assets/images/icono twitter.png" alt="twitter"></a>
-            <a href="./pages/404.html"><img class="indexFooterRS"  src="./assets/images/icono pinterest.png" alt="pinterest"></a>
-        </div>
-        <p>© A Exclusive 2020. Todos los derechos reservados.</p>
+      <div class="indexFooterRRSS">
+        <a href="./pages/404.html"
+          ><img
+            class="indexFooterRS"
+            src="./assets/images/icono facebook.png"
+            alt="facebook"
+        /></a>
+        <a href="./pages/404.html"
+          ><img
+            class="indexFooterRS"
+            src="./assets/images/icono instagram.png"
+            alt="instagram"
+        /></a>
+        <a href="./pages/404.html"
+          ><img
+            class="indexFooterRS"
+            src="./assets/images/icono twitter.png"
+            alt="twitter"
+        /></a>
+        <a href="./pages/404.html"
+          ><img
+            class="indexFooterRS"
+            src="./assets/images/icono pinterest.png"
+            alt="pinterest"
+        /></a>
+      </div>
+      <p>© A Exclusive 2020. Todos los derechos reservados.</p>
     </footer>
-</body>
+  </body>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
 </html>
