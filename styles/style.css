@@ -2834,16 +2834,16 @@ a:active {
 
   .header {
     z-index: 1;
-    position: fixed;
     width: 100%;
     height: 18vh;
     padding: 2vh 0 2vh 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 7vh 8vh;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto auto;
     grid-template-areas:
-      "nadai logo logo logo logo menu menu menu menu menu menu nadad"
-      "nadai logo logo logo logo buscar buscar buscar buscar carrito carrito nadad";
+      "logo logo"
+      "menu menu"
+      "buscar carrito";
     background-color: black;
     text-align: center;
     align-items: center;
@@ -2855,7 +2855,7 @@ a:active {
 
   .headerALogo img {
     height: auto;
-    width: 70%;
+    width: 30%;
     min-width: 100px;
   }
 
@@ -2866,15 +2866,14 @@ a:active {
   }
 
   .headerMenu li {
-    background-color: white;
-    color: black;
+    border-bottom: 2px solid white;
+    color: white;
     padding: 1vh 2vw 1vh 2vw;
-    width: 8vw;
+    width: 18vw;
     display: inline-flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    border-radius: 50px;
   }
 
   .headerMenu li:hover {
@@ -2896,24 +2895,22 @@ a:active {
     width: 100%;
     grid-area: buscar;
     align-content: center;
+    margin-top: 1vh;
   }
 
   .headerBuscar input {
-    width: 24vw;
-    height: 6vh;
+    width: 50vw;
+    height: 5vh;
     padding-left: 0.5vw;
-    border-radius: 0 50px 50px 0;
-    margin-left: -0.5vw;
     border: none;
   }
 
   .headerBuscar button {
-    width: 5vw;
+    width: 15vw;
     min-width: 60px;
-    height: 6vh;
+    height: 5vh;
     background-color: rgb(60, 60, 60);
     color: white;
-    border-radius: 50px 0 0 50px;
     text-align: center;
     font-weight: bolder;
     font-size: 80%;
@@ -2939,7 +2936,9 @@ a:active {
   }
 
   .headerCarrito p {
-    margin: 0 1vw 0 1vw;
+    text-align: center;
+    justify-content: center;
+    font-size: 80%;
   }
 
   .headerCarrito p:hover {
@@ -2947,8 +2946,7 @@ a:active {
   }
 
   .headerCarrito img {
-    width: 1.8vw;
-    transition-duration: 1s;
+display: none;
   }
 
   .headerCarrito img:hover {
@@ -3153,10 +3151,12 @@ a:active {
     background-color: black;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 320px 30px;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas:
-      "clientes servicios redesSociales"
+      "nadaiz clientes nadader"
+      "nadaiz servicios nadader"
+      "nadaiz redesSociales nadader"
       "derechos derechos derechos";
     justify-items: center;
     align-items: center;
@@ -3172,7 +3172,7 @@ a:active {
   }
 
   .footerClientes {
-    height: 200px;
+    height: auto;
     display: grid;
     grid-area: clientes;
     grid-template-columns: 1fr;
@@ -3180,7 +3180,12 @@ a:active {
     grid-template-areas:
       "logo"
       "lista";
-    padding-left: 30%;
+    text-align: center;
+    margin: 5vh 0 2vh 0;
+  }
+
+  .footerClientes ul {
+    text-align: left;
   }
 
   .footerALogo img {
@@ -3201,14 +3206,18 @@ a:active {
     display: grid;
     grid-area: servicios;
     align-items: center;
-    height: 200px;
-    padding: 0 15% 0 15%;
+    height: auto;
+    margin: 2vh 0 2vh 0;
+  }
+
+  .footerServicio h3 {
+    text-align: center;
   }
 
   .footerServicioGrid {
     display: grid;
     grid-template-columns: 1fr 10fr;
-    grid-template-rows: 30px 30px 30px;
+    grid-template-rows: 5vh 5vh 5vh;
     column-gap: 10px;
     row-gap: 20px;
     align-items: center;
@@ -3230,21 +3239,22 @@ a:active {
     grid-area: redesSociales;
     grid-template-columns: 1fr 1fr 1fr 1fr 40px;
     grid-template-rows: auto auto auto 40px;
-    padding-right: 30%;
     grid-template-areas:
       "titulo titulo titulo titulo titulo"
       "ig     fb     tw    pt      nada"
       "tituloB tituloB tituloB tituloB tituloB"
       "buscar buscar buscar buscar botonB";
     row-gap: 5%;
+    margin: 2vh 0 2vh 0;
   }
 
   .footerRedesSociales img {
-    width: 50%;
+    width: 50%;;
   }
 
   .footerRedesSocialesTitulo {
     grid-area: titulo;
+    text-align: center;
   }
 
   .footerIgLogo {
@@ -3269,6 +3279,7 @@ a:active {
 
   .footerRedesSocialesNewsletterTitulo {
     grid-area: tituloB;
+    text-align: center;
   }
 
   .footerRedesSocialesNewsletterInput {
@@ -3565,18 +3576,42 @@ a:active {
   
   /* ------------------ CODIGO CSS TIENDAS ------------------ */
 
+  .mainContent {
+    margin-top: 4vh;
+  }
+
+  .tituloPrincipal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+
+  .tituloPrincipal h1 {
+    font-size: 75px;
+  }
+
+  .tituloPrincipal h6 {
+    font-size: 20px;
+  }
+
   .tarjetasTiendas {
+    margin-top: 10vh;
     display: flex;
     flex-flow: column;
     flex-wrap: wrap;
-    width: 100vw;
   }
 
   .tarjetaTiendas {
     display: flex;
     flex-flow: column;
     align-items: center;
-    width: 30%;
+    padding: 5vh 0 10vh 0;
+    border-bottom: black 5px solid;
+
   }
 
   .tarjetaTiendas img {
@@ -3594,26 +3629,19 @@ a:active {
 
   .botonTiendaFemenina {
     display: inline;
-    padding: 1vw;
+    padding: 5vw;
     background-color: #af0171;
-    border-radius: 20px;
   }
 
   .botonTiendaMasculina {
     display: inline;
-    padding: 1vw;
+    padding: 5vw;
     background-color: #0c7b93;
-    border-radius: 20px;
   }
 
   .botonTiendaOutlet {
     display: inline;
-    padding: 1vw;
+    padding: 5vw;
     background-color: #000000;
-    border-radius: 20px;
-  }
-
-  .header {
-    display: none;
   }
 }
