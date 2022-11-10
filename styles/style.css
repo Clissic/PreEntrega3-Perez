@@ -2743,6 +2743,10 @@ a:active {
 @media screen and (max-width: 426px) {
   /* ------------------ CODIGO CSS INDEX ------------------ */
 
+  .bodyIndex {
+    background-color: black;
+  }
+
   .navbar-display,
   .navbar {
     background-color: black;
@@ -2763,6 +2767,18 @@ a:active {
 
   .dropdown-menu {
     background-color: black;
+  }
+
+  .dropdownSearchInput {
+    width: 70vw;
+    padding-left: 2vw;
+  }
+
+  .dropdownSearchButton {
+    width: 20vw;
+    color: white;
+    background-color: black;
+    font-weight: bold;
   }
 
   .indexMenu {
@@ -2816,28 +2832,30 @@ a:active {
     width: 100%;
     margin: 65vh 5vw auto auto;
     padding: 5%;
-    text-align: left;
+    text-align: center;
     transition-duration: 1s;
   }
 
   .indexFondoEllaBoton {
     background-color: #af0171;
-    padding: 2%;
+    padding: 10%;
     border-radius: 5px;
+    box-shadow: black 0px 0px 20px 5px;
   }
 
   .indexFondoElContenedor {
     width: 100%;
     margin: 65vh 5vw auto auto;
     padding: 5%;
-    text-align: right;
+    text-align: center;
     transition-duration: 1s;
   }
 
   .indexFondoElBoton {
     background-color: #0c7b93;
-    padding: 2%;
+    padding: 10%;
     border-radius: 5px;
+    box-shadow: black 0px 0px 20px 5px;
   }
 
   .indexFondoEllaContenedor,
