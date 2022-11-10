@@ -200,6 +200,7 @@ a:active {
     position: fixed;
     width: 100%;
     height: 18vh;
+    max-height: 150px;
     padding: 2vh 0 2vh 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -660,95 +661,11 @@ a:active {
 
   /* CODIGO CSS TIENDA OUTLET */
 
-  .cabeceraO {
-    position: relative;
-    display: block;
-    height: auto;
-    width: 100%;
-    background-color: #ffffff;
+  .mainContent {
+    margin-top: 22vh;
   }
 
-  .cabeceraO .logoO img {
-    margin: 0 auto 0 auto;
-    padding: 15px 0 15px 0;
-    position: relative;
-    width: 20%;
-    display: block;
-  }
-
-  .separacion1O {
-    position: relative;
-    background-color: black;
-    height: 15px;
-    width: 100%;
-  }
-
-  .menu3O {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-evenly;
-    width: 100%;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    flex-wrap: wrap;
-  }
-
-  .menu3O button {
-    margin: 5px 0 5px 0;
-    padding: 15px 100px;
-    border-radius: 15px;
-    border-width: 0px;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-  }
-
-  .menu3O button:hover {
-    transition-duration: 0.3s;
-    background-color: #b6b6b6;
-    color: black;
-    font-weight: bold;
-  }
-
-  .buscarO {
-    position: absolute;
-    height: 40px;
-    width: 100%;
-    z-index: 1;
-  }
-
-  .buscarO input {
-    position: absolute;
-    width: 40%;
-    height: 35px;
-    border-radius: 20px;
-    border-width: 1px;
-    border-color: #d9d9d9;
-    padding-left: 80px;
-    padding-right: 10px;
-    margin-left: 30%;
-  }
-
-  .buscarO button {
-    border-radius: 20px 0px 0px 20px;
-    position: absolute;
-    width: 70px;
-    height: 35px;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    margin-left: 30%;
-  }
-
-  .buscarO button:hover {
-    transition-duration: 1s;
-    font-size: 101%;
-  }
-
-  .tituloO {
-    margin-top: 50px;
+  .tituloPrincipal {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -758,11 +675,11 @@ a:active {
     justify-content: space-evenly;
   }
 
-  .tituloO h1 {
+  .tituloPrincipal h1 {
     font-size: 100px;
   }
 
-  .tituloO h6 {
+  .tituloPrincipal h6 {
     font-size: 20px;
   }
 
@@ -927,6 +844,58 @@ a:active {
 
   .navbar {
     display: none;
+  }
+
+  /* ------------------ CODIGO CSS TIENDAS ------------------ */
+
+  .tarjetasTiendas {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin: 100px auto 150px auto;
+    justify-content: space-between;
+  }
+
+  .tarjetaTiendas {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 30%;
+  }
+
+  .tarjetaTiendas img {
+    width: 70%;
+    margin-bottom: 50px;
+  }
+
+  .tarjetaTiendasTexto {
+    text-align: center;
+  }
+
+  .tarjetaTiendasTexto h2 {
+    margin-bottom: 20px;
+  }
+
+  .botonTiendaFemenina {
+    display: inline;
+    padding: 1vw;
+    background-color: #af0171;
+    border-radius: 20px;
+  }
+
+  .botonTiendaMasculina {
+    display: inline;
+    padding: 1vw;
+    background-color: #0c7b93;
+    border-radius: 20px;
+  }
+
+  .botonTiendaOutlet {
+    display: inline;
+    padding: 1vw;
+    background-color: #000000;
+    border-radius: 20px;
   }
 }
 
@@ -1573,95 +1542,11 @@ a:active {
 
   /* CODIGO CSS TIENDA OUTLET */
 
-  .cabeceraO {
-    position: relative;
-    display: block;
-    height: auto;
-    width: 100%;
-    background-color: #ffffff;
+  .mainContent {
+    margin-top: 22vh;
   }
 
-  .cabeceraO .logoO img {
-    margin: 0 auto 0 auto;
-    padding: 15px 0 15px 0;
-    position: relative;
-    width: 20%;
-    display: block;
-  }
-
-  .separacion1O {
-    position: relative;
-    background-color: black;
-    height: 15px;
-    width: 100%;
-  }
-
-  .menu3O {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-evenly;
-    width: 100%;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    flex-wrap: wrap;
-  }
-
-  .menu3O button {
-    margin: 5px 0 5px 0;
-    padding: 15px 100px;
-    border-radius: 15px;
-    border-width: 0px;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-  }
-
-  .menu3O button:hover {
-    transition-duration: 0.3s;
-    background-color: #b6b6b6;
-    color: black;
-    font-weight: bold;
-  }
-
-  .buscarO {
-    position: absolute;
-    height: 40px;
-    width: 100%;
-    z-index: 1;
-  }
-
-  .buscarO input {
-    position: absolute;
-    width: 40%;
-    height: 35px;
-    border-radius: 20px;
-    border-width: 1px;
-    border-color: #d9d9d9;
-    padding-left: 80px;
-    padding-right: 10px;
-    margin-left: 30%;
-  }
-
-  .buscarO button {
-    border-radius: 20px 0px 0px 20px;
-    position: absolute;
-    width: 70px;
-    height: 35px;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    margin-left: 30%;
-  }
-
-  .buscarO button:hover {
-    transition-duration: 1s;
-    font-size: 101%;
-  }
-
-  .tituloO {
-    margin-top: 50px;
+  .tituloPrincipal {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -1671,11 +1556,11 @@ a:active {
     justify-content: space-evenly;
   }
 
-  .tituloO h1 {
-    font-size: 100px;
+  .tituloPrincipal h1 {
+    font-size: 75px;
   }
 
-  .tituloO h6 {
+  .tituloPrincipal h6 {
     font-size: 20px;
   }
 
@@ -1841,9 +1726,61 @@ a:active {
   .navbar {
     display: none;
   }
+
+  /* ------------------ CODIGO CSS TIENDAS ------------------ */
+
+  .tarjetasTiendas {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin: 100px auto 150px auto;
+    justify-content: space-between;
+  }
+
+  .tarjetaTiendas {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 30%;
+  }
+
+  .tarjetaTiendas img {
+    width: 70%;
+    margin-bottom: 50px;
+  }
+
+  .tarjetaTiendasTexto {
+    text-align: center;
+  }
+
+  .tarjetaTiendasTexto h2 {
+    margin-bottom: 20px;
+  }
+
+  .botonTiendaFemenina {
+    display: inline;
+    padding: 1vw;
+    background-color: #af0171;
+    border-radius: 20px;
+  }
+
+  .botonTiendaMasculina {
+    display: inline;
+    padding: 1vw;
+    background-color: #0c7b93;
+    border-radius: 20px;
+  }
+
+  .botonTiendaOutlet {
+    display: inline;
+    padding: 1vw;
+    background-color: #000000;
+    border-radius: 20px;
+  }
 }
 
-@media screen and (min-width: 426px) and (max-width: 768px) {
+@media screen and (min-width: 427px) and (max-width: 768px) { /* TABLET */
   /* ------------------ CODIGO CSS INDEX ------------------ */
 
   .indexMenu {
@@ -2009,17 +1946,18 @@ a:active {
     z-index: 1;
     position: fixed;
     width: 100%;
-    height: 18vh;
+    height: 10vh;
     padding: 2vh 0 2vh 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 7vh 8vh;
+    grid-template-columns: .2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 6vh 4vh;
     grid-template-areas:
-      "nadai logo logo logo logo menu menu menu menu menu menu nadad"
-      "nadai logo logo logo logo buscar buscar buscar buscar carrito carrito nadad";
+      "logo logo logo menu menu menu menu menu menu menu menu"
+      "logo logo logo buscar buscar buscar buscar buscar carrito carrito carrito";
     background-color: black;
     text-align: center;
     align-items: center;
+    justify-items: center;
   }
 
   .headerALogo {
@@ -2027,8 +1965,9 @@ a:active {
   }
 
   .headerALogo img {
+    margin-top: 1vh;
     height: auto;
-    width: 70%;
+    width: 50%;
     min-width: 100px;
   }
 
@@ -2039,25 +1978,25 @@ a:active {
   }
 
   .headerMenu li {
-    background-color: white;
-    color: black;
-    padding: 1vh 2vw 1vh 2vw;
-    width: 8vw;
-    display: inline-flex;
-    flex-wrap: wrap;
+    background-color: black;
+    color: white;
+    border-left: white solid 2px;
+    margin-right: 3vw;
+    padding-left: 1vw;
+    width: 12vw;
+    display: inline;
+    flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: center;
-    border-radius: 50px;
   }
 
   .headerMenu li:hover {
     background-color: rgb(60, 60, 60);
     color: white;
-    font-weight: bolder;
   }
 
   .headerMenu li:active {
     color: black;
+    background-color: grey;
   }
 
   .headerMenu a {
@@ -2066,16 +2005,17 @@ a:active {
   }
 
   .headerBuscar {
+    margin-top: 1vh;
     width: 100%;
     grid-area: buscar;
     align-content: center;
   }
 
   .headerBuscar input {
-    width: 24vw;
-    height: 6vh;
+    margin-top: 1vh;
+    width: 30vw;
+    height: 4vh;
     padding-left: 0.5vw;
-    border-radius: 0 50px 50px 0;
     margin-left: -0.5vw;
     border: none;
   }
@@ -2083,10 +2023,9 @@ a:active {
   .headerBuscar button {
     width: 5vw;
     min-width: 60px;
-    height: 6vh;
+    height: 4vh;
     background-color: rgb(60, 60, 60);
     color: white;
-    border-radius: 50px 0 0 50px;
     text-align: center;
     font-weight: bolder;
     font-size: 80%;
@@ -2102,6 +2041,7 @@ a:active {
   }
 
   .headerCarrito {
+    margin-top: 2vh;
     display: flex;
     width: 100%;
     grid-area: carrito;
@@ -2120,8 +2060,7 @@ a:active {
   }
 
   .headerCarrito img {
-    width: 1.8vw;
-    transition-duration: 1s;
+    display: none;
   }
 
   .headerCarrito img:hover {
@@ -2326,10 +2265,12 @@ a:active {
     background-color: black;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 320px 30px;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas:
-      "clientes servicios redesSociales"
+      "nadaiz clientes nadader"
+      "nadaiz servicios nadader"
+      "nadaiz redesSociales nadader"
       "derechos derechos derechos";
     justify-items: center;
     align-items: center;
@@ -2345,7 +2286,7 @@ a:active {
   }
 
   .footerClientes {
-    height: 200px;
+    height: auto;
     display: grid;
     grid-area: clientes;
     grid-template-columns: 1fr;
@@ -2353,7 +2294,12 @@ a:active {
     grid-template-areas:
       "logo"
       "lista";
-    padding-left: 30%;
+    text-align: center;
+    margin: 5vh 0 2vh 0;
+  }
+
+  .footerClientes ul {
+    text-align: left;
   }
 
   .footerALogo img {
@@ -2374,14 +2320,18 @@ a:active {
     display: grid;
     grid-area: servicios;
     align-items: center;
-    height: 200px;
-    padding: 0 15% 0 15%;
+    height: auto;
+    margin: 2vh 0 2vh 0;
+  }
+
+  .footerServicio h3 {
+    text-align: center;
   }
 
   .footerServicioGrid {
     display: grid;
     grid-template-columns: 1fr 10fr;
-    grid-template-rows: 30px 30px 30px;
+    grid-template-rows: 5vh 5vh 5vh;
     column-gap: 10px;
     row-gap: 20px;
     align-items: center;
@@ -2403,21 +2353,22 @@ a:active {
     grid-area: redesSociales;
     grid-template-columns: 1fr 1fr 1fr 1fr 40px;
     grid-template-rows: auto auto auto 40px;
-    padding-right: 30%;
     grid-template-areas:
       "titulo titulo titulo titulo titulo"
       "ig     fb     tw    pt      nada"
       "tituloB tituloB tituloB tituloB tituloB"
       "buscar buscar buscar buscar botonB";
     row-gap: 5%;
+    margin: 2vh 0 2vh 0;
   }
 
   .footerRedesSociales img {
-    width: 50%;
+    width: 50%;;
   }
 
   .footerRedesSocialesTitulo {
     grid-area: titulo;
+    text-align: center;
   }
 
   .footerIgLogo {
@@ -2442,6 +2393,7 @@ a:active {
 
   .footerRedesSocialesNewsletterTitulo {
     grid-area: tituloB;
+    text-align: center;
   }
 
   .footerRedesSocialesNewsletterInput {
@@ -2470,95 +2422,11 @@ a:active {
 
   /* CODIGO CSS TIENDA OUTLET */
 
-  .cabeceraO {
-    position: relative;
-    display: block;
-    height: auto;
-    width: 100%;
-    background-color: #ffffff;
+  .mainContent {
+    margin-top: 22vh;
   }
 
-  .cabeceraO .logoO img {
-    margin: 0 auto 0 auto;
-    padding: 15px 0 15px 0;
-    position: relative;
-    width: 20%;
-    display: block;
-  }
-
-  .separacion1O {
-    position: relative;
-    background-color: black;
-    height: 15px;
-    width: 100%;
-  }
-
-  .menu3O {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-evenly;
-    width: 100%;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    flex-wrap: wrap;
-  }
-
-  .menu3O button {
-    margin: 5px 0 5px 0;
-    padding: 15px 100px;
-    border-radius: 15px;
-    border-width: 0px;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-  }
-
-  .menu3O button:hover {
-    transition-duration: 0.3s;
-    background-color: #b6b6b6;
-    color: black;
-    font-weight: bold;
-  }
-
-  .buscarO {
-    position: absolute;
-    height: 40px;
-    width: 100%;
-    z-index: 1;
-  }
-
-  .buscarO input {
-    position: absolute;
-    width: 40%;
-    height: 35px;
-    border-radius: 20px;
-    border-width: 1px;
-    border-color: #d9d9d9;
-    padding-left: 80px;
-    padding-right: 10px;
-    margin-left: 30%;
-  }
-
-  .buscarO button {
-    border-radius: 20px 0px 0px 20px;
-    position: absolute;
-    width: 70px;
-    height: 35px;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    margin-left: 30%;
-  }
-
-  .buscarO button:hover {
-    transition-duration: 1s;
-    font-size: 101%;
-  }
-
-  .tituloO {
-    margin-top: 50px;
+  .tituloPrincipal {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -2568,11 +2436,11 @@ a:active {
     justify-content: space-evenly;
   }
 
-  .tituloO h1 {
-    font-size: 100px;
+  .tituloPrincipal h1 {
+    font-size: 75px;
   }
 
-  .tituloO h6 {
+  .tituloPrincipal h6 {
     font-size: 20px;
   }
 
@@ -2738,10 +2606,58 @@ a:active {
   .navbar {
     display: none;
   }
+
+  /* ------------------ CODIGO CSS TIENDAS ------------------ */
+
+  .tarjetasTiendas {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin: 100px auto 150px auto;
+    justify-content: space-between;
+  }
+
+  .tarjetaTiendas {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 30%;
+  }
+
+  .tarjetaTiendas img {
+    width: 70%;
+    margin-bottom: 50px;
+  }
+
+  .tarjetaTiendasTexto {
+    text-align: center;
+  }
+
+  .tarjetaTiendasTexto h2 {
+    margin-bottom: 20px;
+  }
+
+  .botonTiendaFemenina {
+    display: inline;
+    padding: 1vw;
+    background-color: #af0171;
+  }
+
+  .botonTiendaMasculina {
+    display: inline;
+    padding: 1vw;
+    background-color: #0c7b93;
+  }
+
+  .botonTiendaOutlet {
+    display: inline;
+    padding: 1vw;
+    background-color: #000000;
+  }
 }
 
-@media screen and (max-width: 426px) {
-
+@media screen and (max-width: 426px) { /* MOBILE */
   /* ------------------ CODIGO CSS INDEX ------------------ */
 
   .bodyIndex {
@@ -2866,7 +2782,10 @@ a:active {
     font-size: 90%;
   }
 
-  .indexFondoElla h2,.indexFondoElla p, .indexFondoEl h2, .indexFondoEl p {
+  .indexFondoElla h2,
+  .indexFondoElla p,
+  .indexFondoEl h2,
+  .indexFondoEl p {
     display: none;
   }
 
@@ -3641,5 +3560,60 @@ a:active {
 
   .botonContacto:active {
     background-color: rgb(53, 53, 53);
+  }
+
+  
+  /* ------------------ CODIGO CSS TIENDAS ------------------ */
+
+  .tarjetasTiendas {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+
+  .tarjetaTiendas {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 30%;
+  }
+
+  .tarjetaTiendas img {
+    width: 70%;
+    margin-bottom: 50px;
+  }
+
+  .tarjetaTiendasTexto {
+    text-align: center;
+  }
+
+  .tarjetaTiendasTexto h2 {
+    margin-bottom: 20px;
+  }
+
+  .botonTiendaFemenina {
+    display: inline;
+    padding: 1vw;
+    background-color: #af0171;
+    border-radius: 20px;
+  }
+
+  .botonTiendaMasculina {
+    display: inline;
+    padding: 1vw;
+    background-color: #0c7b93;
+    border-radius: 20px;
+  }
+
+  .botonTiendaOutlet {
+    display: inline;
+    padding: 1vw;
+    background-color: #000000;
+    border-radius: 20px;
+  }
+
+  .header {
+    display: none;
   }
 }
