@@ -808,7 +808,7 @@ a:active {
   .mapaContacto {
     display: flex;
     flex-flow: row;
-    padding: 0px 0px 50px 0px;
+    padding: 0px 0px 15vh 0px;
     flex-wrap: nowrap;
     justify-content: center;
   }
@@ -3581,6 +3581,7 @@ display: none;
   }
 
   .tarjetaContactoTexto {
+    width: 80vw;
     text-align: center;
   }
 
@@ -3608,6 +3609,7 @@ display: none;
     color: white;
     text-align: center;
     justify-content: space-evenly;
+    margin-bottom: 5vh;
   }
 
   .nombreContacto {
