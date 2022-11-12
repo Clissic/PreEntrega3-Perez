@@ -16,6 +16,7 @@ a:active {
   text-decoration: none;
 }
 
+/* DESKTOP GRANDE */
 @media screen and (min-width: 1024px) {
   /* ------------------ CODIGO CSS INDEX ------------------ */
 
@@ -807,16 +808,15 @@ a:active {
   .mapaContacto {
     display: flex;
     flex-flow: row;
-    padding: 50px 0px 50px 0px;
-    flex-wrap: wrap;
+    padding: 0px 0px 50px 0px;
+    flex-wrap: nowrap;
     justify-content: center;
   }
 
   .formContacto {
     display: flex;
     flex-flow: column;
-    width: 30%;
-    margin: 0 20px 0 20px;
+    width: 40vw;
     padding: 20px;
     background-color: black;
     color: white;
@@ -914,6 +914,7 @@ a:active {
   }
 }
 
+/* DESKTOP CHICO */
 @media screen and (min-width: 769px) and (max-width: 1023px) {
   .indexMenu {
     background-color: black;
@@ -1703,16 +1704,15 @@ a:active {
   .mapaContacto {
     display: flex;
     flex-flow: row;
-    padding: 50px 0px 50px 0px;
-    flex-wrap: wrap;
+    padding: 0px 0px 50px 0px;
+    flex-wrap: nowrap;
     justify-content: center;
   }
 
   .formContacto {
     display: flex;
     flex-flow: column;
-    width: 30%;
-    margin: 0 20px 0 20px;
+    width: 40vw;
     padding: 20px;
     background-color: black;
     color: white;
@@ -1810,7 +1810,8 @@ a:active {
   }
 }
 
-@media screen and (min-width: 427px) and (max-width: 768px) { /* TABLET */
+/* TABLET */
+@media screen and (min-width: 427px) and (max-width: 768px) { 
   /* ------------------ CODIGO CSS INDEX ------------------ */
 
   .indexMenu {
@@ -2598,16 +2599,21 @@ a:active {
   .mapaContacto {
     display: flex;
     flex-flow: row;
-    padding: 50px 0px 50px 0px;
+    padding: 0px 0px 50px 0px;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100vw;
+  }
+
+  .mapaContacto iframe {
+    width: 100vw;
   }
 
   .formContacto {
     display: flex;
     flex-flow: column;
-    width: 30%;
-    margin: 0 20px 0 20px;
+    width: 80vw;
+    margin: 5vh 20px 0 20px;
     padding: 20px;
     background-color: black;
     color: white;
@@ -2702,7 +2708,8 @@ a:active {
   }
 }
 
-@media screen and (max-width: 426px) { /* MOBILE */
+/* MOBILE */
+@media screen and (max-width: 426px) {
   /* ------------------ CODIGO CSS INDEX ------------------ */
 
   .bodyIndex {
@@ -3553,23 +3560,24 @@ display: none;
 
   .tarjetasContacto {
     display: flex;
-    flex-flow: row;
-    width: 80%;
-    margin: 100px auto 150px auto;
+    flex-flow: column;
+    width: 100vw;
     justify-content: space-between;
-    flex-wrap: wrap;
+    margin: 0 0 5vh 0;
   }
 
   .tarjetaContacto {
     display: flex;
     flex-flow: column;
     align-items: center;
-    width: 30%;
+    width: 100vw;
+    padding: 5vh 0 5vh 0;
+    border-bottom: black 5px solid;
   }
 
   .tarjetaContacto img {
     width: 70%;
-    margin-bottom: 50px;
+    margin-bottom: 5vh;
   }
 
   .tarjetaContactoTexto {
@@ -3583,16 +3591,18 @@ display: none;
   .mapaContacto {
     display: flex;
     flex-flow: row;
-    padding: 50px 0px 50px 0px;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .mapaContacto iframe {
+    width: 100%;
   }
 
   .formContacto {
     display: flex;
     flex-flow: column;
-    width: 30%;
-    margin: 0 20px 0 20px;
+    width: 100%;
     padding: 20px;
     background-color: black;
     color: white;
