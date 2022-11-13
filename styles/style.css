@@ -192,7 +192,7 @@ a:active {
     margin: 1.5vh 0.6vw 0.5vh 0.6vw;
   }
 
-  /* CODIGO CSS TIENDA FEMENINA */
+  /* ------------------  CODIGO CSS TIENDA ------------------ */
 
   /* ------------------ CODIGO CSS HEADER ------------------ */
 
@@ -264,7 +264,7 @@ a:active {
   }
 
   .headerBuscar input {
-    width: 24vw;
+    width: 70%;
     height: 6vh;
     padding-left: 0.5vw;
     border-radius: 0 50px 50px 0;
@@ -273,7 +273,7 @@ a:active {
   }
 
   .headerBuscar button {
-    width: 5vw;
+    width: 25%;
     min-width: 60px;
     height: 6vh;
     background-color: rgb(60, 60, 60);
@@ -321,12 +321,140 @@ a:active {
     transform: rotate(360deg);
   }
 
+  /*HEADER CON BOOTSTRAP */
+
+  .headerBootstrap {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 18vh;
+    max-height: 150px;
+    padding: 2vh 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 7vh 8vh;
+    grid-template-areas:
+      "nadai logo logo logo logo menu menu menu menu menu menu nadad"
+      "nadai logo logo logo logo buscar buscar buscar buscar carrito carrito nadad";
+    background-color: black;
+    text-align: center;
+    align-items: center;
+  }
+
+  .headerALogoBootstrap {
+    grid-area: logo;
+  }
+
+  .headerALogoBootstrap img {
+    height: auto;
+    width: 70%;
+    min-width: 100px;
+  }
+
+  .headerMenuBootstrap {
+    grid-area: menu;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin-top: 2vh;
+  }
+
+  .headerMenuBootstrap li {
+    background-color: white;
+    color: black;
+    padding: .8vh 2vw .8vh 2vw;
+    width: 12vw;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 50px;
+  }
+
+  .headerMenuBootstrap li:hover {
+    background-color: rgb(60, 60, 60);
+    color: white;
+    font-weight: bolder;
+  }
+
+  .headerMenuBootstrap li:active {
+    color: black;
+  }
+
+  .headerMenuBootstrap a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .headerBuscarBootstrap {
+    width: 100%;
+    grid-area: buscar;
+    align-content: center;
+    justify-items: center;
+  }
+
+  .headerBuscarInputTextBootstrap {
+    width: 25vw;
+    height: 30px;
+    padding-left: 0.5vw;
+    margin-left: -0.5vw;
+    border: none;
+    border-radius: 0 50px 50px 0;
+  }
+
+  .headerBuscarInputButtonBootstrap {
+    width: 5vw;
+    min-width: 70px;
+    height: 30px;
+    background-color: rgb(60, 60, 60);
+    color: white;
+    border: none;
+    border-radius: 50px 0 0 50px;
+  }
+
+  .headerBuscarInputButtonBootstrap:active {
+    background-color: rgb(160, 160, 160);
+    color: black;
+  }
+
+  .headerCarritoBootstrap {
+    display: flex;
+    width: 100%;
+    grid-area: carrito;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+  }
+
+  .headerCarritoBootstrap p {
+    margin: 0 1vw 0 1vw;
+  }
+
+  .headerCarritoBootstrap p:hover {
+    text-decoration: underline;
+  }
+
+  .headerCarritoBootstrap img {
+    width: 1.8vw;
+    transition-duration: 1s;
+  }
+
+  .headerCarritoBootstrap img:hover {
+    transition-duration: 1s;
+    transform: rotate(360deg);
+  }
+
+  .indexMenuLogoMobileBootstrap {
+    display: none;
+  }
+
   /* ------------------ CODIGO CSS CARRUSEL ------------------ */
 
   .carousel,
   .slide {
     margin-top: 18vh;
-    height: 60vh;
+    height: 500px;
     justify-content: center;
   }
 
@@ -342,7 +470,7 @@ a:active {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    height: 80vh;
+    height: 75vh;
     background-color: white;
   }
 
@@ -383,6 +511,7 @@ a:active {
     font-size: 20px;
     font-weight: bold;
     margin-top: 4vh;
+    text-align: center;
   }
 
   .storeCategoriasImg img {
@@ -407,12 +536,12 @@ a:active {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    height: 80vh;
+    height: auto;
     background-color: rgb(225, 225, 225);
   }
 
   .imagenTexto iframe {
-    margin-top: 10vh;
+    margin: 10vh 0 10vh 0;
     width: 60vw;
     height: 60vh;
   }
@@ -437,7 +566,7 @@ a:active {
 
   .ingresos {
     padding-top: 5vh;
-    height: 150vh;
+    height: auto;
   }
 
   .ingresos h6 {
@@ -484,7 +613,7 @@ a:active {
   .pagos {
     background-color: rgb(225, 225, 225);
     padding-top: 5vh;
-    height: 60vh;
+    height: auto;
   }
 
   .pagosGrid {
@@ -492,6 +621,10 @@ a:active {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+  }
+
+  .pagosGrid a {
+    text-align: center;
   }
 
   .pagos h6 {
@@ -556,6 +689,7 @@ a:active {
   .footerClientes ul {
     grid-area: lista;
     list-style: none;
+    padding: 0;
   }
 
   .footerClientes li {
@@ -1105,7 +1239,7 @@ a:active {
     margin: 1.5vh 1vw 0.5vh 1vw;
   }
 
-  /* CODIGO CSS TIENDA FEMENINA */
+  /* ------------------  CODIGO CSS TIENDA ------------------ */
 
   /* ------------------ CODIGO CSS HEADER ------------------ */
 
@@ -1176,7 +1310,7 @@ a:active {
   }
 
   .headerBuscar input {
-    width: 24vw;
+    width: 70%;
     height: 6vh;
     padding-left: 0.5vw;
     border-radius: 0 50px 50px 0;
@@ -1185,7 +1319,7 @@ a:active {
   }
 
   .headerBuscar button {
-    width: 5vw;
+    width: 25%;
     min-width: 60px;
     height: 6vh;
     background-color: rgb(60, 60, 60);
@@ -1233,12 +1367,140 @@ a:active {
     transform: rotate(360deg);
   }
 
+  /*HEADER CON BOOTSTRAP */
+
+  .headerBootstrap {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 18vh;
+    max-height: 150px;
+    padding: 2vh 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 7vh 8vh;
+    grid-template-areas:
+      "nadai logo logo logo logo menu menu menu menu menu menu nadad"
+      "nadai logo logo logo logo buscar buscar buscar buscar carrito carrito nadad";
+    background-color: black;
+    text-align: center;
+    align-items: center;
+  }
+
+  .headerALogoBootstrap {
+    grid-area: logo;
+  }
+
+  .headerALogoBootstrap img {
+    height: auto;
+    width: 70%;
+    min-width: 100px;
+  }
+
+  .headerMenuBootstrap {
+    grid-area: menu;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin-top: 2vh;
+  }
+
+  .headerMenuBootstrap li {
+    background-color: white;
+    color: black;
+    padding: .8vh 2vw .8vh 2vw;
+    width: 12vw;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 50px;
+  }
+
+  .headerMenuBootstrap li:hover {
+    background-color: rgb(60, 60, 60);
+    color: white;
+    font-weight: bolder;
+  }
+
+  .headerMenuBootstrap li:active {
+    color: black;
+  }
+
+  .headerMenuBootstrap a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .headerBuscarBootstrap {
+    width: 100%;
+    grid-area: buscar;
+    align-content: center;
+    justify-items: center;
+  }
+
+  .headerBuscarInputTextBootstrap {
+    width: 24vw;
+    height: 30px;
+    padding-left: 0.5vw;
+    margin-left: -0.5vw;
+    border: none;
+    border-radius: 0 50px 50px 0;
+  }
+
+  .headerBuscarInputButtonBootstrap {
+    width: 5vw;
+    min-width: 70px;
+    height: 30px;
+    background-color: rgb(60, 60, 60);
+    color: white;
+    border: none;
+    border-radius: 50px 0 0 50px;
+  }
+
+  .headerBuscarInputButtonBootstrap:active {
+    background-color: rgb(160, 160, 160);
+    color: black;
+  }
+
+  .headerCarritoBootstrap {
+    display: flex;
+    width: 100%;
+    grid-area: carrito;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+  }
+
+  .headerCarritoBootstrap p {
+    margin: 0 1vw 0 1vw;
+  }
+
+  .headerCarritoBootstrap p:hover {
+    text-decoration: underline;
+  }
+
+  .headerCarritoBootstrap img {
+    width: 1.8vw;
+    transition-duration: 1s;
+  }
+
+  .headerCarritoBootstrap img:hover {
+    transition-duration: 1s;
+    transform: rotate(360deg);
+  }
+
+  .indexMenuLogoMobileBootstrap {
+    display: none;
+  }
+
   /* ------------------ CODIGO CSS CARRUSEL ------------------ */
 
   .carousel,
   .slide {
     margin-top: 18vh;
-    height: 60vh;
+    height: 400px;
     justify-content: center;
   }
 
@@ -1254,7 +1516,7 @@ a:active {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    height: 80vh;
+    height: 75vh;
     background-color: white;
   }
 
@@ -1282,12 +1544,13 @@ a:active {
     flex-direction: row;
     flex-wrap: nowrap;
     overflow-x: auto;
-    justify-content: space-evenly;
+    justify-content: left;
   }
 
   .storeCategoriasImg {
     position: relative;
     justify-content: center;
+    margin: 0 1vw 0 1vw;
   }
 
   .storeCategoriasImg h5 {
@@ -1295,6 +1558,7 @@ a:active {
     font-size: 20px;
     font-weight: bold;
     margin-top: 4vh;
+    text-align: center;
   }
 
   .storeCategoriasImg img {
@@ -1319,21 +1583,26 @@ a:active {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    height: 80vh;
+    height: auto;
     background-color: rgb(225, 225, 225);
   }
 
   .imagenTexto iframe {
-    margin-top: 10vh;
-    width: 60vw;
+    margin: 10vh 0 10vh 0;
+    width: 75vw;
     height: 60vh;
   }
 
   .imagenTexto .texto {
-    margin-top: 15vh;
+    margin-top: 10vh;
     margin-left: 2vw;
     text-align: justify;
-    width: 35vw;
+    width: 20vw;
+  }
+
+  .imagenTexto p {
+    max-height: 50vh;
+    overflow-y: scroll;
   }
 
   .imagenTexto h2 {
@@ -1341,15 +1610,11 @@ a:active {
     font-size: xx-large;
   }
 
-  .imagenTexto p {
-    font-size: large;
-  }
-
   /* ------------------ NUEVOS INGRESOS ------------------ */
 
   .ingresos {
     padding-top: 5vh;
-    height: 150vh;
+    height: auto;
   }
 
   .ingresos h6 {
@@ -1396,7 +1661,7 @@ a:active {
   .pagos {
     background-color: rgb(225, 225, 225);
     padding-top: 5vh;
-    height: 60vh;
+    height: auto;
   }
 
   .pagosGrid {
@@ -1404,6 +1669,10 @@ a:active {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+  }
+
+  .pagosGrid a {
+    text-align: center;
   }
 
   .pagos h6 {
@@ -2001,7 +2270,7 @@ a:active {
     display: none;
   }
 
-  /* CODIGO CSS TIENDA FEMENINA */
+  /* ------------------  CODIGO CSS TIENDA ------------------ */
 
   /* ------------------ CODIGO CSS HEADER ------------------ */
 
@@ -2076,7 +2345,7 @@ a:active {
 
   .headerBuscar input {
     margin-top: 1vh;
-    width: 30vw;
+    width: 65%;
     height: 4vh;
     padding-left: 0.5vw;
     margin-left: -0.5vw;
@@ -2084,7 +2353,7 @@ a:active {
   }
 
   .headerBuscar button {
-    width: 5vw;
+    width: 15%;
     min-width: 60px;
     height: 4vh;
     background-color: rgb(60, 60, 60);
@@ -2123,10 +2392,138 @@ a:active {
   }
 
   .headerCarrito img {
-    display: none;
+    width: 20px;
   }
 
   .headerCarrito img:hover {
+    transition-duration: 1s;
+    transform: rotate(360deg);
+  }
+
+  /*HEADER CON BOOTSTRAP */
+
+  .headerBootstrap {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 14vh;
+    padding: 2vh 0 2vh 0;
+    display: grid;
+    grid-template-columns: .2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 6vh 4vh;
+    grid-template-areas:
+      "logo logo logo menu menu menu menu menu menu menu menu"
+      "logo logo logo buscar buscar buscar buscar buscar carrito carrito carrito";
+    background-color: black;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .headerALogoBootstrap {
+    grid-area: logo;
+  }
+
+  .headerALogoBootstrap img {
+    margin-top: 1vh;
+    height: auto;
+    width: 50%;
+    min-width: 100px;
+  }
+
+  .indexMenuLogoBootstrap {
+    display: none;
+  }
+
+  .headerMenuBootstrap {
+    grid-area: menu;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin-top: 2.5vh;
+  }
+
+  .headerMenuBootstrap li {
+    background-color: black;
+    color: white;
+    border-left: white solid 2px;
+    margin-right: 3vw;
+    padding-left: 1vw;
+    width: 12vw;
+    display: inline;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+
+  .headerMenuBootstrap li:hover {
+    background-color: rgb(60, 60, 60);
+    color: white;
+  }
+
+  .headerMenuBootstrap li:active {
+    color: black;
+    background-color: grey;
+  }
+
+  .headerMenuBootstrap a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .headerBuscarBootstrap {
+    margin-top: 1vh;
+    width: 100%;
+    grid-area: buscar;
+    align-content: center;
+    justify-items: center;
+  }
+
+  .headerBuscarInputTextBootstrap {
+    width: 75%;
+    height: 25px;
+    padding-left: 0.5vw;
+    margin-left: -0.5vw;
+    border: none;
+  }
+
+  .headerBuscarInputButtonBootstrap {
+    width: 15%;
+    min-width: 70px;
+    height: 25px;
+    background-color: rgb(60, 60, 60);
+    color: white;
+    border: none;
+  }
+
+  .headerBuscarInputButtonBootstrap:active {
+    background-color: rgb(160, 160, 160);
+    color: black;
+  }
+
+  .headerCarritoBootstrap {
+    margin-top: 2vh;
+    display: flex;
+    width: 100%;
+    grid-area: carrito;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+  }
+
+  .headerCarritoBootstrap p {
+    margin: 0 1vw 0 1vw;
+  }
+
+  .headerCarritoBootstrap p:hover {
+    text-decoration: underline;
+  }
+
+  .headerCarritoBootstrap img {
+    width: 20px;
+  }
+
+  .headerCarritoBootstrap img:hover {
     transition-duration: 1s;
     transform: rotate(360deg);
   }
@@ -2135,8 +2532,8 @@ a:active {
 
   .carousel,
   .slide {
-    margin-top: 18vh;
-    height: 60vh;
+    margin-top: 14vh;
+    height: 300px;
     justify-content: center;
   }
 
@@ -2152,7 +2549,7 @@ a:active {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    height: 80vh;
+    height: 75vh;
     background-color: white;
   }
 
@@ -2180,12 +2577,13 @@ a:active {
     flex-direction: row;
     flex-wrap: nowrap;
     overflow-x: auto;
-    justify-content: space-evenly;
+    justify-content: left;
   }
 
   .storeCategoriasImg {
     position: relative;
     justify-content: center;
+    margin: 0 1vw 0 1vw;
   }
 
   .storeCategoriasImg h5 {
@@ -2193,6 +2591,7 @@ a:active {
     font-size: 20px;
     font-weight: bold;
     margin-top: 4vh;
+    text-align: center;
   }
 
   .storeCategoriasImg img {
@@ -2214,24 +2613,27 @@ a:active {
   .imagenTexto {
     position: relative;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     width: 100%;
-    height: 80vh;
+    height: auto;
     background-color: rgb(225, 225, 225);
   }
 
   .imagenTexto iframe {
-    margin-top: 10vh;
-    width: 60vw;
+    margin-top: 5vh;
+    width: 100%;
     height: 60vh;
   }
 
   .imagenTexto .texto {
-    margin-top: 15vh;
-    margin-left: 2vw;
+    margin: 5vh auto 5vh auto;
     text-align: justify;
-    width: 35vw;
+    width: 90%;
+  }
+
+  .imagenTexto p {
+    max-height: 50vh;
+    overflow-y: scroll;
   }
 
   .imagenTexto h2 {
@@ -2239,15 +2641,11 @@ a:active {
     font-size: xx-large;
   }
 
-  .imagenTexto p {
-    font-size: large;
-  }
-
   /* ------------------ NUEVOS INGRESOS ------------------ */
 
   .ingresos {
     padding-top: 5vh;
-    height: 150vh;
+    height: auto;
   }
 
   .ingresos h6 {
@@ -2294,7 +2692,7 @@ a:active {
   .pagos {
     background-color: rgb(225, 225, 225);
     padding-top: 5vh;
-    height: 60vh;
+    height: auto;
   }
 
   .pagosGrid {
@@ -2302,6 +2700,10 @@ a:active {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+  }
+
+  .pagosGrid a {
+    text-align: center;
   }
 
   .pagos h6 {
@@ -2928,7 +3330,7 @@ a:active {
     display: none;
   }
 
-  /* CODIGO CSS TIENDA FEMENINA */
+  /* ------------------  CODIGO CSS TIENDA ------------------ */
 
   /* ------------------ CODIGO CSS HEADER ------------------ */
 
@@ -2969,7 +3371,7 @@ a:active {
     border-bottom: 2px solid white;
     color: white;
     padding: 1vh 2vw 1vh 2vw;
-    width: 18vw;
+    width: 18%;
     display: inline-flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -2999,14 +3401,14 @@ a:active {
   }
 
   .headerBuscar input {
-    width: 50vw;
+    width: 70%;
     height: 5vh;
     padding-left: 0.5vw;
     border: none;
   }
 
   .headerBuscar button {
-    width: 15vw;
+    width: 15%;
     min-width: 60px;
     height: 5vh;
     background-color: rgb(60, 60, 60);
@@ -3030,7 +3432,7 @@ a:active {
     width: 100%;
     grid-area: carrito;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     text-decoration: none;
     color: white;
   }
@@ -3046,10 +3448,133 @@ a:active {
   }
 
   .headerCarrito img {
-display: none;
+    display: none;
   }
 
   .headerCarrito img:hover {
+    transition-duration: 1s;
+    transform: rotate(360deg);
+  }
+
+  /*HEADER CON BOOTSTRAP */
+
+  .headerBootstrap {
+    z-index: 1;
+    width: 100%;
+    height: 30vh;
+    padding: 2vh 0 2vh 0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "logo logo"
+      "menu menu"
+      "buscar carrito";
+    background-color: black;
+    text-align: center;
+    align-items: center;
+  }
+
+  .headerALogoBootstrap {
+    grid-area: logo;
+    width: 100%;
+  }
+
+  .headerALogoBootstrap img {
+    height: auto;
+    width: 30%;
+    min-width: 100px;
+  }
+
+  .indexMenuLogoMobileBootstrap img {
+    display: none;
+  }
+
+  .headerMenuBootstrap {
+    grid-area: menu;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+  }
+
+  .headerMenuBootstrap li {
+    border-bottom: 2px solid white;
+    color: white;
+    padding: 1vh 2vw 1vh 2vw;
+    width: 22%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .headerMenuBootstrap li:hover {
+    background-color: rgb(60, 60, 60);
+    color: white;
+    font-weight: bolder;
+  }
+
+  .headerMenuBootstrap li:active {
+    color: black;
+  }
+
+  .headerMenuBootstrap a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .headerBuscarBootstrap {
+    width: 100%;
+    grid-area: buscar;
+    align-content: center;
+    justify-items: center;
+  }
+
+  .headerBuscarInputTextBootstrap {
+    width: 75%;
+    height: 35px;
+    padding-left: 0.5vw;
+    margin-left: -0.5vw;
+    border: none;
+  }
+
+  .headerBuscarInputButtonBootstrap {
+    width: 15%;
+    min-width: 70px;
+    height: 35px;
+    background-color: rgb(60, 60, 60);
+    color: white;
+    border: none;
+  }
+
+  .headerBuscarInputButtonBootstrap:active {
+    background-color: rgb(160, 160, 160);
+    color: black;
+  }
+
+  .headerCarritoBootstrap {
+    display: flex;
+    width: 100%;
+    grid-area: carrito;
+    align-items: center;
+    justify-content: left;
+    text-decoration: none;
+    color: white;
+  }
+
+  .headerCarritoBootstrap p {
+    text-align: left;
+    font-size: 150%;
+  }
+
+  .headerCarritoBootstrap p:hover {
+    text-decoration: underline;
+  }
+
+  .headerCarritoBootstrap img {
+display: none;
+  }
+
+  .headerCarritoBootstrap img:hover {
     transition-duration: 1s;
     transform: rotate(360deg);
   }
@@ -3058,13 +3583,12 @@ display: none;
 
   .carousel,
   .slide {
-    margin-top: 18vh;
-    height: 60vh;
+    height: 250px;
     justify-content: center;
   }
 
-  .carousel-item {
-    object-fit: cover;
+  .carrousel-item {
+    object-fit: fill;
   }
 
   /* ------------------ CODIGO CSS CATEGORIAS ------------------ */
@@ -3075,7 +3599,7 @@ display: none;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    height: 80vh;
+    height: 75vh;
     background-color: white;
   }
 
@@ -3103,12 +3627,13 @@ display: none;
     flex-direction: row;
     flex-wrap: nowrap;
     overflow-x: auto;
-    justify-content: space-evenly;
+    justify-content: left;
   }
 
   .storeCategoriasImg {
     position: relative;
     justify-content: center;
+    margin: 0 1vw 0 1vw;
   }
 
   .storeCategoriasImg h5 {
@@ -3116,6 +3641,7 @@ display: none;
     font-size: 20px;
     font-weight: bold;
     margin-top: 4vh;
+    text-align: center;
   }
 
   .storeCategoriasImg img {
@@ -3137,24 +3663,28 @@ display: none;
   .imagenTexto {
     position: relative;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     width: 100%;
-    height: 80vh;
+    height: auto;
     background-color: rgb(225, 225, 225);
   }
 
   .imagenTexto iframe {
-    margin-top: 10vh;
-    width: 60vw;
+    margin-top: 5vh;
+    width: 100%;
     height: 60vh;
   }
 
   .imagenTexto .texto {
-    margin-top: 15vh;
-    margin-left: 2vw;
+    margin: 5vh auto 5vh auto;
     text-align: justify;
-    width: 35vw;
+    width: 90%;
+  }
+
+  .imagenTexto p {
+    max-height: 50vh;
+    overflow-y: scroll;
+    font-size: 100%;
   }
 
   .imagenTexto h2 {
@@ -3162,15 +3692,11 @@ display: none;
     font-size: xx-large;
   }
 
-  .imagenTexto p {
-    font-size: large;
-  }
-
   /* ------------------ NUEVOS INGRESOS ------------------ */
 
   .ingresos {
     padding-top: 5vh;
-    height: 150vh;
+    height: auto;
   }
 
   .ingresos h6 {
@@ -3217,7 +3743,7 @@ display: none;
   .pagos {
     background-color: rgb(225, 225, 225);
     padding-top: 5vh;
-    height: 60vh;
+    height: auto;
   }
 
   .pagosGrid {
@@ -3225,6 +3751,10 @@ display: none;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+  }
+
+  .pagosGrid a {
+    text-align: center;
   }
 
   .pagos h6 {
@@ -3235,7 +3765,7 @@ display: none;
   }
 
   .pagosImg img {
-    width: 15vw;
+    width: 30vw;
     margin-bottom: 5vh;
   }
 
@@ -3625,7 +4155,7 @@ display: none;
   .tarjetasContacto {
     display: flex;
     flex-flow: column;
-    width: 100vw;
+    width: 100%;
     justify-content: space-between;
     margin: 0 0 5vh 0;
   }
@@ -3634,7 +4164,7 @@ display: none;
     display: flex;
     flex-flow: column;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     padding: 5vh 0 5vh 0;
     margin-bottom: 5vh;
   }
