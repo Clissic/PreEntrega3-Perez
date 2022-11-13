@@ -780,6 +780,16 @@ a:active {
     text-align: justify;
   }
 
+  .fuenteVOUGE {
+    text-align: center;
+    margin-bottom: 5vh;
+  }
+
+  .fuenteVOUGE a {
+    color: rgb(1, 1, 179);
+    font-weight: bold;
+  }
+
   /* CODIGO CSS CONTACTO */
 
   .tarjetasContacto {
@@ -1682,6 +1692,16 @@ a:active {
     text-align: justify;
   }
 
+  .fuenteVOUGE {
+    text-align: center;
+    margin-bottom: 5vh;
+  }
+
+  .fuenteVOUGE a {
+    color: rgb(1, 1, 179);
+    font-weight: bold;
+  }
+
   /* CODIGO CSS CONTACTO */
 
   .tarjetasContacto {
@@ -2581,6 +2601,16 @@ a:active {
   .marca .marcaTexto {
     width: 90%;
     text-align: justify;
+  }
+
+  .fuenteVOUGE {
+    text-align: center;
+    margin-bottom: 5vh;
+  }
+
+  .fuenteVOUGE a {
+    color: rgb(1, 1, 179);
+    font-weight: bold;
   }
 
   /* CODIGO CSS CONTACTO */
@@ -3578,6 +3608,16 @@ display: none;
   .marca .marcaTexto {
     width: 95%;
     text-align: justify;
+  }
+
+  .fuenteVOUGE {
+    text-align: center;
+    margin-bottom: 5vh;
+  }
+
+  .fuenteVOUGE a {
+    color: rgb(1, 1, 179);
+    font-weight: bold;
   }
 
   /* CODIGO CSS CONTACTO */
