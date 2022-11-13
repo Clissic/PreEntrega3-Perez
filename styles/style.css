@@ -3596,7 +3596,7 @@ display: none;
     align-items: center;
     width: 100vw;
     padding: 5vh 0 5vh 0;
-    border-bottom: black 5px solid;
+    margin-bottom: 5vh;
   }
 
   .tarjetaContacto img {
@@ -3708,7 +3708,7 @@ display: none;
     flex-flow: column;
     align-items: center;
     padding: 5vh 0 10vh 0;
-    border-bottom: black 5px solid;
+    margin-bottom: 5vh;
 
   }
 
