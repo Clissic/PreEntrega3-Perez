@@ -200,15 +200,15 @@ a:active {
     z-index: 1;
     position: fixed;
     width: 100%;
-    height: 16vh;
-    max-height: 150px;
-    padding: 2vh 0 0 0;
+    height: 14vh;
+    padding: .5vh 0 .5vh 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 7vh 8vh;
+    grid-template-rows: 6vh 6vh;
     grid-template-areas:
-      "nadai logo logo logo logo menu menu menu menu menu menu nadad"
-      "nadai logo logo logo logo buscar buscar buscar buscar carrito carrito nadad";
+      "nadai logo logo menu menu menu menu menu menu menu menu nadadd"
+      "nadai logo logo buscar buscar buscar buscar buscar carrito carrito nadad nadadd";
+    row-gap: 1vh;
     background-color: black;
     text-align: center;
     align-items: center;
@@ -219,8 +219,7 @@ a:active {
   }
 
   .headerALogo img {
-    height: auto;
-    width: 70%;
+    width: 100%;
     min-width: 100px;
   }
 
@@ -228,27 +227,29 @@ a:active {
     grid-area: menu;
     list-style: none;
     width: 100%;
+    padding: 0;
+    margin-top: 2vh;
   }
 
   .headerMenu li {
-    background-color: white;
-    color: black;
-    padding: 1vh 2vw 1vh 2vw;
-    width: 8vw;
+    border-bottom: 2px solid white;
+    color: white;
+    padding: .8vh 2vw .8vh 2vw;
+    width: 10vw;
     display: inline-flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
     justify-content: center;
-    border-radius: 50px;
   }
 
   .headerMenu li:hover {
-    background-color: rgb(60, 60, 60);
-    color: white;
+    background-color: rgb(160, 160, 160);
+    color: black;
     font-weight: bolder;
   }
 
   .headerMenu li:active {
+    background-color: white;
     color: black;
   }
 
@@ -261,32 +262,28 @@ a:active {
     width: 100%;
     grid-area: buscar;
     align-content: center;
+    justify-items: center;
   }
 
-  .headerBuscar input {
-    width: 25vw;
+  .headerBuscarInputText {
+    width: 30vw;
     height: 30px;
     padding-left: 0.5vw;
     margin-left: -0.5vw;
     border: none;
-    border-radius: 0 50px 50px 0;
   }
 
-  .headerBuscar button {
+  .headerBuscarInputButton {
     width: 5vw;
     min-width: 70px;
     height: 30px;
     background-color: rgb(60, 60, 60);
     color: white;
     border: none;
-    border-radius: 50px 0 0 50px;
   }
 
-  .headerBuscar button:hover {
-    background-color: rgb(130, 130, 130);
-  }
-
-  .headerBuscar button:active {
+  .headerBuscarInputButton:active {
+    background-color: rgb(160, 160, 160);
     color: black;
   }
 
@@ -318,130 +315,7 @@ a:active {
     transform: rotate(360deg);
   }
 
-  /*HEADER CON BOOTSTRAP */
-
-  .headerBootstrap {
-    z-index: 1;
-    position: fixed;
-    width: 100%;
-    height: 18vh;
-    padding: 2vh 0 0 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 7vh 8vh;
-    grid-template-areas:
-      "nadai logo logo logo logo menu menu menu menu menu menu nadad"
-      "nadai logo logo logo logo buscar buscar buscar buscar carrito carrito nadad";
-    background-color: black;
-    text-align: center;
-    align-items: center;
-  }
-
-  .headerALogoBootstrap {
-    grid-area: logo;
-  }
-
-  .headerALogoBootstrap img {
-    height: auto;
-    width: 70%;
-    min-width: 100px;
-  }
-
-  .headerMenuBootstrap {
-    grid-area: menu;
-    list-style: none;
-    width: 100%;
-    padding: 0;
-    margin-top: 2vh;
-  }
-
-  .headerMenuBootstrap li {
-    background-color: white;
-    color: black;
-    padding: .8vh 2vw .8vh 2vw;
-    width: 12vw;
-    display: inline-flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: center;
-    border-radius: 50px;
-  }
-
-  .headerMenuBootstrap li:hover {
-    background-color: rgb(60, 60, 60);
-    color: white;
-    font-weight: bolder;
-  }
-
-  .headerMenuBootstrap li:active {
-    color: black;
-  }
-
-  .headerMenuBootstrap a {
-    text-decoration: none;
-    color: black;
-  }
-
-  .headerBuscarBootstrap {
-    width: 100%;
-    grid-area: buscar;
-    align-content: center;
-    justify-items: center;
-  }
-
-  .headerBuscarInputTextBootstrap {
-    width: 25vw;
-    height: 30px;
-    padding-left: 0.5vw;
-    margin-left: -0.5vw;
-    border: none;
-    border-radius: 0 50px 50px 0;
-  }
-
-  .headerBuscarInputButtonBootstrap {
-    width: 5vw;
-    min-width: 70px;
-    height: 30px;
-    background-color: rgb(60, 60, 60);
-    color: white;
-    border: none;
-    border-radius: 50px 0 0 50px;
-  }
-
-  .headerBuscarInputButtonBootstrap:active {
-    background-color: rgb(160, 160, 160);
-    color: black;
-  }
-
-  .headerCarritoBootstrap {
-    display: flex;
-    width: 100%;
-    grid-area: carrito;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: white;
-  }
-
-  .headerCarritoBootstrap p {
-    margin: 0 1vw 0 1vw;
-  }
-
-  .headerCarritoBootstrap p:hover {
-    text-decoration: underline;
-  }
-
-  .headerCarritoBootstrap img {
-    width: 1.8vw;
-    transition-duration: 1s;
-  }
-
-  .headerCarritoBootstrap img:hover {
-    transition-duration: 1s;
-    transform: rotate(360deg);
-  }
-
-  .indexMenuLogoMobileBootstrap {
+  .indexMenuLogoMobile {
     display: none;
   }
 
@@ -1244,14 +1118,15 @@ a:active {
     z-index: 1;
     position: fixed;
     width: 100%;
-    height: 16vh;
-    padding: 2vh 0 0 0;
+    height: 14vh;
+    padding: .5vh 0 .5vh 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 7vh 8vh;
+    grid-template-rows: 6vh 6vh;
     grid-template-areas:
-      "nadai logo logo logo logo menu menu menu menu menu menu nadad"
-      "nadai logo logo logo logo buscar buscar buscar buscar carrito carrito nadad";
+      "nadai logo logo menu menu menu menu menu menu menu menu nadadd"
+      "nadai logo logo buscar buscar buscar buscar buscar carrito carrito nadad nadadd";
+    row-gap: 1vh;
     background-color: black;
     text-align: center;
     align-items: center;
@@ -1262,8 +1137,7 @@ a:active {
   }
 
   .headerALogo img {
-    height: auto;
-    width: 70%;
+    width: 100%;
     min-width: 100px;
   }
 
@@ -1271,31 +1145,33 @@ a:active {
     grid-area: menu;
     list-style: none;
     width: 100%;
+    padding: 0;
+    margin-top: 2vh;
   }
 
   .headerMenu li {
-    background-color: white;
-    color: black;
-    padding: 1vh 2vw 1vh 2vw;
-    width: 8vw;
+    border-bottom: 2px solid white;
+    color: white;
+    padding: .8vh 2vw .8vh 2vw;
+    width: 10vw;
     display: inline-flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
     justify-content: center;
-    border-radius: 50px;
   }
 
   .headerMenu li:hover {
-    background-color: rgb(60, 60, 60);
-    color: white;
+    background-color: rgb(160, 160, 160);
+    color: black;
     font-weight: bolder;
   }
 
   .headerMenu li:active {
+    background-color: white;
     color: black;
   }
 
-  .headerMenu a {
+  .headerMenuBootstrap a {
     text-decoration: none;
     color: black;
   }
@@ -1304,35 +1180,28 @@ a:active {
     width: 100%;
     grid-area: buscar;
     align-content: center;
+    justify-items: center;
   }
 
-  .headerBuscar input {
-    width: 70%;
-    height: 6vh;
+  .headerBuscarInputText {
+    width: 30vw;
+    height: 30px;
     padding-left: 0.5vw;
-    border-radius: 0 50px 50px 0;
     margin-left: -0.5vw;
     border: none;
   }
 
-  .headerBuscar button {
-    width: 25%;
-    min-width: 60px;
-    height: 6vh;
+  .headerBuscarInputButton {
+    width: 5vw;
+    min-width: 70px;
+    height: 30px;
     background-color: rgb(60, 60, 60);
     color: white;
-    border-radius: 50px 0 0 50px;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 80%;
     border: none;
   }
 
-  .headerBuscar button:hover {
-    background-color: rgb(130, 130, 130);
-  }
-
-  .headerBuscar button:active {
+  .headerBuscarInputButton:active {
+    background-color: rgb(160, 160, 160);
     color: black;
   }
 
@@ -1364,131 +1233,7 @@ a:active {
     transform: rotate(360deg);
   }
 
-  /*HEADER CON BOOTSTRAP */
-
-  .headerBootstrap {
-    z-index: 1;
-    position: fixed;
-    width: 100%;
-    height: 18vh;
-    max-height: 150px;
-    padding: 2vh 0 0 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 7vh 8vh;
-    grid-template-areas:
-      "nadai logo logo logo logo menu menu menu menu menu menu nadad"
-      "nadai logo logo logo logo buscar buscar buscar buscar carrito carrito nadad";
-    background-color: black;
-    text-align: center;
-    align-items: center;
-  }
-
-  .headerALogoBootstrap {
-    grid-area: logo;
-  }
-
-  .headerALogoBootstrap img {
-    height: auto;
-    width: 70%;
-    min-width: 100px;
-  }
-
-  .headerMenuBootstrap {
-    grid-area: menu;
-    list-style: none;
-    width: 100%;
-    padding: 0;
-    margin-top: 2vh;
-  }
-
-  .headerMenuBootstrap li {
-    background-color: white;
-    color: black;
-    padding: .8vh 2vw .8vh 2vw;
-    width: 12vw;
-    display: inline-flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: center;
-    border-radius: 50px;
-  }
-
-  .headerMenuBootstrap li:hover {
-    background-color: rgb(60, 60, 60);
-    color: white;
-    font-weight: bolder;
-  }
-
-  .headerMenuBootstrap li:active {
-    color: black;
-  }
-
-  .headerMenuBootstrap a {
-    text-decoration: none;
-    color: black;
-  }
-
-  .headerBuscarBootstrap {
-    width: 100%;
-    grid-area: buscar;
-    align-content: center;
-    justify-items: center;
-  }
-
-  .headerBuscarInputTextBootstrap {
-    width: 24vw;
-    height: 30px;
-    padding-left: 0.5vw;
-    margin-left: -0.5vw;
-    border: none;
-    border-radius: 0 50px 50px 0;
-  }
-
-  .headerBuscarInputButtonBootstrap {
-    width: 5vw;
-    min-width: 70px;
-    height: 30px;
-    background-color: rgb(60, 60, 60);
-    color: white;
-    border: none;
-    border-radius: 50px 0 0 50px;
-  }
-
-  .headerBuscarInputButtonBootstrap:active {
-    background-color: rgb(160, 160, 160);
-    color: black;
-  }
-
-  .headerCarritoBootstrap {
-    display: flex;
-    width: 100%;
-    grid-area: carrito;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: white;
-  }
-
-  .headerCarritoBootstrap p {
-    margin: 0 1vw 0 1vw;
-  }
-
-  .headerCarritoBootstrap p:hover {
-    text-decoration: underline;
-  }
-
-  .headerCarritoBootstrap img {
-    width: 1.8vw;
-    transition-duration: 1s;
-  }
-
-  .headerCarritoBootstrap img:hover {
-    transition-duration: 1s;
-    transform: rotate(360deg);
-  }
-
-  .indexMenuLogoMobileBootstrap {
+  .indexMenuLogoMobile {
     display: none;
   }
 
@@ -2275,14 +2020,16 @@ a:active {
     z-index: 1;
     position: fixed;
     width: 100%;
-    height: 10vh;
-    padding: 2vh 0 2vh 0;
+    height: 14vh;
+    min-height: 90px;
+    padding: .5vh 0 .5vh 0;
     display: grid;
-    grid-template-columns: .2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 6vh 4vh;
+    grid-template-columns: .2fr .5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
     grid-template-areas:
-      "logo logo logo menu menu menu menu menu menu menu menu"
-      "logo logo logo buscar buscar buscar buscar buscar carrito carrito carrito";
+      "nadaiz logo logo menu menu menu menu menu menu menu menu"
+      "nadaiz logo logo buscar buscar buscar buscar buscar carrito carrito carrito";
+      row-gap: .5vh;
     background-color: black;
     text-align: center;
     align-items: center;
@@ -2294,38 +2041,43 @@ a:active {
   }
 
   .headerALogo img {
-    margin-top: 1vh;
     height: auto;
-    width: 50%;
-    min-width: 100px;
+    width: 90%;
+    margin-top: 1vh;
+  }
+
+  .indexMenuLogo {
+    display: none;
   }
 
   .headerMenu {
     grid-area: menu;
     list-style: none;
     width: 100%;
+    padding: 0;
+    margin-top: 2vh;
   }
 
   .headerMenu li {
-    background-color: black;
+    border-bottom: 2px solid white;
     color: white;
-    border-left: white solid 2px;
-    margin-right: 3vw;
-    padding-left: 1vw;
-    width: 12vw;
-    display: inline;
+    padding: 0.8vh 2vw 0.8vh 2vw;
+    width: 14vw;
+    display: inline-flex;
     flex-wrap: nowrap;
     flex-direction: row;
+    justify-content: center;
   }
 
   .headerMenu li:hover {
-    background-color: rgb(60, 60, 60);
-    color: white;
+    background-color: rgb(160, 160, 160);
+    color: black;
+    font-weight: bolder;
   }
 
   .headerMenu li:active {
+    background-color: white;
     color: black;
-    background-color: grey;
   }
 
   .headerMenu a {
@@ -2334,43 +2086,35 @@ a:active {
   }
 
   .headerBuscar {
-    margin-top: 1vh;
     width: 100%;
     grid-area: buscar;
     align-content: center;
+    justify-items: center;
   }
 
-  .headerBuscar input {
-    margin-top: 1vh;
-    width: 65%;
-    height: 4vh;
+  .headerBuscarInputText {
+    width: 30vw;
+    height: 30px;
     padding-left: 0.5vw;
     margin-left: -0.5vw;
     border: none;
   }
 
-  .headerBuscar button {
-    width: 15%;
-    min-width: 60px;
-    height: 4vh;
+  .headerBuscarInputButton {
+    width: 5vw;
+    min-width: 70px;
+    height: 30px;
     background-color: rgb(60, 60, 60);
     color: white;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 80%;
     border: none;
   }
 
-  .headerBuscar button:hover {
-    background-color: rgb(130, 130, 130);
-  }
-
-  .headerBuscar button:active {
+  .headerBuscarInputButton:active {
+    background-color: rgb(160, 160, 160);
     color: black;
   }
 
   .headerCarrito {
-    margin-top: 2vh;
     display: flex;
     width: 100%;
     grid-area: carrito;
@@ -2393,134 +2137,6 @@ a:active {
   }
 
   .headerCarrito img:hover {
-    transition-duration: 1s;
-    transform: rotate(360deg);
-  }
-
-  /*HEADER CON BOOTSTRAP */
-
-  .headerBootstrap {
-    z-index: 1;
-    position: fixed;
-    width: 100%;
-    height: 14vh;
-    padding: 2vh 0 2vh 0;
-    display: grid;
-    grid-template-columns: .2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 6vh 4vh;
-    grid-template-areas:
-      "logo logo logo menu menu menu menu menu menu menu menu"
-      "logo logo logo buscar buscar buscar buscar buscar carrito carrito carrito";
-    background-color: black;
-    text-align: center;
-    align-items: center;
-    justify-items: center;
-  }
-
-  .headerALogoBootstrap {
-    grid-area: logo;
-  }
-
-  .headerALogoBootstrap img {
-    margin-top: 1vh;
-    height: auto;
-    width: 50%;
-    min-width: 100px;
-  }
-
-  .indexMenuLogoBootstrap {
-    display: none;
-  }
-
-  .headerMenuBootstrap {
-    grid-area: menu;
-    list-style: none;
-    width: 100%;
-    padding: 0;
-    margin-top: 2.5vh;
-  }
-
-  .headerMenuBootstrap li {
-    background-color: black;
-    color: white;
-    border-left: white solid 2px;
-    margin-right: 3vw;
-    padding-left: 1vw;
-    width: 12vw;
-    display: inline;
-    flex-wrap: nowrap;
-    flex-direction: row;
-  }
-
-  .headerMenuBootstrap li:hover {
-    background-color: rgb(60, 60, 60);
-    color: white;
-  }
-
-  .headerMenuBootstrap li:active {
-    color: black;
-    background-color: grey;
-  }
-
-  .headerMenuBootstrap a {
-    text-decoration: none;
-    color: black;
-  }
-
-  .headerBuscarBootstrap {
-    margin-top: 1vh;
-    width: 100%;
-    grid-area: buscar;
-    align-content: center;
-    justify-items: center;
-  }
-
-  .headerBuscarInputTextBootstrap {
-    width: 75%;
-    height: 25px;
-    padding-left: 0.5vw;
-    margin-left: -0.5vw;
-    border: none;
-  }
-
-  .headerBuscarInputButtonBootstrap {
-    width: 15%;
-    min-width: 70px;
-    height: 25px;
-    background-color: rgb(60, 60, 60);
-    color: white;
-    border: none;
-  }
-
-  .headerBuscarInputButtonBootstrap:active {
-    background-color: rgb(160, 160, 160);
-    color: black;
-  }
-
-  .headerCarritoBootstrap {
-    margin-top: 2vh;
-    display: flex;
-    width: 100%;
-    grid-area: carrito;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: white;
-  }
-
-  .headerCarritoBootstrap p {
-    margin: 0 1vw 0 1vw;
-  }
-
-  .headerCarritoBootstrap p:hover {
-    text-decoration: underline;
-  }
-
-  .headerCarritoBootstrap img {
-    width: 20px;
-  }
-
-  .headerCarritoBootstrap img:hover {
     transition-duration: 1s;
     transform: rotate(360deg);
   }
@@ -2885,7 +2501,7 @@ a:active {
   /* CODIGO CSS TIENDA OUTLET */
 
   .mainContent {
-    margin-top: 22vh;
+    margin-top: 15vh;
   }
 
   .tituloPrincipal {
@@ -3339,9 +2955,10 @@ a:active {
     z-index: 1;
     width: 100%;
     height: 18vh;
-    padding: 2vh 0 2vh 0;
+    min-height: 110px;
+    padding: 1vh 0 1vh 0;
     display: grid;
-    grid-template-columns: 8fr 1fr;
+    grid-template-columns: 7fr 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas:
       "logo logo"
@@ -3371,21 +2988,22 @@ a:active {
   .headerMenu li {
     border-bottom: 2px solid white;
     color: white;
-    padding: 1vh 2vw 1vh 2vw;
-    width: 18%;
+    padding: 0vh 2vw .8vh 2vw;
+    width: 18vw;
     display: inline-flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
     justify-content: center;
   }
 
   .headerMenu li:hover {
-    background-color: rgb(60, 60, 60);
-    color: white;
+    background-color: rgb(160, 160, 160);
+    color: black;
     font-weight: bolder;
   }
 
   .headerMenu li:active {
+    background-color: white;
     color: black;
   }
 
@@ -3398,25 +3016,24 @@ a:active {
     width: 100%;
     grid-area: buscar;
     align-content: center;
+    justify-items: center;
     margin-top: 1vh;
   }
 
-  .headerBuscar input {
-    width: 70%;
-    height: 5vh;
+  .headerBuscarInputText {
+    width: 60vw;
+    height: 30px;
     padding-left: 0.5vw;
+    margin-left: -0.5vw;
     border: none;
   }
 
-  .headerBuscar button {
-    width: 20%;
-    min-width: 60px;
-    height: 5vh;
+  .headerBuscarInputButton {
+    width: 5vw;
+    min-width: 70px;
+    height: 30px;
     background-color: rgb(60, 60, 60);
     color: white;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 80%;
     border: none;
   }
 
@@ -3452,132 +3069,6 @@ a:active {
   }
 
   .headerCarrito img:hover {
-    transition-duration: 1s;
-    transform: rotate(360deg);
-  }
-
-  /*HEADER CON BOOTSTRAP */
-
-  .headerBootstrap {
-    width: 100%;
-    height: 22vh;
-    padding: 2vh 0 2vh 0;
-    display: grid;
-    grid-template-columns: 8fr 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas:
-      "logo logo"
-      "menu menu"
-      "buscar carrito";
-    background-color: black;
-    text-align: center;
-    align-items: center;
-  }
-
-  .headerALogoBootstrap {
-    grid-area: logo;
-    width: 100%;
-  }
-
-  .headerALogoBootstrap img {
-    height: auto;
-    width: 30%;
-    min-width: 100px;
-  }
-
-  .indexMenuLogoMobileBootstrap img {
-    display: none;
-  }
-
-  .headerMenuBootstrap {
-    grid-area: menu;
-    list-style: none;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-
-  .headerMenuBootstrap li {
-    border-bottom: 2px solid white;
-    color: white;
-    padding: 1.2vh 2vw 0.8vh 2vw;
-    width: 22%;
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .headerMenuBootstrap li:hover {
-    background-color: rgb(60, 60, 60);
-    color: white;
-    font-weight: bolder;
-  }
-
-  .headerMenuBootstrap li:active {
-    color: black;
-  }
-
-  .headerMenuBootstrap a {
-    text-decoration: none;
-    color: black;
-  }
-
-  .headerBuscarBootstrap {
-    width: 100%;
-    grid-area: buscar;
-    align-content: center;
-    justify-items: center;
-    margin-top: 1vh;
-  }
-
-  .headerBuscarInputTextBootstrap {
-    width: 73%;
-    height: 30px;
-    padding-left: 0.5vw;
-    margin-left: -0.5vw;
-    border: none;
-  }
-
-  .headerBuscarInputButtonBootstrap {
-    width: 17%;
-    min-width: 70px;
-    height: 30px;
-    background-color: rgb(60, 60, 60);
-    color: white;
-    border: none;
-    font-weight: bold;
-    font-size: 80%;
-  }
-
-  .headerBuscarInputButtonBootstrap:active {
-    background-color: rgb(160, 160, 160);
-    color: black;
-  }
-
-  .headerCarritoBootstrap {
-    display: flex;
-    width: 100%;
-    grid-area: carrito;
-    align-items: center;
-    justify-content: left;
-    text-decoration: none;
-    color: white;
-  }
-
-  .headerCarritoBootstrap p {
-      display: none;
-  }
-
-  .headerCarritoBootstrap p:hover {
-    text-decoration: underline;
-  }
-
-  .headerCarritoBootstrap img {
-    width: 30px;
-    margin-top: 1vh;
-  }
-
-  .headerCarritoBootstrap img:hover {
     transition-duration: 1s;
     transform: rotate(360deg);
   }
