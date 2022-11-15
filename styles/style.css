@@ -3340,7 +3340,7 @@ a:active {
     height: 18vh;
     padding: 2vh 0 2vh 0;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 8fr 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas:
       "logo logo"
@@ -3408,7 +3408,7 @@ a:active {
   }
 
   .headerBuscar button {
-    width: 15%;
+    width: 20%;
     min-width: 60px;
     height: 5vh;
     background-color: rgb(60, 60, 60);
@@ -3438,9 +3438,7 @@ a:active {
   }
 
   .headerCarrito p {
-    text-align: center;
-    justify-content: center;
-    font-size: 80%;
+    display: none;
   }
 
   .headerCarrito p:hover {
@@ -3448,7 +3446,8 @@ a:active {
   }
 
   .headerCarrito img {
-    display: none;
+    margin-top: 1vh;
+    width: 30px;
   }
 
   .headerCarrito img:hover {
@@ -3464,7 +3463,7 @@ a:active {
     height: 30vh;
     padding: 2vh 0 2vh 0;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 11fr 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas:
       "logo logo"
@@ -3530,7 +3529,7 @@ a:active {
   }
 
   .headerBuscarInputTextBootstrap {
-    width: 75%;
+    width: 78%;
     height: 35px;
     padding-left: 0.5vw;
     margin-left: -0.5vw;
@@ -3562,8 +3561,7 @@ a:active {
   }
 
   .headerCarritoBootstrap p {
-    text-align: left;
-    font-size: 150%;
+      display: none;
   }
 
   .headerCarritoBootstrap p:hover {
@@ -3571,7 +3569,7 @@ a:active {
   }
 
   .headerCarritoBootstrap img {
-display: none;
+    width: 30px;
   }
 
   .headerCarritoBootstrap img:hover {
