@@ -264,25 +264,22 @@ a:active {
   }
 
   .headerBuscar input {
-    width: 70%;
-    height: 6vh;
+    width: 25vw;
+    height: 30px;
     padding-left: 0.5vw;
-    border-radius: 0 50px 50px 0;
     margin-left: -0.5vw;
     border: none;
+    border-radius: 0 50px 50px 0;
   }
 
   .headerBuscar button {
-    width: 25%;
-    min-width: 60px;
-    height: 6vh;
+    width: 5vw;
+    min-width: 70px;
+    height: 30px;
     background-color: rgb(60, 60, 60);
     color: white;
-    border-radius: 50px 0 0 50px;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 80%;
     border: none;
+    border-radius: 50px 0 0 50px;
   }
 
   .headerBuscar button:hover {
@@ -2656,7 +2653,7 @@ a:active {
   }
 
   .ingresosGrid {
-    width: 100%;
+    width: auto;
     top: 15vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -3177,7 +3174,7 @@ a:active {
   }
 
   button.navbar-toggler {
-    margin-right: 2vw;
+    margin-right: 5vw;
   }
 
   .navbar-collapse {
@@ -3208,13 +3205,17 @@ a:active {
     text-align: center;
   }
 
+  .navbar-brand {
+    padding-left: 5vw;
+  }
+
   .indexMenuLogo {
     z-index: -2;
     width: 70%;
     grid-area: logo;
     margin: auto;
     min-width: 50px;
-    padding: 2vh 0 2vh 5vw;
+    padding: 2vh 0 2vh 0vw;
   }
 
   .indexFondo {
@@ -3458,12 +3459,11 @@ a:active {
   /*HEADER CON BOOTSTRAP */
 
   .headerBootstrap {
-    z-index: 1;
     width: 100%;
-    height: 30vh;
+    height: 22vh;
     padding: 2vh 0 2vh 0;
     display: grid;
-    grid-template-columns: 11fr 1fr;
+    grid-template-columns: 8fr 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas:
       "logo logo"
@@ -3494,12 +3494,13 @@ a:active {
     list-style: none;
     width: 100%;
     padding: 0;
+    margin: 0;
   }
 
   .headerMenuBootstrap li {
     border-bottom: 2px solid white;
     color: white;
-    padding: 1vh 2vw 1vh 2vw;
+    padding: 1.2vh 2vw 0.8vh 2vw;
     width: 22%;
     display: inline-flex;
     flex-direction: row;
@@ -3526,23 +3527,26 @@ a:active {
     grid-area: buscar;
     align-content: center;
     justify-items: center;
+    margin-top: 1vh;
   }
 
   .headerBuscarInputTextBootstrap {
-    width: 78%;
-    height: 35px;
+    width: 73%;
+    height: 30px;
     padding-left: 0.5vw;
     margin-left: -0.5vw;
     border: none;
   }
 
   .headerBuscarInputButtonBootstrap {
-    width: 15%;
+    width: 17%;
     min-width: 70px;
-    height: 35px;
+    height: 30px;
     background-color: rgb(60, 60, 60);
     color: white;
     border: none;
+    font-weight: bold;
+    font-size: 80%;
   }
 
   .headerBuscarInputButtonBootstrap:active {
@@ -3570,6 +3574,7 @@ a:active {
 
   .headerCarritoBootstrap img {
     width: 30px;
+    margin-top: 1vh;
   }
 
   .headerCarritoBootstrap img:hover {
@@ -3705,11 +3710,11 @@ a:active {
   }
 
   .ingresosGrid {
-    width: 100%;
+    width: 100vw;
     top: 15vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 65vh 65vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 65vh 65vh 65vh 65vh 65vh 65vh;
     column-gap: 2vw;
     row-gap: 2vh;
     text-align: center;
