@@ -742,23 +742,26 @@ a:active {
   }
 
   .Img404 img {
-    margin: 10vh 15vw 10vh 15vw;
-    width: 70vw;
+    display: block;
+    margin: 10vh auto 10vh auto;
+    width: 60vw;
+    ;
   }
 
   .easterEgg {
     text-align: center;
-    margin-bottom: 5vh;
+    margin: 5vh 0 5vh 0;
     color: #d9d9d9;
   }
 
   .indexBackButton {
-    width: 50%;
+    display: block;
+    margin: auto;
+    width: 20vw;
     background-color: green;
     color: white;
     padding: 2vh 3vw 2vh 3vw;
     text-align: center;
-    margin: 0 25% 5vh 25%;
   }
 
   /* CODIGO CSS MARCAS */
