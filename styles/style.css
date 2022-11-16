@@ -667,73 +667,6 @@ a:active {
     font-size: smaller;
   }
 
-  /* CODIGO CSS TIENDA OUTLET */
-
-  .mainContent {
-    margin-top: 22vh;
-  }
-
-  .tituloPrincipal {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 200px;
-    text-align: center;
-    justify-content: space-evenly;
-  }
-
-  .tituloPrincipal h1 {
-    font-size: 100px;
-  }
-
-  .tituloPrincipal h6 {
-    font-size: 20px;
-  }
-
-  .outletImg {
-    position: relative;
-    width: 100%;
-  }
-
-  .outletImg img {
-    margin: 0 15% 0 15%;
-    width: 70%;
-  }
-
-  .menu1O {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: space-evenly;
-    width: 100%;
-    margin-bottom: 90px;
-    flex-wrap: wrap;
-  }
-
-  .menu1O h6 {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .menu1O button {
-    margin: 5px 0 5px 0;
-    padding: 15px 100px;
-    border-radius: 15px;
-    border-width: 0px;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-  }
-
-  .menu1O button:hover {
-    transition-duration: 0.3s;
-    background-color: #b6b6b6;
-    color: black;
-    font-weight: bold;
-  }
-
   /*   CODIGO CSS 404 */
 
   .Img404 {
@@ -765,6 +698,28 @@ a:active {
   }
 
   /* CODIGO CSS MARCAS */
+
+  .mainContent {
+    margin-top: 22vh;
+  }
+
+  .tituloPrincipal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+
+  .tituloPrincipal h1 {
+    font-size: 100px;
+  }
+
+  .tituloPrincipal h6 {
+    font-size: 20px;
+  }
 
   .marcasMain {
     display: flex;
@@ -1588,73 +1543,6 @@ a:active {
     padding-bottom: 5px;
   }
 
-  /* CODIGO CSS TIENDA OUTLET */
-
-  .mainContent {
-    margin-top: 22vh;
-  }
-
-  .tituloPrincipal {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 200px;
-    text-align: center;
-    justify-content: space-evenly;
-  }
-
-  .tituloPrincipal h1 {
-    font-size: 75px;
-  }
-
-  .tituloPrincipal h6 {
-    font-size: 20px;
-  }
-
-  .outletImg {
-    position: relative;
-    width: 100%;
-  }
-
-  .outletImg img {
-    margin: 0 15% 0 15%;
-    width: 70%;
-  }
-
-  .menu1O {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: space-evenly;
-    width: 100%;
-    margin-bottom: 90px;
-    flex-wrap: wrap;
-  }
-
-  .menu1O h6 {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .menu1O button {
-    margin: 5px 0 5px 0;
-    padding: 15px 100px;
-    border-radius: 15px;
-    border-width: 0px;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-  }
-
-  .menu1O button:hover {
-    transition-duration: 0.3s;
-    background-color: #b6b6b6;
-    color: black;
-    font-weight: bold;
-  }
-
   /*   CODIGO CSS 404 */
 
   .Img404 {
@@ -1683,6 +1571,28 @@ a:active {
   }
 
   /* CODIGO CSS MARCAS */
+
+  .mainContent {
+    margin-top: 22vh;
+  }
+
+  .tituloPrincipal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+
+  .tituloPrincipal h1 {
+    font-size: 75px;
+  }
+
+  .tituloPrincipal h6 {
+    font-size: 20px;
+  }
 
   .marcasMain {
     display: flex;
@@ -2503,73 +2413,6 @@ a:active {
     padding-bottom: 5px;
   }
 
-  /* CODIGO CSS TIENDA OUTLET */
-
-  .mainContent {
-    margin-top: 15vh;
-  }
-
-  .tituloPrincipal {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 200px;
-    text-align: center;
-    justify-content: space-evenly;
-  }
-
-  .tituloPrincipal h1 {
-    font-size: 75px;
-  }
-
-  .tituloPrincipal h6 {
-    font-size: 20px;
-  }
-
-  .outletImg {
-    position: relative;
-    width: 100%;
-  }
-
-  .outletImg img {
-    margin: 0 15% 0 15%;
-    width: 70%;
-  }
-
-  .menu1O {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: space-evenly;
-    width: 100%;
-    margin-bottom: 90px;
-    flex-wrap: wrap;
-  }
-
-  .menu1O h6 {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .menu1O button {
-    margin: 5px 0 5px 0;
-    padding: 15px 100px;
-    border-radius: 15px;
-    border-width: 0px;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-  }
-
-  .menu1O button:hover {
-    transition-duration: 0.3s;
-    background-color: #b6b6b6;
-    color: black;
-    font-weight: bold;
-  }
-
   /*   CODIGO CSS 404 */
 
   .Img404 {
@@ -2598,6 +2441,28 @@ a:active {
   }
 
   /* CODIGO CSS MARCAS */
+
+  .mainContent {
+    margin-top: 15vh;
+  }
+
+  .tituloPrincipal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+
+  .tituloPrincipal h1 {
+    font-size: 75px;
+  }
+
+  .tituloPrincipal h6 {
+    font-size: 20px;
+  }
 
   .marcasMain {
     display: flex;
@@ -3426,12 +3291,12 @@ a:active {
     grid-area: botonB;
     background-color: #373737;
     border: #373737 solid 2px;
+    display: flex;
+    justify-items: center;
   }
 
   .footerEnviarLogo img {
-    width: 60%;
-    display: block;
-    margin: auto;
+    width: 50%;
   }
 
   .footerDerechos {
@@ -3440,157 +3305,6 @@ a:active {
     text-align: center;
     font-size: smaller;
     margin: 6vh 0 0px 0;
-  }
-
-  /* CODIGO CSS TIENDA OUTLET */
-
-  .cabeceraO {
-    position: relative;
-    display: block;
-    height: auto;
-    width: 100%;
-    background-color: #ffffff;
-  }
-
-  .cabeceraO .logoO img {
-    margin: 0 auto 0 auto;
-    padding: 15px 0 15px 0;
-    position: relative;
-    width: 20%;
-    display: block;
-  }
-
-  .separacion1O {
-    position: relative;
-    background-color: black;
-    height: 15px;
-    width: 100%;
-  }
-
-  .menu3O {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-evenly;
-    width: 100%;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    flex-wrap: wrap;
-  }
-
-  .menu3O button {
-    margin: 5px 0 5px 0;
-    padding: 15px 100px;
-    border-radius: 15px;
-    border-width: 0px;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-  }
-
-  .menu3O button:hover {
-    transition-duration: 0.3s;
-    background-color: #b6b6b6;
-    color: black;
-    font-weight: bold;
-  }
-
-  .buscarO {
-    position: absolute;
-    height: 40px;
-    width: 100%;
-    z-index: 1;
-  }
-
-  .buscarO input {
-    position: absolute;
-    width: 40%;
-    height: 35px;
-    border-radius: 20px;
-    border-width: 1px;
-    border-color: #d9d9d9;
-    padding-left: 80px;
-    padding-right: 10px;
-    margin-left: 30%;
-  }
-
-  .buscarO button {
-    border-radius: 20px 0px 0px 20px;
-    position: absolute;
-    width: 70px;
-    height: 35px;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    margin-left: 30%;
-  }
-
-  .buscarO button:hover {
-    transition-duration: 1s;
-    font-size: 101%;
-  }
-
-  .tituloO {
-    margin-top: 50px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 200px;
-    text-align: center;
-    justify-content: space-evenly;
-  }
-
-  .tituloO h1 {
-    font-size: 100px;
-  }
-
-  .tituloO h6 {
-    font-size: 20px;
-  }
-
-  .outletImg {
-    position: relative;
-    width: 100%;
-  }
-
-  .outletImg img {
-    margin: 0 15% 0 15%;
-    width: 70%;
-  }
-
-  .menu1O {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: space-evenly;
-    width: 100%;
-    margin-bottom: 90px;
-    flex-wrap: wrap;
-  }
-
-  .menu1O h6 {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .menu1O button {
-    margin: 5px 0 5px 0;
-    padding: 15px 100px;
-    border-radius: 15px;
-    border-width: 0px;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-  }
-
-  .menu1O button:hover {
-    transition-duration: 0.3s;
-    background-color: #b6b6b6;
-    color: black;
-    font-weight: bold;
   }
 
   /*   CODIGO CSS 404 */
@@ -3621,6 +3335,30 @@ a:active {
   }
 
   /* CODIGO CSS MARCAS */
+
+  .mainContent {
+    margin-top: 4vh;
+  }
+
+  .tituloPrincipal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+
+  .tituloPrincipal h1 {
+    font-size: 75px;
+  }
+
+  .tituloPrincipal h6 {
+    font-size: 20px;
+    width: 80vw;
+    margin: auto;
+  }
 
   .marcasMain {
     display: flex;
@@ -3747,30 +3485,6 @@ a:active {
 
   
   /* ------------------ CODIGO CSS TIENDAS ------------------ */
-
-  .mainContent {
-    margin-top: 4vh;
-  }
-
-  .tituloPrincipal {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 200px;
-    text-align: center;
-    justify-content: space-evenly;
-  }
-
-  .tituloPrincipal h1 {
-    font-size: 75px;
-  }
-
-  .tituloPrincipal h6 {
-    font-size: 20px;
-    width: 80vw;
-    margin: auto;
-  }
 
   .tarjetasTiendas {
     margin-top: 10vh;
