@@ -526,7 +526,7 @@ a:active {
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 320px 30px;
+    grid-template-rows: 320px auto;
     grid-template-areas:
       "clientes servicios redesSociales"
       "derechos derechos derechos";
@@ -665,7 +665,6 @@ a:active {
     color: #373737;
     text-align: center;
     font-size: smaller;
-    padding-bottom: 5px;
   }
 
   /* CODIGO CSS TIENDA OUTLET */
