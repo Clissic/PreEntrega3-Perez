@@ -1,0 +1,3310 @@
+@import "utilities/variables";
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  position: absolute;
+}
+
+a {
+  &:link {
+    color: $blanco;
+    text-decoration: none;
+  }
+  &:visited {
+    color: $blanco;
+    text-decoration: none;
+  }
+  &:active {
+    color: $blanco;
+    text-decoration: none;
+  }
+}
+
+/* DESKTOP GRANDE */
+@media screen and (min-width: 1024px) {
+  /* ------------------ CODIGO CSS INDEX ------------------ */
+
+  .indexMenu {
+    background-color: $negro;
+    height: 12vh;
+    min-height: 80px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr 1fr 1fr 2fr;
+    grid-template-areas: "nadaIzq tienda marcas logo faq contacto nadaDer";
+    align-items: center;
+    text-align: center;
+  }
+
+  .hoverAnimationMenu {
+    text-decoration: none;
+    &:hover {
+      font-size: larger;
+      font-weight: bolder;
+      transition-duration: 1s;
+    }
+  }
+
+  .indexMenuLogo {
+    width: 50%;
+    grid-area: logo;
+    margin: auto;
+    min-width: 100px;
+    &:hover {
+      width: 60%;
+      transition-duration: 2s;
+      z-index: 1;
+    }
+  }
+
+  .indexMenuLogoMobile {
+    display: none;
+  }
+
+  .indexMenuTienda {
+    grid-area: tienda;
+    color: $blanco;
+  }
+
+  .indexMenuMarcas {
+    grid-area: marcas;
+    color: $blanco;
+  }
+
+  .indexMenuFaq {
+    grid-area: faq;
+    color: $blanco;
+  }
+
+  .indexMenuContacto {
+    grid-area: contacto;
+    color: $blanco;
+  }
+
+  .indexFondo {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    a {
+      text-decoration: none;
+      color: $blanco;
+    }
+  }
+
+  .indexFondoElla,
+  .indexFondoEl {
+    background-size: cover;
+    background-position: top;
+    width: 50%;
+    height: 78vh;
+  }
+
+  .indexFondoElla {
+    background-image: url(../../assets/images/ella.jpg);
+  }
+
+  .indexFondoEl {
+    background-image: url(../../assets/images/el.jpg);
+  }
+
+  .indexFondoEllaContenedor {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 50%;
+    margin: 50vh auto auto 5vw;
+    padding: 3%;
+    transition-duration: 1s;
+    text-align: left;
+    &:hover {
+      transition-duration: 1s;
+      width: 55%;
+      background-color: $negro;
+    }
+  }
+
+  .indexFondoEllaBoton {
+    background-color: #af0171;
+    padding: 2%;
+    border-radius: 5px;
+  }
+
+  .indexFondoElContenedor {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 50%;
+    margin: 50vh 5vw auto auto;
+    padding: 3%;
+    transition-duration: 1s;
+    text-align: right;
+    &:hover {
+      transition-duration: 1s;
+      width: 55%;
+      background-color: $negro;
+    }
+  }
+
+  .indexFondoElBoton {
+    background-color: #0c7b93;
+    padding: 2%;
+    border-radius: 5px;
+  }
+
+  .indexFondoEllaContenedor,
+  .indexFondoElContenedor {
+    color: $blanco;
+    animation: fadeIn 5s;
+    font-size: 90%;
+    max-height: 40%;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .indexFondoEllaContenedor p,
+  .indexFondoElContenedor p {
+    margin: 3vh 0 3vh 0;
+  }
+
+  .indexFooter {
+    background-color: $negro;
+    height: 10vh;
+    min-height: 60px;
+    color: $grisclaro;
+    text-align: center;
+    font-size: small;
+  }
+
+  .indexFooterRRSS {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .indexFooterRS {
+    width: 1.6vw;
+    min-width: 20px;
+    margin: 1.5vh 0.6vw 0.5vh 0.6vw;
+  }
+
+  /* ------------------ CODIGO CSS TIENDA ------------------ */
+
+  /* ------------------ CODIGO CSS HEADER ------------------ */
+
+  .header {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 14vh;
+    min-height: 85px;
+    padding: 0.5vh 0 0.5vh 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+      "nadai logo logo menu menu menu menu menu menu menu menu nadadd"
+      "nadai logo logo buscar buscar buscar buscar buscar carrito carrito nadad nadadd";
+    background-color: $negro;
+    text-align: center;
+    align-items: center;
+  }
+
+  .headerALogo {
+    grid-area: logo;
+    img {
+      width: 100%;
+      min-width: 100px;
+    }
+  }
+
+  .headerMenu {
+    grid-area: menu;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin-top: 2vh;
+    li {
+      border-bottom: 2px solid $blanco;
+      color: $blanco;
+      padding: 0.8vh 2vw 0.8vh 2vw;
+      width: 15vw;
+      display: inline-flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: center;
+      &:hover {
+        background-color: $blanco;
+        color: $negro;
+        font-weight: bolder;
+      }
+      &:active {
+        background-color: $grisclaro;
+        color: $negro;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: $negro;
+    }
+  }
+
+  .headerBuscar {
+    width: 100%;
+    grid-area: buscar;
+    align-content: center;
+    justify-items: center;
+  }
+
+  .headerBuscarInputText {
+    width: 30vw;
+    height: 30px;
+    padding-left: 0.5vw;
+    margin-left: -0.5vw;
+    border: none;
+  }
+
+  .headerBuscarInputButton {
+    width: 5vw;
+    min-width: 70px;
+    height: 30px;
+    background-color: $gris;
+    color: $blanco;
+    border: none;
+    &:active {
+      background-color: $grisclaro;
+      color: $negro;
+    }
+  }
+
+  .headerCarrito {
+    display: flex;
+    width: 100%;
+    grid-area: carrito;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: $blanco;
+    p {
+      margin: 0 1vw 0 1vw;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    img {
+      width: 1.8vw;
+      transition-duration: 1s;
+      &:hover {
+        transition-duration: 1s;
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+  .indexMenuLogoMobile {
+    display: none;
+  }
+
+  /* ------------------ CODIGO CSS CARRUSEL ------------------ */
+
+  .carousel,
+  .slide {
+    margin-top: 14vh;
+    height: 500px;
+    justify-content: center;
+  }
+
+  .carousel-item {
+    object-fit: cover;
+  }
+
+  /* ------------------ CODIGO CSS CATEGORIAS ------------------ */
+
+  .storeCategorias {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 75vh;
+    background-color: $blanco;
+    a {
+      color: $negro;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    h6 {
+      position: absolute;
+      top: 5vh;
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 15px;
+    }
+  }
+
+  .storeCategoriasFlex {
+    position: absolute;
+    top: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: space-evenly;
+  }
+
+  .storeCategoriasImg {
+    position: relative;
+    justify-content: center;
+    h5 {
+      color: $negro;
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 4vh;
+      text-align: center;
+    }
+    img {
+      margin-top: 2vh;
+      margin-bottom: 5px;
+      width: 35vh;
+      &:hover {
+        margin-top: 1vh;
+        margin-bottom: 0.2vh;
+        width: 36vh;
+        transition-duration: 0.5s;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  /* ------------------ CODIGO CSS VIDEO & TEXTO ------------------ */
+
+  .imagenTexto {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    background-color: $blanco;
+    iframe {
+      margin: 10vh 0 10vh 0;
+      width: 60vw;
+      height: 60vh;
+    }
+    .texto {
+      margin-top: 15vh;
+      margin-left: 2vw;
+      text-align: justify;
+      width: 35vw;
+    }
+    h2 {
+      margin-bottom: 30px;
+      font-size: x
+    }
+    p {
+      font-size: large;
+    }
+  }
+
+  /* ------------------ NUEVOS INGRESOS ------------------ */
+
+  .ingresos {
+    padding-top: 5vh;
+    height: auto;
+    h6 {
+      text-align: center;
+      margin-bottom: 5vh;
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 15px;
+    }
+    h5 {
+      color: $negro;
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 3vh;
+      margin-bottom: 10vh;
+    }
+  }
+
+  .ingresosGrid {
+    width: 100%;
+    top: 15vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 65vh 65vh;
+    column-gap: 2vw;
+    row-gap: 2vh;
+    text-align: center;
+    overflow-x: auto;
+    img {
+      height: 50vh;
+      &:hover {
+        height: 52vh;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border-radius: 10px;
+        transition-duration: 0.5s;
+      }
+    }
+  }
+
+  /* ------------------ FORMAS DE PAGO ------------------ */
+
+  .pagos {
+    background-color: $blanco;
+    padding-top: 5vh;
+    height: auto;
+    h6 {
+      margin-bottom: 5vh;
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 15px;
+      text-align: center;
+    }
+  }
+
+  .pagosGrid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    a {
+      text-align: center;
+      margin-bottom: 10vh;
+      color: $negro;
+    }
+  }
+
+  .pagosImg img {
+    width: 15vw;
+    margin-bottom: 5vh;
+  }
+
+  /* ------------------ CODIGO CSS FOOTER ------------------ */
+
+  .footer {
+    color: $blanco;
+    background-color: $negro;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 320px auto;
+    grid-template-areas:
+      "clientes servicios redesSociales"
+      "derechos derechos derechos";
+    justify-items: center;
+    align-items: center;
+    a {
+      color: $gris;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .footerClientes {
+    height: 200px;
+    display: grid;
+    grid-area: clientes;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "logo"
+      "lista";
+    padding-left: 30%;
+    ul {
+      grid-area: lista;
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin-top: 1%;
+    }
+  }
+
+  .footerALogo img {
+    width: 50%;
+    min-width: 100px;
+  }
+
+  .footerServicio {
+    display: grid;
+    grid-area: servicios;
+    align-items: center;
+    height: 200px;
+    padding: 0 15% 0 15%;
+    img {
+      width: 80%;
+      min-width: 20px;
+    }
+  }
+
+  .footerServicioGrid {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: 30px 30px 30px;
+    column-gap: 10px;
+    row-gap: 20px;
+    align-items: center;
+    margin-top: 10px;
+    ul {
+      list-style: none;
+    }
+  }
+
+  .footerRedesSociales {
+    height: 200px;
+    display: grid;
+    grid-area: redesSociales;
+    grid-template-columns: 1fr 1fr 1fr 1fr 40px;
+    grid-template-rows: auto auto auto 40px;
+    padding-right: 30%;
+    grid-template-areas:
+      "titulo titulo titulo titulo titulo"
+      "ig     fb     tw    pt      nada"
+      "tituloB tituloB tituloB tituloB tituloB"
+      "buscar buscar buscar buscar botonB";
+    row-gap: 5%;
+    img {
+      width: 50%;
+    }
+  }
+
+  .footerRedesSocialesTitulo {
+    grid-area: titulo;
+  }
+
+  .footerIgLogo {
+    grid-area: ig;
+    min-width: 40px;
+  }
+
+  .footerFbLogo {
+    grid-area: fb;
+    min-width: 40px;
+  }
+
+  .footerTwLogo {
+    grid-area: tw;
+    min-width: 40px;
+  }
+
+  .footerPtLogo {
+    grid-area: pt;
+    min-width: 40px;
+  }
+
+  .footerRedesSocialesNewsletterTitulo {
+    grid-area: tituloB;
+  }
+
+  .footerRedesSocialesNewsletterInput {
+    grid-area: buscar;
+    border: solid 2px $grisoscuro;
+    padding-left: 2%;
+  }
+
+  .footerEnviarLogo {
+    grid-area: botonB;
+    background-color: $grisoscuro;
+    border: $grisoscuro solid 2px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .footerDerechos {
+    grid-area: derechos;
+    color: $grisoscuro;
+    text-align: center;
+    font-size: smaller;
+  }
+
+  /*   CODIGO CSS 404 */
+
+  .Img404 {
+    position: relative;
+    width: 100%;
+    img {
+      display: block;
+      margin: 10vh auto 10vh auto;
+      width: 60vw;
+    }
+  }
+
+  .easterEgg {
+    text-align: center;
+    margin: 5vh 0 5vh 0;
+    color: $grisclaro;
+  }
+
+  .indexBackButton {
+    display: block;
+    margin: auto;
+    width: 20vw;
+    background-color: green;
+    color: $blanco;
+    padding: 2vh 3vw 2vh 3vw;
+    text-align: center;
+  }
+
+  /* CODIGO CSS MARCAS */
+
+  .mainContent {
+    margin-top: 22vh;
+  }
+
+  .tituloPrincipal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    justify-content: space-evenly;
+    h1 {
+      font-size: 100px;
+    }
+    h6 {
+      font-size: 20px;
+    }
+  }
+
+  .marcasMain {
+    display: flex;
+    flex-flow: column;
+    width: 90%;
+    margin: 50px auto 50px auto;
+  }
+
+  .marca {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 5vh;
+    img {
+      width: 30%;
+    }
+    .marcaTexto {
+      width: 50%;
+      text-align: justify;
+    }
+  }
+
+  .fuenteVOUGE {
+    text-align: center;
+    margin-bottom: 5vh;
+    a {
+      color: rgb(1, 1, 179);
+      font-weight: bold;
+    }
+  }
+
+  /* CODIGO CSS CONTACTO */
+
+  .tarjetasContacto {
+    display: flex;
+    flex-flow: row;
+    width: 80%;
+    margin: 100px auto 150px auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .tarjetaContacto {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 30%;
+    img {
+      width: 70%;
+      margin-bottom: 50px;
+    }
+  }
+
+  .tarjetaContactoTexto {
+    text-align: center;
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+
+  .mapaContacto {
+    display: flex;
+    flex-flow: row;
+    padding: 0px 0px 15vh 0px;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .formContacto {
+    display: flex;
+    flex-flow: column;
+    width: 40vw;
+    padding: 20px;
+    background-color: $negro;
+    color: $blanco;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+
+  .nombreContacto {
+    height: 10%;
+    border-radius: 10px;
+    padding-left: 5px;
+  }
+
+  .emailContacto {
+    height: 10%;
+    border-radius: 10px;
+    padding-left: 5px;
+  }
+
+  .comentarioContacto {
+    height: 50%;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-top: 5px;
+  }
+
+  .botonContacto {
+    text-align: center;
+    color: $blanco;
+    background-color: $gris;
+    border-radius: 10px;
+    height: 10%;
+    width: 30%;
+    font-size: medium;
+    &:active {
+      background-color: $grisoscuro;
+    }
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  /* ------------------ CODIGO CSS TIENDAS ------------------ */
+
+  .tarjetasTiendas {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin: 100px auto 150px auto;
+    justify-content: space-between;
+  }
+
+  .tarjetaTiendas {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 30%;
+    img {
+      width: 70%;
+      margin-bottom: 50px;
+    }
+  }
+
+  .tarjetaTiendasTexto {
+    text-align: center;
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+
+  .botonTiendaFemenina {
+    display: inline;
+    padding: 1vw;
+    background-color: #af0171;
+    border-radius: 20px;
+  }
+
+  .botonTiendaMasculina {
+    display: inline;
+    padding: 1vw;
+    background-color: #0c7b93;
+    border-radius: 20px;
+  }
+
+  .botonTiendaOutlet {
+    display: inline;
+    padding: 1vw;
+    background-color: $negro;
+    border-radius: 20px;
+  }
+}
+
+/* DESKTOP CHICO */
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .indexMenu {
+    background-color: $negro;
+    height: 12vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr 1fr 1fr 2fr;
+    grid-template-areas: "nadaIzq tienda marcas logo faq contacto nadaDer";
+    align-items: center;
+    text-align: center;
+  }
+
+  .hoverAnimationMenu {
+    text-decoration: none;
+    &:hover {
+      font-size: larger;
+      font-weight: bolder;
+      transition-duration: 1s;
+    }
+  }
+
+  .indexMenuLogo {
+    width: 50%;
+    grid-area: logo;
+    margin: auto;
+    min-width: 100px;
+  }
+
+  .indexMenuLogoMobile {
+    display: none;
+    &:hover {
+      width: 60%;
+      transition-duration: 2s;
+      z-index: 1;
+    }
+  }
+
+  .indexMenuTienda {
+    grid-area: tienda;
+    color: $blanco;
+  }
+
+  .indexMenuMarcas {
+    grid-area: marcas;
+    color: $blanco;
+  }
+
+  .indexMenuFaq {
+    grid-area: faq;
+    color: $blanco;
+  }
+
+  .indexMenuContacto {
+    grid-area: contacto;
+    color: $blanco;
+  }
+
+  .indexFondo {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    a {
+      text-decoration: none;
+      color: $blanco;
+    }
+  }
+
+  .indexFondoElla {
+    background-image: url(../../assets/images/ella.jpg);
+  }
+
+  .indexFondoEl {
+    background-image: url(../../assets/images/el.jpg);
+  }
+
+  .indexFondoElla,
+  .indexFondoEl {
+    background-size: cover;
+    background-position: top;
+    width: 50%;
+    height: 78vh;
+  }
+
+  .indexFondoEllaContenedor {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 50%;
+    margin: 50vh auto auto 5vw;
+    padding: 3%;
+    transition-duration: 1s;
+    text-align: left;
+    &:hover {
+      transition-duration: 1s;
+      width: 55%;
+      background-color: $negro;
+    }
+  }
+
+  .indexFondoEllaBoton {
+    background-color: #af0171;
+    padding: 2%;
+    border-radius: 5px;
+  }
+
+  .indexFondoElContenedor {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 50%;
+    margin: 50vh 5vw auto auto;
+    padding: 3%;
+    transition-duration: 1s;
+    text-align: right;
+    &:hover {
+      transition-duration: 1s;
+      width: 55%;
+      background-color: $negro;
+    }
+  }
+
+  .indexFondoElBoton {
+    background-color: #0c7b93;
+    padding: 2%;
+    border-radius: 5px;
+  }
+
+  .indexFondoEllaContenedor,
+  .indexFondoElContenedor {
+    color: $blanco;
+    animation: fadeIn 5s;
+    font-size: 90%;
+    max-height: 40%;
+    overflow-y: auto;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .indexFondoEllaContenedor p,
+  .indexFondoElContenedor p {
+    margin: 3vh 0 3vh 0;
+  }
+
+  .indexFooter {
+    background-color: $negro;
+    height: 10vh;
+    color: $grisclaro;
+    text-align: center;
+    font-size: small;
+  }
+
+  .indexFooterRRSS {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .indexFooterRS {
+    width: 1.6vw;
+    min-width: 20px;
+    margin: 1.5vh 1vw 0.5vh 1vw;
+  }
+
+  /* ------------------  CODIGO CSS TIENDA ------------------ */
+
+  /* ------------------ CODIGO CSS HEADER ------------------ */
+
+  .header {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 14vh;
+    padding: 0.5vh 0 0.5vh 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+      "nadai logo logo menu menu menu menu menu menu menu menu nadadd"
+      "nadai logo logo buscar buscar buscar buscar buscar carrito carrito nadad nadadd";
+    background-color: $negro;
+    text-align: center;
+    align-items: center;
+  }
+
+  .headerALogo {
+    grid-area: logo;
+    img {
+      width: 100%;
+      min-width: 100px;
+    }
+  }
+
+  .headerMenu {
+    grid-area: menu;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin-top: 2vh;
+    li {
+      border-bottom: 2px solid $blanco;
+      color: $blanco;
+      padding: 0.8vh 2vw 0.8vh 2vw;
+      width: 15vw;
+      display: inline-flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: center;
+      &:hover {
+        background-color: $blanco;
+        color: $negro;
+        font-weight: bolder;
+      }
+      &:active {
+        background-color: $grisclaro;
+        color: $negro;
+      }
+    }
+  }
+
+  .headerBuscar {
+    width: 100%;
+    grid-area: buscar;
+    align-content: center;
+    justify-items: center;
+  }
+
+  .headerBuscarInputText {
+    width: 30vw;
+    height: 30px;
+    padding-left: 0.5vw;
+    margin-left: -0.5vw;
+    border: none;
+  }
+
+  .headerBuscarInputButton {
+    width: 5vw;
+    min-width: 70px;
+    height: 30px;
+    background-color: $gris;
+    color: $blanco;
+    border: none;
+    &:active {
+      background-color: $grisclaro;
+      color: $negro;
+    }
+  }
+
+  .headerCarrito {
+    display: flex;
+    width: 100%;
+    grid-area: carrito;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: $blanco;
+    p {
+      margin: 0 1vw 0 1vw;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    img {
+      width: 1.8vw;
+      transition-duration: 1s;
+      &:hover {
+        transition-duration: 1s;
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+  .indexMenuLogoMobile {
+    display: none;
+  }
+
+  /* ------------------ CODIGO CSS CARRUSEL ------------------ */
+
+  .carousel,
+  .slide {
+    margin-top: 14vh;
+    height: 400px;
+    justify-content: center;
+  }
+
+  .carousel-item {
+    object-fit: cover;
+  }
+
+  /* ------------------ CODIGO CSS CATEGORIAS ------------------ */
+
+  .storeCategorias {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 75vh;
+    background-color: $blanco;
+    a {
+      color: $negro;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    h6 {
+      position: absolute;
+      top: 5vh;
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 15px;
+    }
+  }
+
+  .storeCategoriasFlex {
+    position: absolute;
+    top: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: left;
+  }
+
+  .storeCategoriasImg {
+    position: relative;
+    justify-content: center;
+    margin: 0 1vw 0 1vw;
+    h5 {
+      color: $negro;
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 4vh;
+      text-align: center;
+    }
+    img {
+      margin-top: 2vh;
+      margin-bottom: 5px;
+      width: 35vh;
+      &:hover {
+        margin-top: 1vh;
+        margin-bottom: 0.2vh;
+        width: 36vh;
+        transition-duration: 0.5s;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  /* ------------------ CODIGO CSS VIDEO & TEXTO ------------------ */
+
+  .imagenTexto {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    background-color: $blanco;
+    iframe {
+      margin: 10vh 0 10vh 0;
+      width: 75vw;
+      height: 60vh;
+    }
+    .texto {
+      margin-top: 10vh;
+      margin-left: 2vw;
+      text-align: justify;
+      width: 20vw;
+    }
+    p {
+      max-height: 50vh;
+      overflow-y: scroll;
+    }
+    h2 {
+      margin-bottom: 30px;
+      font-size: xx-large;
+    }
+  }
+
+  /* ------------------ NUEVOS INGRESOS ------------------ */
+
+  .ingresos {
+    padding-top: 5vh;
+    height: auto;
+    h6 {
+      text-align: center;
+      margin-bottom: 5vh;
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 15px;
+    }
+    h5 {
+      color: $negro;
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 3vh;
+      margin-bottom: 10vh;
+    }
+  }
+
+  .ingresosGrid {
+    width: 100%;
+    top: 15vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 65vh 65vh;
+    column-gap: 2vw;
+    row-gap: 2vh;
+    text-align: center;
+    overflow-x: auto;
+    img {
+      height: 50vh;
+      &:hover {
+        height: 52vh;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border-radius: 10px;
+        transition-duration: 0.5s;
+      }
+    }
+  }
+
+  /* ------------------ FORMAS DE PAGO ------------------ */
+
+  .pagos {
+    background-color: $blanco;
+    padding-top: 5vh;
+    height: auto;
+    h6 {
+      margin-bottom: 5vh;
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 15px;
+      text-align: center;
+    }
+  }
+
+  .pagosGrid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    a {
+      text-align: center;
+      margin-bottom: 10vh;
+      color: $negro;
+    }
+  }
+
+  .pagosImg img {
+    width: 15vw;
+    margin-bottom: 5vh;
+  }
+
+  /* ------------------ CODIGO CSS FOOTER ------------------ */
+
+  .footer {
+    color: $blanco;
+    background-color: $negro;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 320px auto;
+    grid-template-areas:
+      "clientes servicios redesSociales"
+      "derechos derechos derechos";
+    justify-items: center;
+    align-items: center;
+    a {
+      color: $gris;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .footerClientes {
+    height: 200px;
+    display: grid;
+    grid-area: clientes;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "logo"
+      "lista";
+    padding-left: 30%;
+    ul {
+      padding: 0;
+      grid-area: lista;
+      list-style: none;
+    }
+    li {
+      margin-top: 2%;
+    }
+  }
+
+  .footerALogo img {
+    width: 50%;
+    min-width: 100px;
+  }
+
+  .footerServicio {
+    display: grid;
+    grid-area: servicios;
+    align-items: center;
+    height: 200px;
+    padding: 0 15% 0 15%;
+    img {
+      width: 80%;
+      min-width: 20px;
+    }
+  }
+
+  .footerServicioGrid {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: 30px 30px 30px;
+    column-gap: 10px;
+    row-gap: 20px;
+    align-items: center;
+    margin-top: 10px;
+    ul {
+      list-style: none;
+    }
+  }
+
+  .footerRedesSociales {
+    height: 200px;
+    display: grid;
+    grid-area: redesSociales;
+    grid-template-columns: 1fr 1fr 1fr 1fr 40px;
+    grid-template-rows: auto auto auto 40px;
+    padding-right: 30%;
+    grid-template-areas:
+      "titulo titulo titulo titulo titulo"
+      "ig     fb     tw    pt      nada"
+      "tituloB tituloB tituloB tituloB tituloB"
+      "buscar buscar buscar buscar botonB";
+    row-gap: 5%;
+    img {
+      width: 50%;
+    }
+  }
+
+  .footerRedesSocialesTitulo {
+    grid-area: titulo;
+  }
+
+  .footerIgLogo {
+    grid-area: ig;
+    min-width: 40px;
+  }
+
+  .footerFbLogo {
+    grid-area: fb;
+    min-width: 40px;
+  }
+
+  .footerTwLogo {
+    grid-area: tw;
+    min-width: 40px;
+  }
+
+  .footerPtLogo {
+    grid-area: pt;
+    min-width: 40px;
+  }
+
+  .footerRedesSocialesNewsletterTitulo {
+    grid-area: tituloB;
+  }
+
+  .footerRedesSocialesNewsletterInput {
+    grid-area: buscar;
+    border: solid 2px $grisoscuro;
+    padding-left: 2%;
+  }
+
+  .footerEnviarLogo {
+    grid-area: botonB;
+    background-color: $grisoscuro;
+    border: $grisoscuro solid 2px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .footerDerechos {
+    grid-area: derechos;
+    color: $grisoscuro;
+    text-align: center;
+    font-size: smaller;
+  }
+
+  /*   CODIGO CSS 404 */
+
+  .Img404 {
+    position: relative;
+    width: 100%;
+    img {
+      margin: 10vh 15vw 10vh 15vw;
+      width: 70vw;
+    }
+  }
+
+  .easterEgg {
+    text-align: center;
+    margin-bottom: 5vh;
+    color: $grisclaro;
+  }
+
+  .indexBackButton {
+    width: 50%;
+    background-color: green;
+    color: $blanco;
+    padding: 2vh 3vw 2vh 3vw;
+    text-align: center;
+    margin: 0 25% 5vh 25%;
+  }
+
+  /* CODIGO CSS MARCAS */
+
+  .mainContent {
+    margin-top: 22vh;
+  }
+
+  .tituloPrincipal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    justify-content: space-evenly;
+    h1 {
+      font-size: 75px;
+    }
+    h6 {
+      font-size: 20px;
+    }
+  }
+
+  .marcasMain {
+    display: flex;
+    flex-flow: column;
+    width: 90%;
+    margin: 50px auto 50px auto;
+  }
+
+  .marca {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 5vh;
+    img {
+      width: 30%;
+    }
+    .marcaTexto {
+      width: 60%;
+      text-align: justify;
+    }
+  }
+
+  .fuenteVOUGE {
+    text-align: center;
+    margin-bottom: 5vh;
+    a {
+      color: rgb(1, 1, 179);
+      font-weight: bold;
+    }
+  }
+
+  /* CODIGO CSS CONTACTO */
+
+  .tarjetasContacto {
+    display: flex;
+    flex-flow: row;
+    width: 80%;
+    margin: 100px auto 150px auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .tarjetaContacto {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 30%;
+    img {
+      width: 70%;
+      margin-bottom: 50px;
+    }
+  }
+
+  .tarjetaContactoTexto {
+    text-align: center;
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+
+  .mapaContacto {
+    display: flex;
+    flex-flow: row;
+    padding: 0px 0px 50px 0px;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .formContacto {
+    display: flex;
+    flex-flow: column;
+    width: 40vw;
+    padding: 20px;
+    background-color: $negro;
+    color: $blanco;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+
+  .nombreContacto {
+    height: 10%;
+    border-radius: 10px;
+    padding-left: 5px;
+  }
+
+  .emailContacto {
+    height: 10%;
+    border-radius: 10px;
+    padding-left: 5px;
+  }
+
+  .comentarioContacto {
+    height: 50%;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-top: 5px;
+  }
+
+  .botonContacto {
+    text-align: center;
+    color: $blanco;
+    background-color: $gris;
+    border-radius: 10px;
+    height: 10%;
+    width: 30%;
+    font-size: medium;
+    &:active {
+      background-color: $grisoscuro;
+    }
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  /* ------------------ CODIGO CSS TIENDAS ------------------ */
+
+  .tarjetasTiendas {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin: 100px auto 150px auto;
+    justify-content: space-between;
+  }
+
+  .tarjetaTiendas {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 30%;
+    img {
+      width: 70%;
+      margin-bottom: 50px;
+    }
+  }
+
+  .tarjetaTiendasTexto {
+    text-align: center;
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+
+  .botonTiendaFemenina {
+    display: inline;
+    padding: 1vw;
+    background-color: #af0171;
+    border-radius: 20px;
+  }
+
+  .botonTiendaMasculina {
+    display: inline;
+    padding: 1vw;
+    background-color: #0c7b93;
+    border-radius: 20px;
+  }
+
+  .botonTiendaOutlet {
+    display: inline;
+    padding: 1vw;
+    background-color: $negro;
+    border-radius: 20px;
+  }
+}
+
+/* TABLET */
+@media screen and (min-width: 427px) and (max-width: 768px) {
+  /* ------------------ CODIGO CSS INDEX ------------------ */
+
+  .indexMenu {
+    background-color: $negro;
+    height: 12vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "nadaIzqq tienda nadaIzq marcas logo faq nadaDer contacto nadaDerr";
+    align-items: center;
+    text-align: center;
+  }
+
+  .indexMenuLogoMobile {
+    width: 50%;
+    grid-area: logo;
+    margin: auto;
+    min-width: 50px;
+  }
+
+  .hoverAnimationMenu {
+    text-decoration: none;
+    &:hover {
+      font-size: larger;
+      font-weight: bolder;
+      transition-duration: 1s;
+    }
+  }
+
+  .indexMenuTienda {
+    grid-area: tienda;
+    color: $blanco;
+  }
+
+  .indexMenuMarcas {
+    grid-area: marcas;
+    color: $blanco;
+  }
+
+  .indexMenuFaq {
+    grid-area: faq;
+    color: $blanco;
+  }
+
+  .indexMenuContacto {
+    grid-area: contacto;
+    color: $blanco;
+  }
+
+  .indexFondo {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    a {
+      text-decoration: none;
+      color: $blanco;
+    }
+  }
+
+  .indexFondoElla {
+    background-image: url(../../assets/images/ella.jpg);
+  }
+
+  .indexFondoEl {
+    background-image: url(../../assets/images/el.jpg);
+  }
+
+  .indexFondoElla,
+  .indexFondoEl {
+    background-size: cover;
+    background-position: top;
+    width: 50%;
+    height: 78vh;
+  }
+
+  .indexFondoEllaContenedor {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    margin: 40vh 5vw auto auto;
+    padding: 5%;
+    text-align: left;
+    transition-duration: 1s;
+  }
+
+  .indexFondoEllaBoton {
+    background-color: #af0171;
+    padding: 2%;
+    border-radius: 5px;
+  }
+
+  .indexFondoElContenedor {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    margin: 40vh 5vw auto auto;
+    padding: 5%;
+    text-align: right;
+    transition-duration: 1s;
+  }
+
+  .indexFondoElBoton {
+    background-color: #0c7b93;
+    padding: 2%;
+    border-radius: 5px;
+  }
+
+  .indexFondoEllaContenedor,
+  .indexFondoElContenedor {
+    color: $blanco;
+    animation: fadeIn 5s;
+    font-size: 90%;
+    max-height: 40%;
+    overflow-y: auto;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .indexFondoEllaContenedor p,
+  .indexFondoElContenedor p {
+    margin: 3vh 0 3vh 0;
+  }
+
+  .indexFooter {
+    background-color: $negro;
+    height: 10vh;
+    color: $grisclaro;
+    text-align: center;
+    font-size: small;
+  }
+
+  .indexFooterRRSS {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .indexFooterRS {
+    width: 1.6vw;
+    min-width: 20px;
+    margin: 1.5vh 2vw 0.5vh 2vw;
+  }
+
+  .indexMenuLogo {
+    display: none;
+  }
+
+  /* ------------------  CODIGO CSS TIENDA ------------------ */
+
+  /* ------------------ CODIGO CSS HEADER ------------------ */
+
+  .header {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 14vh;
+    min-height: 90px;
+    padding: 0.5vh 0 0.5vh 0;
+    display: grid;
+    grid-template-columns: 0.2fr 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+      "nadaiz logo logo menu menu menu menu menu menu menu menu"
+      "nadaiz logo logo buscar buscar buscar buscar buscar carrito carrito carrito";
+    row-gap: 0.5vh;
+    background-color: $negro;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .headerALogo {
+    grid-area: logo;
+    img {
+      height: auto;
+      width: 90%;
+      margin-top: 1vh;
+    }
+  }
+
+  .indexMenuLogo {
+    display: none;
+  }
+
+  .headerMenu {
+    grid-area: menu;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin-top: 2vh;
+    li {
+      border-bottom: 2px solid $blanco;
+      color: $blanco;
+      padding: 0.8vh 2vw 0.8vh 2vw;
+      width: 14vw;
+      display: inline-flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: center;
+      &:hover {
+        background-color: $blanco;
+        color: $negro;
+        font-weight: bolder;
+      }
+      &:active {
+        background-color: $grisclaro;
+        color: $negro;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: $negro
+    }
+  }
+
+  .headerBuscar {
+    width: 100%;
+    grid-area: buscar;
+    align-content: center;
+    justify-items: center;
+  }
+
+  .headerBuscarInputText {
+    width: 30vw;
+    height: 30px;
+    padding-left: 0.5vw;
+    margin-left: -0.5vw;
+    border: none;
+  }
+
+  .headerBuscarInputButton {
+    width: 5vw;
+    min-width: 70px;
+    height: 30px;
+    background-color: $gris;
+    color: $blanco;
+    border: none;
+    &:active {
+      background-color: $grisclaro;
+      color: $negro;
+    }
+  }
+
+  .headerCarrito {
+    display: flex;
+    width: 100%;
+    grid-area: carrito;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: $blanco;
+    p {
+      margin: 0 1vw 0 1vw;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    img {
+      width: 20px;
+      &:hover {
+        transition-duration: 1s;
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+  /* ------------------ CODIGO CSS CARRUSEL ------------------ */
+
+  .carousel,
+  .slide {
+    margin-top: 14vh;
+    height: 300px;
+    justify-content: center;
+  }
+
+  .carousel-item {
+    object-fit: cover;
+  }
+
+  /* ------------------ CODIGO CSS CATEGORIAS ------------------ */
+
+  .storeCategorias {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 75vh;
+    background-color: $blanco;
+    a {
+      color: $negro;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    h6 {
+      position: absolute;
+      top: 5vh;
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 15px;
+    }
+  }
+
+  .storeCategoriasFlex {
+    position: absolute;
+    top: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: left;
+  }
+
+  .storeCategoriasImg {
+    position: relative;
+    justify-content: center;
+    margin: 0 1vw 0 1vw;
+    h5 {
+      color: $negro;
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 4vh;
+      text-align: center;
+    }
+    img {
+      margin-top: 2vh;
+      margin-bottom: 5px;
+      width: 35vh;
+      &:hover {
+        margin-top: 1vh;
+        margin-bottom: 0.2vh;
+        width: 36vh;
+        transition-duration: 0.5s;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  /* ------------------ CODIGO CSS VIDEO & TEXTO ------------------ */
+
+  .imagenTexto {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: $blanco;
+    iframe {
+      margin-top: 5vh;
+      width: 100%;
+      height: 60vh;
+    }
+    .texto {
+      margin: 5vh auto 5vh auto;
+      text-align: justify;
+      width: 90%;
+    }
+    p {
+      max-height: 50vh;
+      overflow-y: scroll;
+    }
+    h2 {
+      margin-bottom: 30px;
+      font-size: xx-large;
+    }
+  }
+
+  /* ------------------ NUEVOS INGRESOS ------------------ */
+
+  .ingresos {
+    padding-top: 5vh;
+    height: auto;
+    h6 {
+      text-align: center;
+      margin-bottom: 5vh;
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 15px;
+    }
+    h5 {
+      color: $negro;
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 3vh;
+      margin-bottom: 10vh;
+    }
+  }
+
+  .ingresosGrid {
+    width: auto;
+    top: 15vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 65vh 65vh;
+    column-gap: 2vw;
+    row-gap: 2vh;
+    text-align: center;
+    overflow-x: auto;
+    img {
+      height: 50vh;
+      &:hover {
+        height: 52vh;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border-radius: 10px;
+        transition-duration: 0.5s;
+      }
+    }
+  }
+
+  /* ------------------ FORMAS DE PAGO ------------------ */
+
+  .pagos {
+    background-color: $blanco;
+    padding-top: 5vh;
+    height: auto;
+    h6 {
+      margin-bottom: 5vh;
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 15px;
+      text-align: center;
+    }
+  }
+
+  .pagosGrid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    a {
+      text-align: center;
+      margin-bottom: 10vh;
+      color: $negro;
+    }
+  }
+
+  .pagosImg img {
+    width: 15vw;
+    margin-bottom: 5vh;
+  }
+
+  /* ------------------ CODIGO CSS FOOTER ------------------ */
+
+  .footer {
+    color: $blanco;
+    background-color: $negro;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "nadaiz clientes nadader"
+      "nadaiz servicios nadader"
+      "nadaiz redesSociales nadader"
+      "derechos derechos derechos";
+    justify-items: center;
+    align-items: center;
+    a {
+      color: $gris;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .footerClientes {
+    height: auto;
+    display: grid;
+    grid-area: clientes;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "logo"
+      "lista";
+    text-align: center;
+    margin: 5vh 0 2vh 0;
+    ul {
+      text-align: left;
+      grid-area: lista;
+      list-style: none;
+    }
+    li {
+      margin-top: 2%;
+    }
+  }
+
+  .footerALogo img {
+    width: 50%;
+    min-width: 100px;
+  }
+
+  .footerServicio {
+    display: grid;
+    grid-area: servicios;
+    align-items: center;
+    height: auto;
+    margin: 2vh 0 2vh 0;
+    h3 {
+      text-align: center;
+    }
+    img {
+      width: 80%;
+      min-width: 20px;
+    }
+  }
+
+  .footerServicioGrid {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: 5vh 5vh 5vh;
+    column-gap: 10px;
+    row-gap: 20px;
+    align-items: center;
+    margin-top: 10px;
+    ul {
+      list-style: none;
+    }
+  }
+
+  .footerRedesSociales {
+    height: 200px;
+    display: grid;
+    grid-area: redesSociales;
+    grid-template-columns: 1fr 1fr 1fr 1fr 40px;
+    grid-template-rows: auto auto auto 40px;
+    grid-template-areas:
+      "titulo titulo titulo titulo titulo"
+      "ig     fb     tw    pt      nada"
+      "tituloB tituloB tituloB tituloB tituloB"
+      "buscar buscar buscar buscar botonB";
+    row-gap: 5%;
+    margin: 2vh 0 2vh 0;
+    img {
+      width: 50%;
+    }
+  }
+
+  .footerRedesSocialesTitulo {
+    grid-area: titulo;
+    text-align: center;
+  }
+
+  .footerIgLogo {
+    grid-area: ig;
+    min-width: 40px;
+  }
+
+  .footerFbLogo {
+    grid-area: fb;
+    min-width: 40px;
+  }
+
+  .footerTwLogo {
+    grid-area: tw;
+    min-width: 40px;
+  }
+
+  .footerPtLogo {
+    grid-area: pt;
+    min-width: 40px;
+  }
+
+  .footerRedesSocialesNewsletterTitulo {
+    grid-area: tituloB;
+    text-align: center;
+  }
+
+  .footerRedesSocialesNewsletterInput {
+    grid-area: buscar;
+    border: solid 2px $grisoscuro;
+    padding-left: 2%;
+  }
+
+  .footerEnviarLogo {
+    grid-area: botonB;
+    background-color: $grisoscuro;
+    border: $grisoscuro solid 2px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .footerDerechos {
+    grid-area: derechos;
+    color: $grisoscuro;
+    text-align: center;
+    font-size: smaller;
+    padding-bottom: 5px;
+  }
+
+  /*   CODIGO CSS 404 */
+
+  .Img404 {
+    position: relative;
+    width: 100%;
+    img {
+      margin: 10vh 15vw 10vh 15vw;
+      width: 70vw;
+    }
+  }
+
+  .easterEgg {
+    text-align: center;
+    margin-bottom: 5vh;
+    color: $grisclaro;
+  }
+
+  .indexBackButton {
+    width: 50%;
+    background-color: green;
+    color: $blanco;
+    padding: 2vh 3vw 2vh 3vw;
+    text-align: center;
+    margin: 0 25% 5vh 25%;
+  }
+
+  /* CODIGO CSS MARCAS */
+
+  .mainContent {
+    margin-top: 15vh;
+  }
+
+  .tituloPrincipal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    justify-content: space-evenly;
+    h1 {
+      font-size: 75px;
+    }
+    h6 {
+      font-size: 20px;
+    }
+  }
+
+  .marcasMain {
+    display: flex;
+    flex-flow: column;
+    width: 90%;
+    margin: 50px auto 50px auto;
+  }
+
+  .marca {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 5vh;
+    img {
+      width: 50%;
+    }
+    .marcaTexto {
+      width: 90%;
+      text-align: justify;
+    }
+  }
+
+  .fuenteVOUGE {
+    text-align: center;
+    margin-bottom: 5vh;
+    a {
+      color: rgb(1, 1, 179);
+      font-weight: bold;
+    }
+  }
+
+  /* CODIGO CSS CONTACTO */
+
+  .tarjetasContacto {
+    display: flex;
+    flex-flow: row;
+    width: 80%;
+    margin: 100px auto 150px auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .tarjetaContacto {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 30%;
+    img {
+      width: 70%;
+      margin-bottom: 50px;
+    }
+  }
+
+  .tarjetaContactoTexto {
+    text-align: center;
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+
+  .mapaContacto {
+    display: flex;
+    flex-flow: row;
+    padding: 0px 0px 50px 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    iframe {
+      width: 100vw;
+    }
+  }
+
+  .formContacto {
+    display: flex;
+    flex-flow: column;
+    width: 80vw;
+    margin: 5vh 20px 0 20px;
+    padding: 20px;
+    background-color: $negro;
+    color: $blanco;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+
+  .nombreContacto {
+    height: 10%;
+    border-radius: 10px;
+    padding-left: 5px;
+  }
+
+  .emailContacto {
+    height: 10%;
+    border-radius: 10px;
+    padding-left: 5px;
+  }
+
+  .comentarioContacto {
+    height: 50%;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-top: 5px;
+  }
+
+  .botonContacto {
+    text-align: center;
+    color: $blanco;
+    background-color: $gris;
+    border-radius: 10px;
+    height: 10%;
+    width: 30%;
+    font-size: medium;
+    &:active {
+      background-color: $grisoscuro;
+    }
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  /* ------------------ CODIGO CSS TIENDAS ------------------ */
+
+  .tarjetasTiendas {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin: 100px auto 150px auto;
+    justify-content: space-between;
+  }
+
+  .tarjetaTiendas {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 30%;
+    img {
+      width: 70%;
+      margin-bottom: 50px;
+    }
+  }
+
+  .tarjetaTiendasTexto {
+    text-align: center;
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+
+  .botonTiendaFemenina {
+    display: inline;
+    padding: 1vw;
+    background-color: #af0171;
+  }
+
+  .botonTiendaMasculina {
+    display: inline;
+    padding: 1vw;
+    background-color: #0c7b93;
+  }
+
+  .botonTiendaOutlet {
+    display: inline;
+    padding: 1vw;
+    background-color: $negro;
+  }
+}
+
+/* MOBILE */
+@media screen and (max-width: 426px) {
+  /* ------------------ CODIGO CSS INDEX ------------------ */
+
+  .bodyIndex {
+    background-color: $negro;
+  }
+
+  .navbar-display,
+  .navbar {
+    background-color: $negro;
+    padding: 0;
+  }
+
+  a.navbar-brand {
+    width: 70vw;
+  }
+
+  button.navbar-toggler {
+    margin-right: 5vw;
+  }
+
+  .navbar-collapse {
+    margin-left: 5vw;
+  }
+
+  .dropdown-menu {
+    background-color: $negro
+  }
+
+  .dropdownSearchInput {
+    width: 70vw;
+    padding-left: 2vw;
+  }
+
+  .dropdownSearchButton {
+    width: 20vw;
+    color: $blanco;
+    background-color: $negro;
+    font-weight: bold;
+  }
+
+  .indexMenu {
+    display: none;
+    background-color: $negro;
+    height: 12vh;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navbar-brand {
+    padding-left: 5vw;
+  }
+
+  .indexMenuLogo {
+    z-index: -2;
+    width: 70%;
+    grid-area: logo;
+    margin: auto;
+    min-width: 50px;
+    padding: 2vh 0 2vh 0vw;
+  }
+
+  .indexFondo {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    a {
+      text-decoration: none;
+      color: $blanco;
+    }
+  }
+
+  .indexFondoElla {
+    background-image: url(../../assets/images/ella.jpg);
+  }
+
+  .indexFondoEl {
+    background-image: url(../../assets/images/el.jpg);
+  }
+
+  .indexFondoElla,
+  .indexFondoEl {
+    background-size: cover;
+    background-position: top;
+    width: 50%;
+    height: 76vh;
+  }
+
+  .indexFondoEllaContenedor {
+    width: 100%;
+    margin: 65vh 5vw auto auto;
+    padding: 5%;
+    text-align: center;
+    transition-duration: 1s;
+  }
+
+  .indexFondoEllaBoton {
+    background-color: #af0171;
+    padding: 10%;
+    border-radius: 5px;
+    box-shadow: black 0px 0px 20px 5px;
+  }
+
+  .indexFondoElContenedor {
+    width: 100%;
+    margin: 65vh 5vw auto auto;
+    padding: 5%;
+    text-align: center;
+    transition-duration: 1s;
+  }
+
+  .indexFondoElBoton {
+    background-color: #0c7b93;
+    padding: 10%;
+    border-radius: 5px;
+    box-shadow: black 0px 0px 20px 5px;
+  }
+
+  .indexFondoEllaContenedor,
+  .indexFondoElContenedor {
+    color: $blanco;
+    animation: fadeIn 5s;
+    font-size: 90%;
+  }
+
+  .indexFondoElla h2,
+  .indexFondoElla p,
+  .indexFondoEl h2,
+  .indexFondoEl p {
+    display: none;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .indexFondoEllaContenedor p,
+  .indexFondoElContenedor p {
+    margin: 3vh 0 3vh 0;
+  }
+
+  .indexFooter {
+    background-color: $negro;
+    height: 10vh;
+    color: $grisclaro;
+    text-align: center;
+    font-size: small;
+  }
+
+  .indexFooterRRSS {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .indexFooterRS {
+    width: 1.6vw;
+    min-width: 20px;
+    margin: 2.5vh 2vw 0.5vh 2vw;
+  }
+
+  .indexMenuLogoMobile {
+    display: none;
+  }
+
+  /* ------------------  CODIGO CSS TIENDA ------------------ */
+
+  /* ------------------ CODIGO CSS HEADER ------------------ */
+
+  .header {
+    z-index: 1;
+    width: 100%;
+    height: 19vh;
+    min-height: 110px;
+    padding: 0.5vh 0 1vh 0;
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+    grid-template-rows: 50% 20% 30%;
+    grid-template-areas:
+      "logo logo"
+      "menu menu"
+      "buscar carrito";
+    background-color: $negro;
+    text-align: center;
+    align-items: center;
+  }
+
+  .headerALogo {
+    grid-area: logo;
+    img {
+      height: auto;
+      width: 30%;
+      min-width: 100px;
+    }
+  }
+
+  .headerMenu {
+    grid-area: menu;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    li {
+      border-bottom: 2px solid $blanco;
+      color: $blanco;
+      padding: 0vh 2vw 0.8vh 2vw;
+      width: 18vw;
+      display: inline-flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: center;
+      &:hover {
+        background-color: $blanco;
+        color: $negro;
+        font-weight: bolder;
+      }
+      &:active {
+        background-color: $grisclaro;
+        color: $negro;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: $negro;
+    }
+  }
+
+  .headerBuscar {
+    width: 100%;
+    grid-area: buscar;
+    align-content: center;
+    justify-items: center;
+    margin-top: 1vh;
+  }
+
+  .headerBuscarInputText {
+    width: 60vw;
+    height: 30px;
+    padding-left: 0.5vw;
+    margin-left: -0.5vw;
+    border: none;
+  }
+
+  .headerBuscarInputButton {
+    width: 5vw;
+    min-width: 70px;
+    height: 30px;
+    background-color: $gris;
+    color: $blanco;
+    border: none;
+    &:active {
+      background-color: $grisclaro;
+      color: $negro;
+    }
+  }
+
+  .headerCarrito {
+    display: flex;
+    width: 100%;
+    grid-area: carrito;
+    align-items: center;
+    justify-content: left;
+    text-decoration: none;
+    color: $blanco;
+    p {
+      display: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    img {
+      margin-top: 1vh;
+      width: 30px;
+      &:hover {
+        transition-duration: 1s;
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+  /* ------------------ CODIGO CSS CARRUSEL ------------------ */
+
+  .carousel,
+  .slide {
+    height: 250px;
+    justify-content: center;
+  }
+
+  .carrousel-item {
+    object-fit: fill;
+  }
+
+  /* ------------------ CODIGO CSS CATEGORIAS ------------------ */
+
+  .storeCategorias {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 75vh;
+    background-color: $blanco;
+    a {
+      color: $negro;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    h6 {
+      position: absolute;
+      top: 5vh;
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 15px;
+    }
+  }
+
+  .storeCategoriasFlex {
+    position: absolute;
+    top: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: left;
+  }
+
+  .storeCategoriasImg {
+    position: relative;
+    justify-content: center;
+    margin: 0 1vw 0 1vw;
+    h5 {
+      color: $negro;
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 4vh;
+      text-align: center;
+    }
+    img {
+      margin-top: 2vh;
+      margin-bottom: 5px;
+      width: 35vh;
+      &:hover {
+        margin-top: 1vh;
+        margin-bottom: 0.2vh;
+        width: 36vh;
+        transition-duration: 0.5s;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  /* ------------------ CODIGO CSS VIDEO & TEXTO ------------------ */
+
+  .imagenTexto {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: $blanco;
+    iframe {
+      margin-top: 5vh;
+      width: 100%;
+      height: 40vh;
+    }
+    .texto {
+      margin: 5vh auto 5vh auto;
+      text-align: justify;
+      width: 90%;
+    }
+    p {
+      max-height: 50vh;
+      overflow-y: scroll;
+      font-size: 100%;
+    }
+    h2 {
+      margin-bottom: 30px;
+      font-size: xx-large;
+    }
+  }
+
+  /* ------------------ NUEVOS INGRESOS ------------------ */
+
+  .ingresos {
+    padding-top: 5vh;
+    height: auto;
+    h6 {
+      text-align: center;
+      margin-bottom: 5vh;
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 15px;
+    }
+    h5 {
+      color: $negro;
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 3vh;
+      margin-bottom: 10vh;
+    }
+  }
+
+  .ingresosGrid {
+    width: 100vw;
+    top: 15vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 65vh 65vh 65vh 65vh 65vh 65vh;
+    column-gap: 2vw;
+    row-gap: 2vh;
+    text-align: center;
+    overflow-x: auto;
+    img {
+      height: 50vh;
+      &:hover {
+        height: 52vh;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border-radius: 10px;
+        transition-duration: 0.5s;
+      }
+    }
+  }
+
+  /* ------------------ FORMAS DE PAGO ------------------ */
+
+  .pagos {
+    background-color: $blanco;
+    padding-top: 5vh;
+    height: auto;
+    h6 {
+      margin-bottom: 5vh;
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 15px;
+      text-align: center;
+    }
+  }
+
+  .pagosGrid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    a {
+      text-align: center;
+      margin-bottom: 10vh;
+      color: $negro;
+    }
+  }
+
+  .pagosImg img {
+    width: 30vw;
+    margin-bottom: 5vh;
+  }
+
+  /* ------------------ CODIGO CSS FOOTER ------------------ */
+
+  .footer {
+    color: $blanco;
+    background-color: $negro;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "nadaiz clientes nadader"
+      "nadaiz servicios nadader"
+      "nadaiz redesSociales nadader"
+      "derechos derechos derechos";
+    justify-items: center;
+    align-items: center;
+    a {
+      color: $gris;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .footerClientes {
+    height: auto;
+    display: grid;
+    grid-area: clientes;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "logo"
+      "lista";
+    text-align: center;
+    margin: 5vh 0 2vh 0;
+    ul {
+      grid-area: lista;
+      list-style: none;
+      text-align: center;
+      padding: 0;
+    }
+    li {
+      margin-top: 2%;
+    }
+  }
+
+  .footerALogo img {
+    width: 50%;
+    min-width: 100px;
+  }
+
+  .footerServicio {
+    display: grid;
+    grid-area: servicios;
+    align-items: center;
+    height: auto;
+    margin: 2vh 0 2vh 0;
+    h3 {
+      text-align: center;
+    }
+    img {
+      width: 80%;
+      min-width: 20px;
+    }
+  }
+
+  .footerServicioGrid {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: 5vh 5vh 5vh;
+    column-gap: 10px;
+    row-gap: 20px;
+    align-items: center;
+    margin-top: 10px;
+    text-align: justify;
+    ul {
+      list-style: none;
+    }
+  }
+
+  .footerRedesSociales {
+    height: 200px;
+    display: grid;
+    grid-area: redesSociales;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto 40px;
+    grid-template-areas:
+      "titulo titulo titulo titulo"
+      "ig     fb     tw    pt"
+      "tituloB tituloB tituloB tituloB"
+      "buscar buscar buscar botonB";
+    row-gap: 5%;
+    margin: 2vh 0 2vh 0;
+    img {
+      display: block;
+      margin: auto;
+      width: 80%;
+    }
+  }
+
+  .footerRedesSocialesTitulo {
+    grid-area: titulo;
+    text-align: center;
+  }
+
+  .footerIgLogo {
+    grid-area: ig;
+    min-width: 40px;
+  }
+
+  .footerFbLogo {
+    grid-area: fb;
+    min-width: 40px;
+  }
+
+  .footerTwLogo {
+    grid-area: tw;
+    min-width: 40px;
+  }
+
+  .footerPtLogo {
+    grid-area: pt;
+    min-width: 40px;
+  }
+
+  .footerRedesSocialesNewsletterTitulo {
+    grid-area: tituloB;
+    text-align: center;
+  }
+
+  .footerRedesSocialesNewsletterInput {
+    grid-area: buscar;
+    border: solid 2px $grisoscuro;
+    padding-left: 2%;
+  }
+
+  .footerEnviarLogo {
+    grid-area: botonB;
+    background-color: $grisoscuro;
+    border: $grisoscuro solid 2px;
+    display: flex;
+    justify-items: center;
+    img {
+      width: 50%;
+    }
+  }
+
+  .footerDerechos {
+    grid-area: derechos;
+    color: $grisoscuro;
+    text-align: center;
+    font-size: smaller;
+    margin: 6vh 0 0px 0;
+  }
+
+  /*   CODIGO CSS 404 */
+
+  .Img404 {
+    position: relative;
+    width: 100%;
+    img {
+      margin: 10vh 15vw 10vh 15vw;
+      width: 70vw;
+    }
+  }
+
+  .indexBackButton {
+    width: 50%;
+    background-color: green;
+    color: $blanco;
+    padding: 2vh 3vw 2vh 3vw;
+    text-align: center;
+    margin: 0 25% 5vh 25%;
+  }
+
+  .easterEgg {
+    text-align: center;
+    margin-bottom: 5vh;
+    color: $grisclaro;
+  }
+
+  /* CODIGO CSS MARCAS */
+
+  .mainContent {
+    margin-top: 4vh;
+  }
+
+  .tituloPrincipal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    justify-content: space-evenly;
+    h1 {
+      font-size: 75px;
+    }
+    h6 {
+      font-size: 20px;
+      width: 80vw;
+      margin: auto;
+    }
+  }
+
+  .marcasMain {
+    display: flex;
+    flex-flow: column;
+    width: 90%;
+    margin: 50px auto 50px auto;
+  }
+
+  .marca {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 5vh;
+    img {
+      width: 90%;
+    }
+    .marcaTexto {
+      width: 95%;
+      text-align: justify;
+    }
+  }
+
+  .fuenteVOUGE {
+    text-align: center;
+    margin-bottom: 5vh;
+    a {
+      color: rgb(1, 1, 179);
+      font-weight: bold;
+    }
+  }
+
+  /* CODIGO CSS CONTACTO */
+
+  .tarjetasContacto {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 0 5vh 0;
+  }
+
+  .tarjetaContacto {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    padding: 5vh 0 5vh 0;
+    margin-bottom: 5vh;
+    img {
+      width: 70%;
+      margin-bottom: 5vh;
+    }
+  }
+
+  .tarjetaContactoTexto {
+    width: 80vw;
+    text-align: center;
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+
+  .mapaContacto {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    iframe {
+      width: 100%;
+    }
+  }
+
+  .formContacto {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    padding: 20px;
+    background-color: $negro;
+    color: $blanco;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-bottom: 5vh;
+  }
+
+  .nombreContacto {
+    height: 10%;
+    border-radius: 10px;
+    padding-left: 5px;
+  }
+
+  .emailContacto {
+    height: 10%;
+    border-radius: 10px;
+    padding-left: 5px;
+  }
+
+  .comentarioContacto {
+    height: 50%;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-top: 5px;
+  }
+
+  .botonContacto {
+    text-align: center;
+    color: $blanco;
+    background-color: $gris;
+    border-radius: 10px;
+    height: 10%;
+    width: 30%;
+    font-size: medium;
+    &:active {
+      background-color: $grisoscuro;
+    }
+  }
+
+  /* ------------------ CODIGO CSS TIENDAS ------------------ */
+
+  .tarjetasTiendas {
+    margin-top: 10vh;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+  }
+
+  .tarjetaTiendas {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 5vh 0 10vh 0;
+    margin-bottom: 5vh;
+    img {
+      width: 70%;
+      margin-bottom: 50px;
+    }
+  }
+
+  .tarjetaTiendasTexto {
+    text-align: center;
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+
+  .botonTiendaFemenina {
+    display: inline;
+    padding: 5vw;
+    background-color: #af0171;
+  }
+
+  .botonTiendaMasculina {
+    display: inline;
+    padding: 5vw;
+    background-color: #0c7b93;
+  }
+
+  .botonTiendaOutlet {
+    display: inline;
+    padding: 5vw;
+    background-color: $negro;
+  }
+}
