@@ -378,11 +378,9 @@ a {
       margin-bottom: 5px;
       width: 35vh;
       &:hover {
-        margin-top: 1vh;
-        margin-bottom: 0.2vh;
-        width: 36vh;
-        transition-duration: 0.5s;
+        box-shadow: $grisclaro 0px 0px 10px 2px;
         border-radius: 5px;
+        transition: .5s;
       }
     }
   }
@@ -438,6 +436,7 @@ a {
   }
 
   .ingresosGrid {
+    padding-top: 2vh;
     width: 100%;
     top: 15vh;
     display: grid;
@@ -450,11 +449,9 @@ a {
     img {
       height: 50vh;
       &:hover {
-        height: 52vh;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        border-radius: 10px;
-        transition-duration: 0.5s;
+        box-shadow: $grisclaro 0px 0px 10px 2px;
+        border-radius: 5px;
+        transition: .5s;
       }
     }
   }

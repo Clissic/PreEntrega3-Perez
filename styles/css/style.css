@@ -276,11 +276,9 @@ a:active {
       margin-bottom: 5px;
       width: 35vh; }
       .storeCategoriasImg img:hover {
-        margin-top: 1vh;
-        margin-bottom: 0.2vh;
-        width: 36vh;
-        transition-duration: 0.5s;
-        border-radius: 5px; }
+        box-shadow: #B6B6B6 0px 0px 10px 2px;
+        border-radius: 5px;
+        transition: .5s; }
   /* ------------------ CODIGO CSS VIDEO & TEXTO ------------------ */
   .imagenTexto {
     position: relative;
@@ -320,6 +318,7 @@ a:active {
       margin-top: 3vh;
       margin-bottom: 10vh; }
   .ingresosGrid {
+    padding-top: 2vh;
     width: 100%;
     top: 15vh;
     display: grid;
@@ -332,11 +331,9 @@ a:active {
     .ingresosGrid img {
       height: 50vh; }
       .ingresosGrid img:hover {
-        height: 52vh;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        border-radius: 10px;
-        transition-duration: 0.5s; }
+        box-shadow: #B6B6B6 0px 0px 10px 2px;
+        border-radius: 5px;
+        transition: .5s; }
   /* ------------------ FORMAS DE PAGO ------------------ */
   .pagos {
     background-color: #ffffff;
