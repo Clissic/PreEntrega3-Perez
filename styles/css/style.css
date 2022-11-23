@@ -607,12 +607,12 @@ a:active {
   .tiendaMain {
     margin-top: 16vh;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: .5fr 1fr 4fr .5fr;
     grid-template-rows: auto auto;
-    grid-template-areas: "nada menuCategorias" "filtros grillaCategoria"; }
+    grid-template-areas: "nadaiz nada menuCategorias nadader" "nadaiz filtros grillaCategoria nadader"; }
   .filtros {
     grid-area: filtros;
-    margin: 0 1vw 0 2vw; }
+    margin: 0 1vw 0 0; }
     .filtros p {
       color: #666666; }
     .filtros .filtro {
@@ -644,10 +644,11 @@ a:active {
     .menuCategorias p {
       color: #666666; }
     .menuCategorias ul {
-      margin-left: 5vw; }
+      padding: 0; }
       .menuCategorias ul li {
         list-style: none;
-        margin: 0 5vw 0 0;
+        width: 40%;
+        margin: 0 2vw 0 2vw;
         display: inline;
         font-size: large;
         font-weight: 500; }
@@ -660,14 +661,15 @@ a:active {
   .grillaCategoria {
     grid-area: grillaCategoria; }
     .grillaCategoria p {
+      margin-left: 20px;
       color: #666666; }
     .grillaCategoria .grillaProductos {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly; }
       .grillaCategoria .grillaProductos .card {
-        margin: 20px 20px 20px 20px;
-        width: 25vw; }
+        margin: 0px 0px 20px 20px;
+        width: 30%; }
         .grillaCategoria .grillaProductos .card:hover {
           box-shadow: #B6B6B6 0px 0px 10px 2px;
           transition: .5s; }
