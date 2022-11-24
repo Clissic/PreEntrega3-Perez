@@ -3369,6 +3369,7 @@ a {
       width: 80%;
       min-width: 20px;
     }
+    display: none;
   }
 
   .footerServicioGrid {
@@ -3386,17 +3387,15 @@ a {
   }
 
   .footerRedesSociales {
-    height: 200px;
+    height: auto;
     display: grid;
     grid-area: redesSociales;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto 40px;
+    grid-template-rows: auto auto;
     grid-template-areas:
       "titulo titulo titulo titulo"
-      "ig     fb     tw    pt"
-      "tituloB tituloB tituloB tituloB"
-      "buscar buscar buscar botonB";
-    row-gap: 5%;
+      "ig     fb     tw    pt";
+    row-gap: 10%;
     margin: 2vh 0 2vh 0;
     img {
       display: block;
@@ -3433,12 +3432,14 @@ a {
   .footerRedesSocialesNewsletterTitulo {
     grid-area: tituloB;
     text-align: center;
+    display: none;
   }
 
   .footerRedesSocialesNewsletterInput {
     grid-area: buscar;
     border: solid 2px $grisoscuro;
     padding-left: 2%;
+    display: none;
   }
 
   .footerEnviarLogo {
@@ -3450,6 +3451,7 @@ a {
     img {
       width: 50%;
     }
+    display: none;
   }
 
   .footerDerechos {
@@ -3457,7 +3459,7 @@ a {
     color: $grisoscuro;
     text-align: center;
     font-size: smaller;
-    margin: 6vh 0 0px 0;
+    margin: 3vh 0 0px 0;
   }
 
   /*   CODIGO CSS 404 */
