@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../styles/css/style.css" />
   </head>
   <body>
-        <header>
+    <header>
       <menu class="header">
         <div class="headerALogo">
           <a class="indexMenuLogo" href="../index.html"
@@ -158,6 +158,153 @@
           </div>
         </fieldset>
         <a class="tituloGris" href="./tienda.html"><p>Limpiar filtros</p></a>
+      </div>
+      <div class="accordion accordion-flush" id="accordionFiltros">
+        <div class="accordionCategoriasMobile accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              CATEGORÍAS
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <div class="menuCategoriasMobile">
+                <ul class="menuListaCategorias">
+                  <li><a href="./tienda.html">NOVEDADES</a></li>
+                  <li><a href="./tienda.html">ROPA</a></li>
+                  <li><a href="./tienda.html">ACCESORIOS</a></li>
+                  <li><a href="./tienda.html">BOLSOS</a></li>
+                  <li><a href="./tienda.html">ROPA INTERIOR</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              APLICAR FILTROS
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <div class="filtrosMobile">
+                <p class="tituloGris">Filtrar por</p>
+                <fieldset class="filtroMobile ordenarPor">
+                  <legend>ORDENAR POR</legend>
+                  <div>
+                    <input
+                      type="radio"
+                      name="orden"
+                      id="filtroOrdenarPorRecomendados"
+                    />
+                    <label for="filtroOrdenarPorRecomendados">Recomendados</label>
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      name="orden"
+                      id="filtroOrdenarPorLoMasVendido"
+                    />
+                    <label for="filtroOrdenarPorLoMasVendido">Lo Más Vendido</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="orden" id="filtroOrdenarPorNovedades" />
+                    <label for="filtroOrdenarPorNovedades">Novedades</label>
+                  </div>
+                </fieldset>
+                <fieldset class="filtroMobile rangePrecioMobile">
+                  <legend>PRECIO</legend>
+                  <div class="inputPrecio">
+                    <label for="filtroPrecioMinimoMobile"></label>
+                    <input
+                      type="number"
+                      name="precio"
+                      id="filtroPrecioMinimoMobile"
+                      placeholder="Mínimo"
+                    />
+                  </div>
+                  <div class="inputPrecio">
+                    <label for="filtroPrecioMaximoMobile"></label>
+                    <input
+                      type="number"
+                      name="precio"
+                      id="filtroPrecioMaximoMobile"
+                      placeholder="Máximo"
+                    />
+                  </div>
+                  <a href="./tienda.html">APLICAR</a>
+                </fieldset>
+                <fieldset class="filtroMobile tamanio">
+                  <legend>TAMAÑO</legend>
+                  <div>
+                    <input type="radio" name="tamanio" id="filtroTamanioXS" />
+                    <label for="filtroTamanioXS">XS</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="tamanio" id="filtroTamanioS" />
+                    <label for="filtroTamanioS">S</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="tamanio" id="filtroTamanioM" />
+                    <label for="filtroTamanioM">M</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="tamanio" id="filtroTamanioL" />
+                    <label for="filtroTamanioL">L</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="tamanio" id="filtroTamanioXL" />
+                    <label for="filtroTamanioXL">XL</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="tamanio" id="filtroTamanioXXL" />
+                    <label for="filtroTamanioXXL">XXL</label>
+                  </div>
+                </fieldset>
+                <fieldset class="filtroMobile marcas">
+                  <legend>MARCA</legend>
+                  <div>
+                    <input type="radio" name="marca" id="filtroMarcaTommyHilfiger" />
+                    <label for="filtroMarcaTommyHilfiger">TOMMY HILFIGER</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="marca" id="filtroMarcaTommyDenim" />
+                    <label for="filtroMarcaTommyDenim">TOMMY DENIM</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="marca" id="filtroMarcaTommySport" />
+                    <label for="filtroMarcaTommySport">TOMMY SPORT</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="marca" id="filtroMarcaCalvinKlein" />
+                    <label for="filtroMarcaCalvinKlein">CALVIN KLEIN</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="marca" id="filtroMarcaPolo" />
+                    <label for="filtroMarcaPolo">RALPH LAUREN</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="marca" id="filtroMarcaLacoste" />
+                    <label for="filtroMarcaLacoste">LACOSTE</label>
+                  </div>
+                </fieldset>
+                <fieldset class="filtroMobile ordenarPor">
+                  <legend>EDAD</legend>
+                  <div>
+                    <input type="radio" name="orden" id="filtroEdadAdulto" />
+                    <label for="filtroEdadAdulto">ADULTO</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="orden" id="filtroEdadNinio" />
+                    <label for="filtroEdadNinio">NIÑO</label>
+                  </div>
+                </fieldset>
+                <a class="tituloGris" href="./tienda.html"><p>Limpiar filtros</p></a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="menuCategorias">
         <p class="tituloGris">Categorías</p>
@@ -484,4 +631,5 @@
       </div>
     </footer>
   </body>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
 </html>
