@@ -1,0 +1,9 @@
+@mixin categories ($posicion, $display, $direccion, $wrap, $justify, $height, $fondo) {
+    position: $posicion;
+    display: $display;
+    flex-direction: $direccion;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    height: $height;
+    background-color: $fondo;
+}

@@ -1,0 +1,33 @@
+@if $filtroMasculino == true {
+  .filtroFemenino {
+    display: none;
+  }
+} @else {
+  .filtroFemenino {
+    display: inherit;
+  }
+}
+
+@if $filtroFemenino == true {
+  .filtroMasculino {
+    display: none;
+  }
+} @else {
+  .filtroMasculino {
+    display: inherit;
+  }
+}
+
+@if $prideTheme == true {
+    @each $i in red, orange, yellow, lightgreen, green, darkviolet, violet, blue, lightblue {
+        .#{$i} {
+            border: 2px solid $i!important;
+        }
+    }
+
+    @each $key, $value in $pride {
+        .#{$key} {
+            border: 2px solid $value!important;
+        }
+    }
+}

@@ -1,4 +1,6 @@
 @import "./utilities/variables";
+@import "./utilities/conditionals";
+@import "./utilities/mixins";
 
 * {
   padding: 0;
@@ -116,10 +118,10 @@ a {
   .indexFondoEllaContenedor {
     background-color: rgba(0, 0, 0, 0.5);
     width: 50%;
-    margin: 50vh auto auto 5vw;
     padding: 3%;
     transition-duration: 1s;
     text-align: left;
+    margin: 50vh auto auto 5vw;
     &:hover {
       transition-duration: 1s;
       width: 55%;
@@ -128,29 +130,20 @@ a {
   }
 
   .indexFondoEllaBoton {
-    background-color: #af0171;
     padding: 2%;
     border-radius: 5px;
+    background-color: #af0171;
   }
 
   .indexFondoElContenedor {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 50%;
-    margin: 50vh 5vw auto auto;
-    padding: 3%;
-    transition-duration: 1s;
+    @extend .indexFondoEllaContenedor;
     text-align: right;
-    &:hover {
-      transition-duration: 1s;
-      width: 55%;
-      background-color: $negro;
-    }
+    margin: 50vh 5vw auto auto;
   }
 
   .indexFondoElBoton {
+    @extend .indexFondoEllaBoton;
     background-color: #0c7b93;
-    padding: 2%;
-    border-radius: 5px;
   }
 
   .indexFondoEllaContenedor,
@@ -330,13 +323,7 @@ a {
   /* ------------------ CODIGO CSS CATEGORIAS ------------------ */
 
   .storeCategorias {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 75vh;
-    background-color: $blanco;
+    @include categories (relative, flex, row, wrap, center, 75vh, $blanco);
     a {
       color: $negro;
       text-decoration: none;
@@ -967,6 +954,7 @@ a {
   .indexMenu {
     background-color: $negro;
     height: 12vh;
+    min-height: 80px;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 2fr 1fr 1fr 2fr;
     grid-template-areas: "nadaIzq tienda marcas logo faq contacto nadaDer";
@@ -1049,10 +1037,10 @@ a {
   .indexFondoEllaContenedor {
     background-color: rgba(0, 0, 0, 0.5);
     width: 50%;
-    margin: 50vh auto auto 5vw;
     padding: 3%;
     transition-duration: 1s;
     text-align: left;
+    margin: 50vh auto auto 5vw;
     &:hover {
       transition-duration: 1s;
       width: 55%;
@@ -1069,10 +1057,10 @@ a {
   .indexFondoElContenedor {
     background-color: rgba(0, 0, 0, 0.5);
     width: 50%;
-    margin: 50vh 5vw auto auto;
     padding: 3%;
     transition-duration: 1s;
     text-align: right;
+    margin: 50vh 5vw auto auto;
     &:hover {
       transition-duration: 1s;
       width: 55%;
@@ -1258,13 +1246,7 @@ a {
   /* ------------------ CODIGO CSS CATEGORIAS ------------------ */
 
   .storeCategorias {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 75vh;
-    background-color: $blanco;
+    @include categories (relative, flex, row, wrap, center, 75vh, $blanco);
     a {
       color: $negro;
       text-decoration: none;
@@ -2181,13 +2163,7 @@ a {
   /* ------------------ CODIGO CSS CATEGORIAS ------------------ */
 
   .storeCategorias {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 75vh;
-    background-color: $blanco;
+    @include categories (relative, flex, row, wrap, center, 75vh, $blanco);
     a {
       color: $negro;
       text-decoration: none;
@@ -3143,13 +3119,7 @@ a {
   /* ------------------ CODIGO CSS CATEGORIAS ------------------ */
 
   .storeCategorias {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 75vh;
-    background-color: $blanco;
+    @include categories (relative, flex, row, wrap, center, 75vh, $blanco);
     a {
       color: $negro;
       text-decoration: none;
@@ -3761,7 +3731,7 @@ a {
       padding: 10px 10px 10px 30px;
       margin-top: 1vh;
       li {
-        margin: 0vh .6vw 0 .6vw;
+        margin: 0vh 0.6vw 0 0.6vw;
         &:hover {
           border-bottom: 2px solid darkblue;
         }

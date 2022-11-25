@@ -1,11 +1,30 @@
-/* Paleta monocromatica */
-$negro:         #000000;
-$grisoscuro:    #373737;
-$gris:          #666666;
-$grisclaro:     #B6B6B6;
-$blanco:        #ffffff;
+// Paleta monocromatica
+$negro: #000000;
+$grisoscuro: #373737;
+$gris: #666666;
+$grisclaro: #b6b6b6;
+$blanco: #ffffff;
 
-/* Anchos */
+// Anchos
 $anchoCompleto: 100vw;
 $anchoUnTercio: 33vw;
 $anchoUnMedio: 50vw;
+
+// Filtro TIENDA masculino o femenino (true/false)
+$filtroMasculino: false;
+$filtroFemenino: false;
+
+// Tema ORGULLO para TIENDA (true/false)
+$prideTheme: false;
+
+$pride: (
+    card-1: red,
+    card-2: orange,
+    card-3: yellow,
+    card-4: lightgreen,
+    card-5: green,
+    card-6: darkviolet,
+    card-7: violet,
+    card-8: blue,
+    card-9: lightblue
+)
