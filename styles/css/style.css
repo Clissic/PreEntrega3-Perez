@@ -224,7 +224,7 @@ a:active {
   .carousel,
   .slide {
     margin-top: 14vh;
-    height: 500px;
+    height: 70vh;
     justify-content: center; }
   .carousel-item {
     object-fit: cover; }
@@ -879,7 +879,7 @@ a:active {
   .carousel,
   .slide {
     margin-top: 14vh;
-    height: 400px;
+    height: 50vh;
     justify-content: center; }
   .carousel-item {
     object-fit: cover; }
@@ -2200,7 +2200,7 @@ a:active {
   /* ------------------ CODIGO CSS CARRUSEL ------------------ */
   .carousel,
   .slide {
-    height: 250px;
+    height: 30vh;
     justify-content: center; }
   .carrousel-item {
     object-fit: fill; }
@@ -2220,7 +2220,7 @@ a:active {
         text-decoration: underline; }
     .storeCategorias h6 {
       position: absolute;
-      top: 5vh;
+      top: 2vh;
       color: rgba(0, 0, 0, 0.5);
       font-size: 15px; }
   .storeCategoriasFlex {
