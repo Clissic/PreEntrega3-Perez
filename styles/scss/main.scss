@@ -323,7 +323,7 @@ a {
   /* ------------------ CODIGO CSS CATEGORIAS ------------------ */
 
   .storeCategorias {
-    @include categories (relative, flex, row, wrap, center, 75vh, $blanco);
+    @include categories (relative, flex, row, wrap, center, 80vh, $blanco);
     a {
       color: $negro;
       text-decoration: none;
@@ -335,13 +335,20 @@ a {
       position: absolute;
       top: 5vh;
       color: rgba(0, 0, 0, 0.5);
-      font-size: 15px;
+      font-size: 25px;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    p {
+      position: absolute;
+      text-align: center;
+      margin-top: 10vh;
+      margin-bottom: 8vh;
     }
   }
 
   .storeCategoriasFlex {
     position: absolute;
-    top: 10vh;
+    top: 17vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -408,10 +415,15 @@ a {
     padding-top: 5vh;
     height: auto;
     h6 {
-      text-align: center;
-      margin-bottom: 5vh;
+      margin-bottom: 1vh;
       color: rgba(0, 0, 0, 0.5);
-      font-size: 15px;
+      font-size: 25px;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      margin-bottom: 8vh;
     }
     h5 {
       color: $negro;
@@ -450,10 +462,15 @@ a {
     padding-top: 5vh;
     height: auto;
     h6 {
-      margin-bottom: 5vh;
+      margin-bottom: 1vh;
       color: rgba(0, 0, 0, 0.5);
-      font-size: 15px;
+      font-size: 25px;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       text-align: center;
+    }
+    p {
+      text-align: center;
+      margin-bottom: 8vh;
     }
   }
 
@@ -1258,13 +1275,20 @@ a {
       position: absolute;
       top: 5vh;
       color: rgba(0, 0, 0, 0.5);
-      font-size: 15px;
+      font-size: 25px;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    p {
+      position: absolute;
+      text-align: center;
+      margin-top: 10vh;
+      margin-bottom: 8vh;
     }
   }
 
   .storeCategoriasFlex {
     position: absolute;
-    top: 10vh;
+    top: 15vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -1335,10 +1359,15 @@ a {
     padding-top: 5vh;
     height: auto;
     h6 {
-      text-align: center;
-      margin-bottom: 5vh;
+      margin-bottom: 1vh;
       color: rgba(0, 0, 0, 0.5);
-      font-size: 15px;
+      font-size: 25px;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      margin-bottom: 8vh;
     }
     h5 {
       color: $negro;
@@ -1378,10 +1407,15 @@ a {
     padding-top: 5vh;
     height: auto;
     h6 {
-      margin-bottom: 5vh;
+      margin-bottom: 1vh;
       color: rgba(0, 0, 0, 0.5);
-      font-size: 15px;
+      font-size: 25px;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       text-align: center;
+    }
+    p {
+      text-align: center;
+      margin-bottom: 8vh;
     }
   }
 
@@ -2163,7 +2197,7 @@ a {
   /* ------------------ CODIGO CSS CATEGORIAS ------------------ */
 
   .storeCategorias {
-    @include categories (relative, flex, row, wrap, center, 75vh, $blanco);
+    @include categories (relative, flex, row, wrap, center, 78vh, $blanco);
     a {
       color: $negro;
       text-decoration: none;
@@ -2175,13 +2209,19 @@ a {
       position: absolute;
       top: 5vh;
       color: rgba(0, 0, 0, 0.5);
-      font-size: 15px;
+      font-size: 25px;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }    p {
+      position: absolute;
+      text-align: center;
+      margin-top: 10vh;
+      margin-bottom: 8vh;
     }
   }
 
   .storeCategoriasFlex {
     position: absolute;
-    top: 10vh;
+    top: 15vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -2250,10 +2290,15 @@ a {
     padding-top: 5vh;
     height: auto;
     h6 {
-      text-align: center;
-      margin-bottom: 5vh;
+      margin-bottom: 1vh;
       color: rgba(0, 0, 0, 0.5);
-      font-size: 15px;
+      font-size: 25px;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      margin-bottom: 8vh;
     }
     h5 {
       color: $negro;
@@ -2293,10 +2338,15 @@ a {
     padding-top: 5vh;
     height: auto;
     h6 {
-      margin-bottom: 5vh;
+      margin-bottom: 1vh;
       color: rgba(0, 0, 0, 0.5);
-      font-size: 15px;
+      font-size: 25px;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       text-align: center;
+    }
+    p {
+      text-align: center;
+      margin-bottom: 8vh;
     }
   }
 
@@ -3112,7 +3162,7 @@ a {
     justify-content: center;
   }
 
-  .carrousel-item {
+  .carousel-item {
     object-fit: fill;
   }
 
@@ -3131,13 +3181,20 @@ a {
       position: absolute;
       top: 2vh;
       color: rgba(0, 0, 0, 0.5);
-      font-size: 15px;
+      font-size: 25px;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    p {
+      position: absolute;
+      text-align: center;
+      margin-top: 6vh;
+      margin-bottom: 8vh;
     }
   }
 
   .storeCategoriasFlex {
     position: absolute;
-    top: 10vh;
+    top: 12vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -3207,10 +3264,15 @@ a {
     padding-top: 5vh;
     height: auto;
     h6 {
-      text-align: center;
-      margin-bottom: 5vh;
+      margin-bottom: 1vh;
       color: rgba(0, 0, 0, 0.5);
-      font-size: 15px;
+      font-size: 25px;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      margin-bottom: 8vh;
     }
     h5 {
       color: $negro;
@@ -3250,10 +3312,15 @@ a {
     padding-top: 5vh;
     height: auto;
     h6 {
-      margin-bottom: 5vh;
+      margin-bottom: 1vh;
       color: rgba(0, 0, 0, 0.5);
-      font-size: 15px;
+      font-size: 25px;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       text-align: center;
+    }
+    p {
+      text-align: center;
+      margin-bottom: 8vh;
     }
   }
 

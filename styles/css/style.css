@@ -235,7 +235,7 @@ a:active {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    height: 75vh;
+    height: 80vh;
     background-color: #ffffff; }
     .storeCategorias a {
       color: #000000;
@@ -246,10 +246,16 @@ a:active {
       position: absolute;
       top: 5vh;
       color: rgba(0, 0, 0, 0.5);
-      font-size: 15px; }
+      font-size: 25px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+    .storeCategorias p {
+      position: absolute;
+      text-align: center;
+      margin-top: 10vh;
+      margin-bottom: 8vh; }
   .storeCategoriasFlex {
     position: absolute;
-    top: 10vh;
+    top: 17vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -301,10 +307,14 @@ a:active {
     padding-top: 5vh;
     height: auto; }
     .ingresos h6 {
-      text-align: center;
-      margin-bottom: 5vh;
+      margin-bottom: 1vh;
       color: rgba(0, 0, 0, 0.5);
-      font-size: 15px; }
+      font-size: 25px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      text-align: center; }
+    .ingresos p {
+      text-align: center;
+      margin-bottom: 8vh; }
     .ingresos h5 {
       color: #000000;
       font-size: 20px;
@@ -334,10 +344,14 @@ a:active {
     padding-top: 5vh;
     height: auto; }
     .pagos h6 {
-      margin-bottom: 5vh;
+      margin-bottom: 1vh;
       color: rgba(0, 0, 0, 0.5);
-      font-size: 15px;
+      font-size: 25px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       text-align: center; }
+    .pagos p {
+      text-align: center;
+      margin-bottom: 8vh; }
   .pagosGrid {
     display: flex;
     flex-direction: row;
@@ -901,10 +915,16 @@ a:active {
       position: absolute;
       top: 5vh;
       color: rgba(0, 0, 0, 0.5);
-      font-size: 15px; }
+      font-size: 25px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+    .storeCategorias p {
+      position: absolute;
+      text-align: center;
+      margin-top: 10vh;
+      margin-bottom: 8vh; }
   .storeCategoriasFlex {
     position: absolute;
-    top: 10vh;
+    top: 15vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -960,10 +980,14 @@ a:active {
     padding-top: 5vh;
     height: auto; }
     .ingresos h6 {
-      text-align: center;
-      margin-bottom: 5vh;
+      margin-bottom: 1vh;
       color: rgba(0, 0, 0, 0.5);
-      font-size: 15px; }
+      font-size: 25px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      text-align: center; }
+    .ingresos p {
+      text-align: center;
+      margin-bottom: 8vh; }
     .ingresos h5 {
       color: #000000;
       font-size: 20px;
@@ -994,10 +1018,14 @@ a:active {
     padding-top: 5vh;
     height: auto; }
     .pagos h6 {
-      margin-bottom: 5vh;
+      margin-bottom: 1vh;
       color: rgba(0, 0, 0, 0.5);
-      font-size: 15px;
+      font-size: 25px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       text-align: center; }
+    .pagos p {
+      text-align: center;
+      margin-bottom: 8vh; }
   .pagosGrid {
     display: flex;
     flex-direction: row;
@@ -1540,7 +1568,7 @@ a:active {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    height: 75vh;
+    height: 78vh;
     background-color: #ffffff; }
     .storeCategorias a {
       color: #000000;
@@ -1551,10 +1579,16 @@ a:active {
       position: absolute;
       top: 5vh;
       color: rgba(0, 0, 0, 0.5);
-      font-size: 15px; }
+      font-size: 25px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+    .storeCategorias p {
+      position: absolute;
+      text-align: center;
+      margin-top: 10vh;
+      margin-bottom: 8vh; }
   .storeCategoriasFlex {
     position: absolute;
-    top: 10vh;
+    top: 15vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -1608,10 +1642,14 @@ a:active {
     padding-top: 5vh;
     height: auto; }
     .ingresos h6 {
-      text-align: center;
-      margin-bottom: 5vh;
+      margin-bottom: 1vh;
       color: rgba(0, 0, 0, 0.5);
-      font-size: 15px; }
+      font-size: 25px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      text-align: center; }
+    .ingresos p {
+      text-align: center;
+      margin-bottom: 8vh; }
     .ingresos h5 {
       color: #000000;
       font-size: 20px;
@@ -1642,10 +1680,14 @@ a:active {
     padding-top: 5vh;
     height: auto; }
     .pagos h6 {
-      margin-bottom: 5vh;
+      margin-bottom: 1vh;
       color: rgba(0, 0, 0, 0.5);
-      font-size: 15px;
+      font-size: 25px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       text-align: center; }
+    .pagos p {
+      text-align: center;
+      margin-bottom: 8vh; }
   .pagosGrid {
     display: flex;
     flex-direction: row;
@@ -2202,7 +2244,7 @@ a:active {
   .slide {
     height: 30vh;
     justify-content: center; }
-  .carrousel-item {
+  .carousel-item {
     object-fit: fill; }
   /* ------------------ CODIGO CSS CATEGORIAS ------------------ */
   .storeCategorias {
@@ -2222,10 +2264,16 @@ a:active {
       position: absolute;
       top: 2vh;
       color: rgba(0, 0, 0, 0.5);
-      font-size: 15px; }
+      font-size: 25px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+    .storeCategorias p {
+      position: absolute;
+      text-align: center;
+      margin-top: 6vh;
+      margin-bottom: 8vh; }
   .storeCategoriasFlex {
     position: absolute;
-    top: 10vh;
+    top: 12vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -2280,10 +2328,14 @@ a:active {
     padding-top: 5vh;
     height: auto; }
     .ingresos h6 {
-      text-align: center;
-      margin-bottom: 5vh;
+      margin-bottom: 1vh;
       color: rgba(0, 0, 0, 0.5);
-      font-size: 15px; }
+      font-size: 25px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      text-align: center; }
+    .ingresos p {
+      text-align: center;
+      margin-bottom: 8vh; }
     .ingresos h5 {
       color: #000000;
       font-size: 20px;
@@ -2314,10 +2366,14 @@ a:active {
     padding-top: 5vh;
     height: auto; }
     .pagos h6 {
-      margin-bottom: 5vh;
+      margin-bottom: 1vh;
       color: rgba(0, 0, 0, 0.5);
-      font-size: 15px;
+      font-size: 25px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       text-align: center; }
+    .pagos p {
+      text-align: center;
+      margin-bottom: 8vh; }
   .pagosGrid {
     display: flex;
     flex-direction: row;
