@@ -226,21 +226,39 @@ a:active {
     margin-top: 14vh;
     height: 60vh;
     justify-content: center; }
-  .carousel-background-1 {
+  .carousel-background-fem-1 {
     height: 700px;
     background-image: url(../../assets/images/banner-mujer-lacoste.png);
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat; }
-  .carousel-background-2 {
+  .carousel-background-fem-2 {
     height: 700px;
     background-image: url(../../assets/images/banner-mujer-polo.png);
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat; }
-  .carousel-background-3 {
+  .carousel-background-fem-3 {
     height: 700px;
     background-image: url(../../assets/images/banner-mujer-th.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat; }
+  .carousel-background-mas-1 {
+    height: 700px;
+    background-image: url(../../assets/images/banner-hombre-lacoste.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat; }
+  .carousel-background-mas-2 {
+    height: 700px;
+    background-image: url(../../assets/images/banner-hombre-polo.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat; }
+  .carousel-background-mas-3 {
+    height: 700px;
+    background-image: url(../../assets/images/banner-hombre-th.png);
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat; }
@@ -911,19 +929,34 @@ a:active {
     margin-top: 14vh;
     height: 50vh;
     justify-content: center; }
-  .carousel-background-1 {
+  .carousel-background-fem-1 {
     height: 450px;
     background-image: url(../../assets/images/banner-mujer-lacoste.png);
     background-size: contain;
     background-position: top; }
-  .carousel-background-2 {
+  .carousel-background-fem-2 {
     height: 450px;
     background-image: url(../../assets/images/banner-mujer-polo.png);
     background-size: contain;
     background-position: top; }
-  .carousel-background-3 {
+  .carousel-background-fem-3 {
     height: 450px;
     background-image: url(../../assets/images/banner-mujer-th.png);
+    background-size: contain;
+    background-position: top; }
+  .carousel-background-mas-1 {
+    height: 450px;
+    background-image: url(../../assets/images/banner-hombre-lacoste.png);
+    background-size: contain;
+    background-position: top; }
+  .carousel-background-mas-2 {
+    height: 450px;
+    background-image: url(../../assets/images/banner-hombre-polo.png);
+    background-size: contain;
+    background-position: top; }
+  .carousel-background-mas-3 {
+    height: 450px;
+    background-image: url(../../assets/images/banner-hombre-th.png);
     background-size: contain;
     background-position: top; }
   /* ------------------ CODIGO CSS CATEGORIAS ------------------ */
@@ -1588,19 +1621,34 @@ a:active {
     margin-top: 14vh;
     height: 300px;
     justify-content: center; }
-  .carousel-background-1 {
+  .carousel-background-fem-1 {
     height: 450px;
     background-image: url(../../assets/images/banner-mujer-lacoste.png);
     background-size: contain;
     background-position: top; }
-  .carousel-background-2 {
+  .carousel-background-fem-2 {
     height: 450px;
     background-image: url(../../assets/images/banner-mujer-polo.png);
     background-size: contain;
     background-position: top; }
-  .carousel-background-3 {
+  .carousel-background-fem-3 {
     height: 450px;
     background-image: url(../../assets/images/banner-mujer-th.png);
+    background-size: contain;
+    background-position: top; }
+  .carousel-background-mas-1 {
+    height: 450px;
+    background-image: url(../../assets/images/banner-hombre-lacoste.png);
+    background-size: contain;
+    background-position: top; }
+  .carousel-background-mas-2 {
+    height: 450px;
+    background-image: url(../../assets/images/banner-hombre-polo.png);
+    background-size: contain;
+    background-position: top; }
+  .carousel-background-mas-3 {
+    height: 450px;
+    background-image: url(../../assets/images/banner-hombre-th.png);
     background-size: contain;
     background-position: top; }
   /* ------------------ CODIGO CSS CATEGORIAS ------------------ */
@@ -2286,19 +2334,37 @@ a:active {
   .slide {
     height: 27vh;
     justify-content: center; }
-  .carousel-background-1 {
+  .carousel-background-fem-1 {
     height: 450px;
     background-image: url(../../assets/images/banner-mujer-lacoste.png);
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat; }
-  .carousel-background-2 {
+  .carousel-background-fem-2 {
     height: 450px;
     background-image: url(../../assets/images/banner-mujer-polo.png);
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat; }
-  .carousel-background-3 {
+  .carousel-background-fem-3 {
+    height: 450px;
+    background-image: url(../../assets/images/banner-mujer-th.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat; }
+  .carousel-background-mas-1 {
+    height: 450px;
+    background-image: url(../../assets/images/banner-mujer-lacoste.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat; }
+  .carousel-background-mas-2 {
+    height: 450px;
+    background-image: url(../../assets/images/banner-mujer-polo.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat; }
+  .carousel-background-mas-3 {
     height: 450px;
     background-image: url(../../assets/images/banner-mujer-th.png);
     background-size: contain;
