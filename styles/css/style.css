@@ -746,7 +746,34 @@ a:active {
       .faqColumnas .faqPreguntas .faqPregunta {
         margin-bottom: 10vh; }
         .faqColumnas .faqPreguntas .faqPregunta h5 {
-          margin-bottom: 4vh; } }
+          margin-bottom: 4vh; }
+  /* ------------------ CODIGO CSS ENVIOS ------------------ */
+  .enviosColumnas {
+    margin: 5vh 10vw 5vh 10vw;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "preguntas exclusive";
+    column-gap: 5vw;
+    background-image: url(../../assets/images/Logo-A-Exclusive-Transparente-svg.svg);
+    background-position-x: right;
+    background-size: 70%;
+    background-repeat: no-repeat; }
+    .enviosColumnas .enviosExclusive {
+      grid-area: exclusive; }
+      .enviosColumnas .enviosExclusive h4 {
+        text-orientation: upright;
+        writing-mode: vertical-lr;
+        margin-left: 7vw;
+        font-weight: 700;
+        font-size: 400%; }
+    .enviosColumnas .enviosDetalle {
+      justify-content: center; }
+      .enviosColumnas .enviosDetalle .enviosSVG {
+        width: 50%;
+        margin: 10vh auto 10vh auto; }
+      .enviosColumnas .enviosDetalle .enviosDescripcion {
+        text-align: justify;
+        font-size: 150%; } }
 
 /* DESKTOP CHICO */
 @media screen and (min-width: 769px) and (max-width: 1023px) {
@@ -1470,7 +1497,34 @@ a:active {
       .faqColumnas .faqPreguntas .faqPregunta {
         margin-bottom: 10vh; }
         .faqColumnas .faqPreguntas .faqPregunta h5 {
-          margin-bottom: 4vh; } }
+          margin-bottom: 4vh; }
+  /* ------------------ CODIGO CSS ENVIOS ------------------ */
+  .enviosColumnas {
+    margin: 5vh 7vw 5vh 7vw;
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    grid-template-areas: "preguntas exclusive";
+    column-gap: 5vw;
+    background-image: url(../../assets/images/Logo-A-Exclusive-Transparente-svg.svg);
+    background-position-x: right;
+    background-size: 70%;
+    background-repeat: no-repeat; }
+    .enviosColumnas .enviosExclusive {
+      grid-area: exclusive; }
+      .enviosColumnas .enviosExclusive h4 {
+        text-orientation: upright;
+        writing-mode: vertical-lr;
+        margin-left: 10vw;
+        font-weight: 700;
+        font-size: 400%; }
+    .enviosColumnas .enviosDetalle {
+      justify-content: center; }
+      .enviosColumnas .enviosDetalle .enviosSVG {
+        width: 50%;
+        margin: 10vh auto 10vh auto; }
+      .enviosColumnas .enviosDetalle .enviosDescripcion {
+        text-align: justify;
+        font-size: 150%; } }
 
 /* TABLET */
 @media screen and (min-width: 427px) and (max-width: 768px) {
@@ -2205,7 +2259,36 @@ a:active {
       .faqColumnas .faqPreguntas .faqPregunta {
         margin-bottom: 6vh; }
         .faqColumnas .faqPreguntas .faqPregunta h5 {
-          margin-bottom: 4vh; } }
+          margin-bottom: 4vh; }
+  .faqAccordion {
+    display: none; }
+  /* ------------------ CODIGO CSS ENVIOS ------------------ */
+  .enviosColumnas {
+    margin: 5vh 7vw 5vh 7vw;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "preguntas exclusive";
+    column-gap: 2vw;
+    background-image: url(../../assets/images/Logo-A-Exclusive-Transparente-svg.svg);
+    background-position-x: right;
+    background-size: 70%;
+    background-repeat: no-repeat; }
+    .enviosColumnas .enviosExclusive {
+      grid-area: exclusive; }
+      .enviosColumnas .enviosExclusive h4 {
+        text-orientation: upright;
+        writing-mode: vertical-lr;
+        margin-left: 7vw;
+        font-weight: 700;
+        font-size: 400%; }
+    .enviosColumnas .enviosDetalle {
+      justify-content: center; }
+      .enviosColumnas .enviosDetalle .enviosSVG {
+        width: 50%;
+        margin: 10vh auto 10vh auto; }
+      .enviosColumnas .enviosDetalle .enviosDescripcion {
+        text-align: justify;
+        font-size: 130%; } }
 
 /* MOBILE */
 @media screen and (max-width: 426px) {
@@ -2937,4 +3020,21 @@ a:active {
   .faqAccordion {
     margin-bottom: 10vh; }
   .faqAccordion-item {
-    margin-bottom: 1vh; } }
+    margin-bottom: 1vh; }
+  /* ------------------ CODIGO CSS ENVIOS ------------------ */
+  .enviosColumnas {
+    margin: 5vh 7vw 5vh 7vw;
+    background-image: url(../../assets/images/Logo-A-Exclusive-Transparente-svg.svg);
+    background-position-x: right;
+    background-size: 70%;
+    background-repeat: no-repeat; }
+    .enviosColumnas .enviosExclusive {
+      display: none; }
+    .enviosColumnas .enviosDetalle {
+      justify-content: center; }
+      .enviosColumnas .enviosDetalle .enviosSVG {
+        width: 50%;
+        margin: 10vh auto 10vh auto; }
+      .enviosColumnas .enviosDetalle .enviosDescripcion {
+        text-align: justify;
+        font-size: 120%; } }
