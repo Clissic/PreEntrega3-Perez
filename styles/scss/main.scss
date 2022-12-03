@@ -367,7 +367,7 @@ a {
   /* ------------------ CODIGO CSS CATEGORIAS ------------------ */
 
   .storeCategorias {
-    @include categories (relative, flex, row, wrap, center, 80vh, $blanco);
+    @include categories(relative, flex, row, wrap, center, 80vh, $blanco);
     a {
       color: $negro;
       text-decoration: none;
@@ -380,7 +380,7 @@ a {
       top: 5vh;
       color: rgba(0, 0, 0, 0.5);
       font-size: 25px;
-      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     }
     p {
       position: absolute;
@@ -462,7 +462,7 @@ a {
       margin-bottom: 1vh;
       color: rgba(0, 0, 0, 0.5);
       font-size: 25px;
-      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
       text-align: center;
     }
     p {
@@ -509,7 +509,7 @@ a {
       margin-bottom: 1vh;
       color: rgba(0, 0, 0, 0.5);
       font-size: 25px;
-      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
       text-align: center;
     }
     p {
@@ -720,7 +720,7 @@ a {
     text-align: center;
     justify-content: space-evenly;
     h1 {
-      font-size: 100px;
+      font-size: 7vw;
     }
     h6 {
       font-size: 20px;
@@ -1077,6 +1077,41 @@ a {
       }
     }
   }
+
+  /* ------------------ CODIGO CSS PRIVACIDAD ------------------ */
+
+  .privacidadColumnas {
+    margin: 5vh 10vw 5vh 10vw;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "preguntas exclusive";
+    column-gap: 5vw;
+    background-image: url(../../assets/images/Logo-A-Exclusive-Transparente-svg.svg);
+    background-position-x: right;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    .privacidadExclusive {
+      grid-area: exclusive;
+      h4 {
+        text-orientation: upright;
+        writing-mode: vertical-lr;
+        margin-left: 7vw;
+        font-weight: 700;
+        font-size: 800%;
+      }
+    }
+    .privacidadDetalle {
+      justify-content: center;
+      .privacidadSVG {
+        width: 50%;
+        margin: 10vh auto 10vh auto;
+      }
+      .privacidadDescripcion {
+        text-align: justify;
+        font-size: 100%;
+      }
+    }
+  }
 }
 
 /* DESKTOP CHICO */
@@ -1414,7 +1449,7 @@ a {
   /* ------------------ CODIGO CSS CATEGORIAS ------------------ */
 
   .storeCategorias {
-    @include categories (relative, flex, row, wrap, center, 75vh, $blanco);
+    @include categories(relative, flex, row, wrap, center, 75vh, $blanco);
     a {
       color: $negro;
       text-decoration: none;
@@ -1427,7 +1462,7 @@ a {
       top: 5vh;
       color: rgba(0, 0, 0, 0.5);
       font-size: 25px;
-      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     }
     p {
       position: absolute;
@@ -1513,7 +1548,7 @@ a {
       margin-bottom: 1vh;
       color: rgba(0, 0, 0, 0.5);
       font-size: 25px;
-      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
       text-align: center;
     }
     p {
@@ -1561,7 +1596,7 @@ a {
       margin-bottom: 1vh;
       color: rgba(0, 0, 0, 0.5);
       font-size: 25px;
-      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
       text-align: center;
     }
     p {
@@ -1769,7 +1804,7 @@ a {
     text-align: center;
     justify-content: space-evenly;
     h1 {
-      font-size: 75px;
+      font-size: 9vw;
     }
     h6 {
       font-size: 20px;
@@ -2056,7 +2091,7 @@ a {
   .accordion {
     display: none;
   }
-  
+
   /* ------------------ CODIGO CSS FAQ ------------------ */
 
   .faqColumnas {
@@ -2091,7 +2126,7 @@ a {
     }
   }
 
-   /* ------------------ CODIGO CSS ENVIOS ------------------ */
+  /* ------------------ CODIGO CSS ENVIOS ------------------ */
 
   .enviosColumnas {
     margin: 5vh 7vw 5vh 7vw;
@@ -2122,6 +2157,41 @@ a {
       .enviosDescripcion {
         text-align: justify;
         font-size: 150%;
+      }
+    }
+  }
+
+  /* ------------------ CODIGO CSS PRIVACIDAD ------------------ */
+
+  .privacidadColumnas {
+    margin: 5vh 7vw 5vh 7vw;
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    grid-template-areas: "preguntas exclusive";
+    column-gap: 5vw;
+    background-image: url(../../assets/images/Logo-A-Exclusive-Transparente-svg.svg);
+    background-position-x: right;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    .privacidadExclusive {
+      grid-area: exclusive;
+      h4 {
+        text-orientation: upright;
+        writing-mode: vertical-lr;
+        margin-left: 6vw;
+        font-weight: 700;
+        font-size: 800%;
+      }
+    }
+    .privacidadDetalle {
+      justify-content: center;
+      .privacidadSVG {
+        width: 50%;
+        margin: 10vh auto 10vh auto;
+      }
+      .privacidadDescripcion {
+        text-align: justify;
+        font-size: 100%;
       }
     }
   }
@@ -2455,7 +2525,7 @@ a {
   /* ------------------ CODIGO CSS CATEGORIAS ------------------ */
 
   .storeCategorias {
-    @include categories (relative, flex, row, wrap, center, 78vh, $blanco);
+    @include categories(relative, flex, row, wrap, center, 78vh, $blanco);
     a {
       color: $negro;
       text-decoration: none;
@@ -2468,8 +2538,9 @@ a {
       top: 5vh;
       color: rgba(0, 0, 0, 0.5);
       font-size: 25px;
-      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }    p {
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    }
+    p {
       position: absolute;
       text-align: center;
       margin-top: 10vh;
@@ -2551,7 +2622,7 @@ a {
       margin-bottom: 1vh;
       color: rgba(0, 0, 0, 0.5);
       font-size: 25px;
-      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
       text-align: center;
     }
     p {
@@ -2599,7 +2670,7 @@ a {
       margin-bottom: 1vh;
       color: rgba(0, 0, 0, 0.5);
       font-size: 25px;
-      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
       text-align: center;
     }
     p {
@@ -2816,7 +2887,7 @@ a {
     text-align: center;
     justify-content: space-evenly;
     h1 {
-      font-size: 75px;
+      font-size: 9vw;
     }
     h6 {
       font-size: 20px;
@@ -2860,7 +2931,7 @@ a {
     display: flex;
     flex-flow: row;
     width: 80%;
-    margin: 100px auto 150px auto;
+    margin: 20px auto 100px auto;
     justify-content: space-between;
     flex-wrap: wrap;
   }
@@ -2869,9 +2940,9 @@ a {
     display: flex;
     flex-flow: column;
     align-items: center;
-    width: 30%;
+    width: 25%;
     img {
-      width: 70%;
+      width: 100%;
       margin-bottom: 50px;
     }
   }
@@ -2880,6 +2951,7 @@ a {
     text-align: center;
     h2 {
       margin-bottom: 20px;
+      font-size: 4vw;
     }
   }
 
@@ -3161,7 +3233,7 @@ a {
     display: none;
   }
 
-   /* ------------------ CODIGO CSS ENVIOS ------------------ */
+  /* ------------------ CODIGO CSS ENVIOS ------------------ */
 
   .enviosColumnas {
     margin: 5vh 7vw 5vh 7vw;
@@ -3192,6 +3264,41 @@ a {
       .enviosDescripcion {
         text-align: justify;
         font-size: 130%;
+      }
+    }
+  }
+
+  /* ------------------ CODIGO CSS PRIVACIDAD ------------------ */
+
+  .privacidadColumnas {
+    margin: 5vh 7vw 5vh 7vw;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "preguntas exclusive";
+    column-gap: 2vw;
+    background-image: url(../../assets/images/Logo-A-Exclusive-Transparente-svg.svg);
+    background-position-x: right;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    .privacidadExclusive {
+      grid-area: exclusive;
+      h4 {
+        text-orientation: upright;
+        writing-mode: vertical-lr;
+        margin-left: 7vw;
+        font-weight: 700;
+        font-size: 800%;
+      }
+    }
+    .privacidadDetalle {
+      justify-content: center;
+      .privacidadSVG {
+        width: 50%;
+        margin: 10vh auto 10vh auto;
+      }
+      .privacidadDescripcion {
+        text-align: justify;
+        font-size: 100%;
       }
     }
   }
@@ -3543,7 +3650,7 @@ a {
   /* ------------------ CODIGO CSS CATEGORIAS ------------------ */
 
   .storeCategorias {
-    @include categories (relative, flex, row, wrap, center, 75vh, $blanco);
+    @include categories(relative, flex, row, wrap, center, 75vh, $blanco);
     a {
       color: $negro;
       text-decoration: none;
@@ -3556,7 +3663,7 @@ a {
       top: 2vh;
       color: rgba(0, 0, 0, 0.5);
       font-size: 25px;
-      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     }
     p {
       position: absolute;
@@ -3641,7 +3748,7 @@ a {
       margin-bottom: 1vh;
       color: rgba(0, 0, 0, 0.5);
       font-size: 25px;
-      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
       text-align: center;
     }
     p {
@@ -3689,7 +3796,7 @@ a {
       margin-bottom: 1vh;
       color: rgba(0, 0, 0, 0.5);
       font-size: 25px;
-      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
       text-align: center;
     }
     p {
@@ -3910,11 +4017,11 @@ a {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 200px;
+    height: 150px;
     text-align: center;
     justify-content: space-evenly;
     h1 {
-      font-size: 75px;
+      font-size: 9vw;
     }
     h6 {
       font-size: 20px;
@@ -4214,7 +4321,7 @@ a {
       }
     }
   }
-  
+
   /* ------------------ CODIGO CSS FAQ ------------------ */
 
   .faqColumnas {
@@ -4229,7 +4336,7 @@ a {
     margin-bottom: 1vh;
   }
 
-   /* ------------------ CODIGO CSS ENVIOS ------------------ */
+  /* ------------------ CODIGO CSS ENVIOS ------------------ */
 
   .enviosColumnas {
     margin: 5vh 7vw 5vh 7vw;
@@ -4249,6 +4356,30 @@ a {
       .enviosDescripcion {
         text-align: justify;
         font-size: 120%;
+      }
+    }
+  }
+
+  /* ------------------ CODIGO CSS PRIVACIDAD ------------------ */
+
+  .privacidadColumnas {
+    margin: 5vh 7vw 5vh 7vw;
+    background-image: url(../../assets/images/Logo-A-Exclusive-Transparente-svg.svg);
+    background-position-x: right;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    .privacidadExclusive {
+      display: none;
+    }
+    .privacidadDetalle {
+      justify-content: center;
+      .privacidadSVG {
+        width: 50%;
+        margin: 10vh auto 10vh auto;
+      }
+      .privacidadDescripcion {
+        text-align: justify;
+        font-size: 100%;
       }
     }
   }
