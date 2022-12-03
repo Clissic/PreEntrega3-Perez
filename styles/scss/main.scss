@@ -1112,6 +1112,46 @@ a {
       }
     }
   }
+
+  /* ------------------ CODIGO CSS DEVOLUCIONES ------------------ */
+
+  .devolucionesIntro {
+    margin: 15vh 0 10vh 0;
+    padding: 0 5vw 0 5vw;
+    text-align: justify;
+  }
+
+  .devolucionesColumnas {
+    margin: 5vh 10vw 5vh 10vw;
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    grid-template-areas: "preguntas exclusive";
+    column-gap: 5vw;
+    background-image: url(../../assets/images/Logo-A-Exclusive-Transparente-svg.svg);
+    background-position-x: right;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    .devolucionesExclusive {
+      grid-area: exclusive;
+      h4 {
+        text-orientation: upright;
+        writing-mode: vertical-lr;
+        margin-left: 7vw;
+        font-weight: 700;
+        font-size: 800%;
+      }
+    }
+    .devolucionesPreguntas {
+      grid-area: preguntas;
+      text-align: justify;
+      .devolucionesPregunta {
+        margin-bottom: 10vh;
+        h5 {
+          margin-bottom: 4vh;
+        }
+      }
+    }
+  }
 }
 
 /* DESKTOP CHICO */
@@ -2192,6 +2232,46 @@ a {
       .privacidadDescripcion {
         text-align: justify;
         font-size: 100%;
+      }
+    }
+  }
+
+  /* ------------------ CODIGO CSS DEVOLUCIONES ------------------ */
+
+  .devolucionesIntro {
+    margin: 10vh 0 10vh 0;
+    padding: 0 5vw 0 5vw;
+    text-align: justify;
+  }
+
+  .devolucionesColumnas {
+    margin: 5vh 7vw 5vh 7vw;
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    grid-template-areas: "preguntas exclusive";
+    column-gap: 5vw;
+    background-image: url(../../assets/images/Logo-A-Exclusive-Transparente-svg.svg);
+    background-position-x: right;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    .devolucionesExclusive {
+      grid-area: exclusive;
+      h4 {
+        text-orientation: upright;
+        writing-mode: vertical-lr;
+        margin-left: 8vw;
+        font-weight: 700;
+        font-size: 800%;
+      }
+    }
+    .devolucionesPreguntas {
+      grid-area: preguntas;
+      text-align: justify;
+      .devolucionesPregunta {
+        margin-bottom: 10vh;
+        h5 {
+          margin-bottom: 4vh;
+        }
       }
     }
   }
@@ -3302,6 +3382,49 @@ a {
       }
     }
   }
+
+  /* ------------------ CODIGO CSS DEVOLUCIONES ------------------ */
+
+  .devolucionesIntro {
+    margin: 8vh 0 10vh 0;
+    padding: 0 5vw 0 5vw;
+    text-align: justify;
+  }
+
+  .devolucionesColumnas {
+    margin: 5vh 7vw 5vh 7vw;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "preguntas exclusive";
+    column-gap: 2vw;
+    background-image: url(../../assets/images/Logo-A-Exclusive-Transparente-svg.svg);
+    background-position-x: right;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    .devolucionesExclusive {
+      grid-area: exclusive;
+      h4 {
+        text-orientation: upright;
+        writing-mode: vertical-lr;
+        margin-left: 5vw;
+        font-weight: 700;
+        font-size: 700%;
+      }
+    }
+    .devolucionesPreguntas {
+      grid-area: preguntas;
+      text-align: justify;
+      .devolucionesPregunta {
+        margin-bottom: 6vh;
+        h5 {
+          margin-bottom: 4vh;
+        }
+      }
+    }
+  }
+  .devolucionesAccordion {
+    display: none;
+  }
 }
 
 /* MOBILE */
@@ -4382,5 +4505,25 @@ a {
         font-size: 100%;
       }
     }
+  }
+
+  /* ------------------ CODIGO CSS DEVOLUCIONES ------------------ */
+
+  .devolucionesIntro {
+    margin: 8vh 0 5vh 0;
+    padding: 0 5vw 0 5vw;
+    text-align: justify;
+  }
+
+  .devolucionesColumnas {
+    display: none;
+  }
+
+  .devolucionesAccordion {
+    margin-bottom: 10vh;
+  }
+
+  .devolucionesAccordion-item {
+    margin-bottom: 1vh;
   }
 }
