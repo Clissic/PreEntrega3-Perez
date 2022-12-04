@@ -821,15 +821,45 @@ a:active {
       .devolucionesColumnas .devolucionesExclusive h4 {
         text-orientation: upright;
         writing-mode: vertical-lr;
-        margin-left: 7vw;
+        margin-left: 2vw;
         font-weight: 700;
-        font-size: 800%; }
+        font-size: 18vw; }
     .devolucionesColumnas .devolucionesPreguntas {
       grid-area: preguntas;
       text-align: justify; }
       .devolucionesColumnas .devolucionesPreguntas .devolucionesPregunta {
         margin-bottom: 10vh; }
         .devolucionesColumnas .devolucionesPreguntas .devolucionesPregunta h5 {
+          margin-bottom: 4vh; }
+  /* ------------------ CODIGO CSS TERMINOS ------------------ */
+  .terminosIntro {
+    margin: 15vh 0 10vh 0;
+    padding: 0 5vw 0 5vw;
+    text-align: justify; }
+  .terminosColumnas {
+    margin: 5vh 10vw 5vh 10vw;
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    grid-template-areas: "preguntas exclusive";
+    column-gap: 5vw;
+    background-image: url(../../assets/images/Logo-A-Exclusive-Transparente-svg.svg);
+    background-position-x: right;
+    background-size: 70%;
+    background-repeat: no-repeat; }
+    .terminosColumnas .terminosExclusive {
+      grid-area: exclusive; }
+      .terminosColumnas .terminosExclusive h4 {
+        text-orientation: upright;
+        writing-mode: vertical-lr;
+        margin-left: 2vw;
+        font-weight: 700;
+        font-size: 18vw; }
+    .terminosColumnas .terminosPreguntas {
+      grid-area: preguntas;
+      text-align: justify; }
+      .terminosColumnas .terminosPreguntas .terminosPregunta {
+        margin-bottom: 10vh; }
+        .terminosColumnas .terminosPreguntas .terminosPregunta h5 {
           margin-bottom: 4vh; } }
 
 /* DESKTOP CHICO */
@@ -1629,15 +1659,45 @@ a:active {
       .devolucionesColumnas .devolucionesExclusive h4 {
         text-orientation: upright;
         writing-mode: vertical-lr;
-        margin-left: 8vw;
+        margin-left: 6vw;
         font-weight: 700;
-        font-size: 800%; }
+        font-size: 15vw; }
     .devolucionesColumnas .devolucionesPreguntas {
       grid-area: preguntas;
       text-align: justify; }
       .devolucionesColumnas .devolucionesPreguntas .devolucionesPregunta {
         margin-bottom: 10vh; }
         .devolucionesColumnas .devolucionesPreguntas .devolucionesPregunta h5 {
+          margin-bottom: 4vh; }
+  /* ------------------ CODIGO CSS TERMINOS ------------------ */
+  .terminosIntro {
+    margin: 10vh 0 10vh 0;
+    padding: 0 5vw 0 5vw;
+    text-align: justify; }
+  .terminosColumnas {
+    margin: 5vh 7vw 5vh 7vw;
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    grid-template-areas: "preguntas exclusive";
+    column-gap: 5vw;
+    background-image: url(../../assets/images/Logo-A-Exclusive-Transparente-svg.svg);
+    background-position-x: right;
+    background-size: 70%;
+    background-repeat: no-repeat; }
+    .terminosColumnas .terminosExclusive {
+      grid-area: exclusive; }
+      .terminosColumnas .terminosExclusive h4 {
+        text-orientation: upright;
+        writing-mode: vertical-lr;
+        margin-left: 6vw;
+        font-weight: 700;
+        font-size: 15vw; }
+    .terminosColumnas .terminosPreguntas {
+      grid-area: preguntas;
+      text-align: justify; }
+      .terminosColumnas .terminosPreguntas .terminosPregunta {
+        margin-bottom: 10vh; }
+        .terminosColumnas .terminosPreguntas .terminosPregunta h5 {
           margin-bottom: 4vh; } }
 
 /* TABLET */
@@ -2453,7 +2513,7 @@ a:active {
         writing-mode: vertical-lr;
         margin-left: 5vw;
         font-weight: 700;
-        font-size: 700%; }
+        font-size: 15vw; }
     .devolucionesColumnas .devolucionesPreguntas {
       grid-area: preguntas;
       text-align: justify; }
@@ -2462,6 +2522,38 @@ a:active {
         .devolucionesColumnas .devolucionesPreguntas .devolucionesPregunta h5 {
           margin-bottom: 4vh; }
   .devolucionesAccordion {
+    display: none; }
+  /* ------------------ CODIGO CSS TERMINOS ------------------ */
+  .terminosIntro {
+    margin: 8vh 0 10vh 0;
+    padding: 0 5vw 0 5vw;
+    text-align: justify; }
+  .terminosColumnas {
+    margin: 5vh 7vw 5vh 7vw;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "preguntas exclusive";
+    column-gap: 2vw;
+    background-image: url(../../assets/images/Logo-A-Exclusive-Transparente-svg.svg);
+    background-position-x: right;
+    background-size: 70%;
+    background-repeat: no-repeat; }
+    .terminosColumnas .terminosExclusive {
+      grid-area: exclusive; }
+      .terminosColumnas .terminosExclusive h4 {
+        text-orientation: upright;
+        writing-mode: vertical-lr;
+        margin-left: 5vw;
+        font-weight: 700;
+        font-size: 15vw; }
+    .terminosColumnas .terminosPreguntas {
+      grid-area: preguntas;
+      text-align: justify; }
+      .terminosColumnas .terminosPreguntas .terminosPregunta {
+        margin-bottom: 6vh; }
+        .terminosColumnas .terminosPreguntas .terminosPregunta h5 {
+          margin-bottom: 4vh; }
+  .terminosAccordion {
     display: none; } }
 
 /* MOBILE */
@@ -3239,4 +3331,17 @@ a:active {
   .devolucionesAccordion {
     margin-bottom: 10vh; }
   .devolucionesAccordion-item {
-    margin-bottom: 1vh; } }
+    margin-bottom: 1vh; }
+  /* ------------------ CODIGO CSS TERMINOS ------------------ */
+  .terminosIntro {
+    margin: 8vh 0 5vh 0;
+    padding: 0 5vw 0 5vw;
+    text-align: justify; }
+  .terminosColumnas {
+    display: none; }
+  .terminosAccordion {
+    margin-bottom: 10vh; }
+  .terminosAccordion-item {
+    margin-bottom: 1vh; }
+  .accordion-body p {
+    text-align: justify; } }

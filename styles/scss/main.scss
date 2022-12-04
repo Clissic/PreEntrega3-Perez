@@ -1136,15 +1136,55 @@ a {
       h4 {
         text-orientation: upright;
         writing-mode: vertical-lr;
-        margin-left: 7vw;
+        margin-left: 2vw;
         font-weight: 700;
-        font-size: 800%;
+        font-size: 18vw;
       }
     }
     .devolucionesPreguntas {
       grid-area: preguntas;
       text-align: justify;
       .devolucionesPregunta {
+        margin-bottom: 10vh;
+        h5 {
+          margin-bottom: 4vh;
+        }
+      }
+    }
+  }
+
+    /* ------------------ CODIGO CSS TERMINOS ------------------ */
+
+  .terminosIntro {
+    margin: 15vh 0 10vh 0;
+    padding: 0 5vw 0 5vw;
+    text-align: justify;
+  }
+
+  .terminosColumnas {
+    margin: 5vh 10vw 5vh 10vw;
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    grid-template-areas: "preguntas exclusive";
+    column-gap: 5vw;
+    background-image: url(../../assets/images/Logo-A-Exclusive-Transparente-svg.svg);
+    background-position-x: right;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    .terminosExclusive {
+      grid-area: exclusive;
+      h4 {
+        text-orientation: upright;
+        writing-mode: vertical-lr;
+        margin-left: 2vw;
+        font-weight: 700;
+        font-size: 18vw;
+      }
+    }
+    .terminosPreguntas {
+      grid-area: preguntas;
+      text-align: justify;
+      .terminosPregunta {
         margin-bottom: 10vh;
         h5 {
           margin-bottom: 4vh;
@@ -2259,15 +2299,55 @@ a {
       h4 {
         text-orientation: upright;
         writing-mode: vertical-lr;
-        margin-left: 8vw;
+        margin-left: 6vw;
         font-weight: 700;
-        font-size: 800%;
+        font-size: 15vw;
       }
     }
     .devolucionesPreguntas {
       grid-area: preguntas;
       text-align: justify;
       .devolucionesPregunta {
+        margin-bottom: 10vh;
+        h5 {
+          margin-bottom: 4vh;
+        }
+      }
+    }
+  }
+
+    /* ------------------ CODIGO CSS TERMINOS ------------------ */
+
+  .terminosIntro {
+    margin: 10vh 0 10vh 0;
+    padding: 0 5vw 0 5vw;
+    text-align: justify;
+  }
+
+  .terminosColumnas {
+    margin: 5vh 7vw 5vh 7vw;
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    grid-template-areas: "preguntas exclusive";
+    column-gap: 5vw;
+    background-image: url(../../assets/images/Logo-A-Exclusive-Transparente-svg.svg);
+    background-position-x: right;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    .terminosExclusive {
+      grid-area: exclusive;
+      h4 {
+        text-orientation: upright;
+        writing-mode: vertical-lr;
+        margin-left: 6vw;
+        font-weight: 700;
+        font-size: 15vw;
+      }
+    }
+    .terminosPreguntas {
+      grid-area: preguntas;
+      text-align: justify;
+      .terminosPregunta {
         margin-bottom: 10vh;
         h5 {
           margin-bottom: 4vh;
@@ -3408,7 +3488,7 @@ a {
         writing-mode: vertical-lr;
         margin-left: 5vw;
         font-weight: 700;
-        font-size: 700%;
+        font-size: 15vw;
       }
     }
     .devolucionesPreguntas {
@@ -3423,6 +3503,49 @@ a {
     }
   }
   .devolucionesAccordion {
+    display: none;
+  }
+
+    /* ------------------ CODIGO CSS TERMINOS ------------------ */
+
+  .terminosIntro {
+    margin: 8vh 0 10vh 0;
+    padding: 0 5vw 0 5vw;
+    text-align: justify;
+  }
+
+  .terminosColumnas {
+    margin: 5vh 7vw 5vh 7vw;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "preguntas exclusive";
+    column-gap: 2vw;
+    background-image: url(../../assets/images/Logo-A-Exclusive-Transparente-svg.svg);
+    background-position-x: right;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    .terminosExclusive {
+      grid-area: exclusive;
+      h4 {
+        text-orientation: upright;
+        writing-mode: vertical-lr;
+        margin-left: 5vw;
+        font-weight: 700;
+        font-size: 15vw;
+      }
+    }
+    .terminosPreguntas {
+      grid-area: preguntas;
+      text-align: justify;
+      .terminosPregunta {
+        margin-bottom: 6vh;
+        h5 {
+          margin-bottom: 4vh;
+        }
+      }
+    }
+  }
+  .terminosAccordion {
     display: none;
   }
 }
@@ -4525,5 +4648,31 @@ a {
 
   .devolucionesAccordion-item {
     margin-bottom: 1vh;
+  }
+
+  /* ------------------ CODIGO CSS TERMINOS ------------------ */
+
+  .terminosIntro {
+    margin: 8vh 0 5vh 0;
+    padding: 0 5vw 0 5vw;
+    text-align: justify;
+  }
+  
+  .terminosColumnas {
+    display: none;
+  }
+
+  .terminosAccordion {
+    margin-bottom: 10vh;
+  }
+
+  .terminosAccordion-item {
+    margin-bottom: 1vh;
+  }
+
+  .accordion-body {
+    p {
+      text-align: justify;
+    }
   }
 }
