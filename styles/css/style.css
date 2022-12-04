@@ -821,9 +821,9 @@ a:active {
       .devolucionesColumnas .devolucionesExclusive h4 {
         text-orientation: upright;
         writing-mode: vertical-lr;
-        margin-left: 2vw;
+        margin-left: 8vw;
         font-weight: 700;
-        font-size: 18vw; }
+        font-size: 7vw; }
     .devolucionesColumnas .devolucionesPreguntas {
       grid-area: preguntas;
       text-align: justify; }
