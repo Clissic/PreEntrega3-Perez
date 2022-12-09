@@ -860,7 +860,12 @@ a:active {
       .terminosColumnas .terminosPreguntas .terminosPregunta {
         margin-bottom: 10vh; }
         .terminosColumnas .terminosPreguntas .terminosPregunta h5 {
-          margin-bottom: 4vh; } }
+          margin-bottom: 4vh; }
+  /* ------------------ CODIGO CSS TALLES ------------------ */
+  .imgTalles img {
+    display: block;
+    margin: 10vh auto 5vh auto;
+    width: 65vw; } }
 
 /* DESKTOP CHICO */
 @media screen and (min-width: 769px) and (max-width: 1023px) {
@@ -1698,7 +1703,12 @@ a:active {
       .terminosColumnas .terminosPreguntas .terminosPregunta {
         margin-bottom: 10vh; }
         .terminosColumnas .terminosPreguntas .terminosPregunta h5 {
-          margin-bottom: 4vh; } }
+          margin-bottom: 4vh; }
+  /* ------------------ CODIGO CSS TALLES ------------------ */
+  .imgTalles img {
+    display: block;
+    margin: 7vh auto 5vh auto;
+    width: 80vw; } }
 
 /* TABLET */
 @media screen and (min-width: 427px) and (max-width: 768px) {
@@ -1843,6 +1853,8 @@ a:active {
       color: #ffffff;
       padding: 0.8vh 2vw 0.8vh 2vw;
       width: 14vw;
+      height: auto;
+      font-size: 2.5vw;
       display: inline-flex;
       flex-wrap: nowrap;
       flex-direction: row;
@@ -2554,7 +2566,12 @@ a:active {
         .terminosColumnas .terminosPreguntas .terminosPregunta h5 {
           margin-bottom: 4vh; }
   .terminosAccordion {
-    display: none; } }
+    display: none; }
+  /* ------------------ CODIGO CSS TALLES ------------------ */
+  .imgTalles img {
+    display: block;
+    margin: 0vh auto 10vh auto;
+    width: 90vw; } }
 
 /* MOBILE */
 @media screen and (max-width: 426px) {
@@ -2702,6 +2719,7 @@ a:active {
       color: #ffffff;
       padding: 0vh 2vw 0.8vh 2vw;
       width: 18vw;
+      font-size: 3.5vw;
       display: inline-flex;
       flex-wrap: nowrap;
       flex-direction: row;
@@ -3344,4 +3362,9 @@ a:active {
   .terminosAccordion-item {
     margin-bottom: 1vh; }
   .accordion-body p {
-    text-align: justify; } }
+    text-align: justify; }
+  /* ------------------ CODIGO CSS TALLES ------------------ */
+  .imgTalles img {
+    display: block;
+    margin: 0vh auto 5vh auto;
+    width: 98vw; } }

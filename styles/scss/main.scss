@@ -1153,7 +1153,7 @@ a {
     }
   }
 
-    /* ------------------ CODIGO CSS TERMINOS ------------------ */
+  /* ------------------ CODIGO CSS TERMINOS ------------------ */
 
   .terminosIntro {
     margin: 15vh 0 10vh 0;
@@ -1190,6 +1190,16 @@ a {
           margin-bottom: 4vh;
         }
       }
+    }
+  }
+
+  /* ------------------ CODIGO CSS TALLES ------------------ */
+
+  .imgTalles {
+    img {
+      display: block;
+      margin: 10vh auto 5vh auto;
+      width: 65vw;
     }
   }
 }
@@ -2355,6 +2365,16 @@ a {
       }
     }
   }
+
+  /* ------------------ CODIGO CSS TALLES ------------------ */
+
+  .imgTalles {
+    img {
+      display: block;
+      margin: 7vh auto 5vh auto;
+      width: 80vw;
+    }
+  }
 }
 
 /* TABLET */
@@ -2560,6 +2580,8 @@ a {
       color: $blanco;
       padding: 0.8vh 2vw 0.8vh 2vw;
       width: 14vw;
+      height: auto;
+      font-size: 2.5vw;
       display: inline-flex;
       flex-wrap: nowrap;
       flex-direction: row;
@@ -3548,6 +3570,16 @@ a {
   .terminosAccordion {
     display: none;
   }
+
+  /* ------------------ CODIGO CSS TALLES ------------------ */
+
+  .imgTalles {
+    img {
+      display: block;
+      margin: 0vh auto 10vh auto;
+      width: 90vw;
+    }
+  }
 }
 
 /* MOBILE */
@@ -3764,6 +3796,7 @@ a {
       color: $blanco;
       padding: 0vh 2vw 0.8vh 2vw;
       width: 18vw;
+      font-size: 3.5vw;
       display: inline-flex;
       flex-wrap: nowrap;
       flex-direction: row;
@@ -4673,6 +4706,16 @@ a {
   .accordion-body {
     p {
       text-align: justify;
+    }
+  }
+
+  /* ------------------ CODIGO CSS TALLES ------------------ */
+
+  .imgTalles {
+    img {
+      display: block;
+      margin: 0vh auto 5vh auto;
+      width: 98vw;
     }
   }
 }
