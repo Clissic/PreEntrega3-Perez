@@ -3,3 +3,4 @@ boton.addEventListener("click", respuestaClick)
 function respuestaClick() {
     console.log("Compraste!")
 }
+

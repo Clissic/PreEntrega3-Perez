@@ -1,133 +1,241 @@
 // PRODUCTOS
 
-const prod1 = {
-    recomendado: true,
-    masVendido: true,
-    novedad: true,
-    categoria: "ropa",
-    tipo: "remera",
-    color: "azul",
-    marca: "tommy hilfiger",
-    precio: 1390,
-    tamaño: "s",
-    sexo: "hombre",
-    edad: "adulto",
-}
+const productos = [
 
-const prod2 = {
+  {
+    id: "prod1",
+    titulo: "Buzo canguro con capucha, negro, 100% algodón",
+    imagen: "../assets/images/publ1.jpg",
     recomendado: true,
     masVendido: true,
     novedad: true,
     categoria: "ropa",
     tipo: "buzo",
     color: "negro",
-    marca: "tommy hilfiger",
+    marca: "TOMMY HILFIGER",
     precio: 3390,
-    tamaño: "s",
+    talle: "S",
     sexo: "hombre",
     edad: "adulto",
-}
+  },
 
-const prod3 = {
+  {
+    id: "prod2",
+    titulo: "Buzo canguro con capucha, blanco, 100% algodón",
+    imagen: "../assets/images/publ2.jpg",
     recomendado: true,
     masVendido: true,
     novedad: true,
     categoria: "ropa",
     tipo: "buzo",
     color: "blanco",
-    marca: "tommy hilfiger",
+    marca: "TOMMY HILFIGER",
     precio: 3390,
-    tamaño: "s",
+    talle: "S",
     sexo: "hombre",
     edad: "adulto",
-}
+  },
 
-const prod4 = {
+  {
+    id: "prod3",
+    titulo: "Buzo manga larga, varios colores, 100% algodón",
+    imagen: "../assets/images/publ3.jpg",
     recomendado: true,
     masVendido: true,
     novedad: true,
     categoria: "ropa",
     tipo: "buzo",
     color: "blanco",
-    marca: "tommy hilfiger",
+    marca: "TOMMY HILFIGER",
     precio: 2490,
-    tamaño: "s",
+    talle: "S",
     sexo: "hombre",
     edad: "adulto",
-}
+  },
 
-const prod5 = {
+  {
+    id: "prod4",
+    titulo: "Short de baño, varios diseños",
+    imagen: "../assets/images/publ4.jpg",
     recomendado: true,
     masVendido: true,
     novedad: true,
     categoria: "ropa",
     tipo: "short",
     color: "blanco",
-    marca: "tommy hilfiger",
+    marca: "TOMMY HILFIGER",
     precio: 1990,
-    tamaño: "m",
+    talle: "M",
     sexo: "hombre",
     edad: "adulto",
-}
+  },
 
-const prod6 = {
+  {
+    id: "prod5",
+    titulo: "Básicas manga corta, varios colores, 100% algodón",
+    imagen: "../assets/images/publ5.jpg",
     recomendado: true,
     masVendido: true,
     novedad: true,
     categoria: "ropa",
     tipo: "remera",
     color: "azul",
-    marca: "tommy hilfiger",
+    marca: "TOMMY HILFIGER",
     precio: 1390,
-    tamaño: "s",
+    talle: "S",
     sexo: "hombre",
     edad: "adulto",
-}
+  },
 
-const prod7 = {
+  {
+    id: "prod6",
+    titulo: "Básicas manga corta, varios colores, 100% algodón",
+    imagen: "../assets/images/publ6.jpg",
     recomendado: true,
     masVendido: true,
     novedad: true,
     categoria: "ropa",
     tipo: "remera",
     color: "azul",
-    marca: "lacoste",
+    marca: "LACOSTE",
     precio: 1390,
-    tamaño: ["s", "m", "L"],
+    talle: ["S", "M", "L"],
     sexo: "hombre",
     edad: "adulto",
+  },
+
+  {
+    id: "prod7",
+    titulo: "Remera estampada, varios diseños, 100% algodón",
+    imagen: "../assets/images/publ7.jpg",
+    recomendado: true,
+    masVendido: true,
+    novedad: true,
+    categoria: "ropa",
+    tipo: "remera",
+    color: "rojo",
+    marca: "TOMMY HILFIGER",
+    precio: 1390,
+    talle: ["S", "M", "L"],
+    sexo: "hombre",
+    edad: "adulto",
+  },
+
+  {
+    id: "prod8",
+    titulo: "Remera COCODRILO manga corta blanca, 100% algodón",
+    imagen: "../assets/images/publ8.jpg",
+    recomendado: true,
+    masVendido: true,
+    novedad: true,
+    categoria: "ropa",
+    tipo: "remera",
+    color: "blanco",
+    marca: "LACOSTE",
+    precio: 1390,
+    talle: ["S", "L"],
+    sexo: "hombre",
+    edad: "adulto",
+  },
+
+  {
+    id: "prod9",
+    titulo: "Remera HILFIGER manga corta azul, 100% algodón",
+    imagen: "../assets/images/publ9.jpg",
+    recomendado: true,
+    masVendido: true,
+    novedad: true,
+    categoria: "ropa",
+    tipo: "remera",
+    color: "azul",
+    marca: "TOMMY HILFIGER",
+    precio: 1390,
+    talle: "S",
+    sexo: "hombre",
+    edad: "adulto",
+  },
+
+];
+
+//Función CONSTRUCTORA
+function Producto(
+  id,
+  titulo,
+  imagen,
+  recomendado,
+  masVendido,
+  novedad,
+  categoria,
+  tipo,
+  color,
+  marca,
+  precio,
+  talle,
+  sexo,
+  edad
+) {
+  this.id = id;
+  this.titulo = titulo;
+  this.imagen = imagen;
+  this.recomendado = recomendado;
+  this.masVendido = masVendido;
+  this.novedad = novedad;
+  this.categoria = categoria;
+  this.tipo = tipo;
+  this.color = color;
+  this.marca = marca;
+  this.precio = precio;
+  this.talle = talle;
+  this.sexo = sexo;
+  this.edad = edad;
+
+  // Metodo
+  this.descuentoIva = function (precio) {
+    this.precio = precio - precio * 0.21;
+    console.log(
+      "Este " +
+        this.tipo +
+        " con el descuento del IVA cuesta ahora " +
+        this.precio
+    );
+  };
 }
 
-    //CLASE con FUNCIÓN CONSTRUCTORA
-class Producto {
-    constructor(recomendado, masVendido, novedad, categoria, tipo, color, marca, precio, tamaño, sexo, edad) {
-        this.recomendado = recomendado
-        this.masVendido = masVendido
-        this.novedad = novedad
-        this.categoria = categoria
-        this.tipo = tipo
-        this.color = color
-        this.marca = marca
-        this.precio = precio
-        this.tamaño = tamaño
-        this.sexo = sexo
-        this.edad = edad
+/* // Aplicando el Método
+const prod8SinIva = prod8.descuentoIva(prod8.precio) */
 
-        // MÉTODO
-        this.descuentoIva = function (precio) {
-            this.precio = precio - (precio * 0.22)
-            console.log("Este " + this.tipo + " con el descuento del IVA cuesta ahora " + this.precio)
-        }
-    }
+const containerProducto = document.getElementById("grillaProductosId");
+
+function cargarProductos(productosElegidos) {
+  productosElegidos.forEach((producto) => {
+    const div = document.createElement("div");
+    const counter = 0;
+    div.classList.add("card");
+    div.innerHTML = `
+        <img src="${producto.imagen}" class="card-img-top" alt="${producto.titulo}" />
+        <div class="card-body">
+          <h5 class="card-title">${producto.titulo}</h5>
+          <h6 class="cardMarca">
+            Marca: ${producto.marca}
+          </h6>
+          <h6 class="cardTalles">
+            Talles: ${producto.talle}
+          </h6>
+          <h3 class="cardPrecio">
+            Precio: $${producto.precio}
+          </h3>
+          <a href="#" class="btn btn-primary"
+            ><img
+              class="imgCarritoBlanco"
+              src="../assets/images/carrito blanco.png"
+              alt="comprar"
+            />
+            COMPRAR</a
+          >
+        `;
+
+    containerProducto.append(div);
+  });
 }
 
-// Array de PRODUCTOS
-
-let productos = []
-
-// Aplicando Función CONSTRUCTORA
-const prod8 = new Producto(false, false, false, "ropa", "buzo", "blanco", "lacoste", 3390, "s", "mujer", "adulto")
-const prod9 = new Producto(false, false, true, "ropa", "buzo", "blanco", "polo", 3390, "m", "hombre", "adulto")
-
-// Aplicando el Método
-const prod8SinIva = prod8.descuentoIva(prod8.precio)
+cargarProductos(productos);
