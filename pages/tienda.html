@@ -40,8 +40,9 @@
             placeholder="Déjanos ayudarte..."
           />
         </div>
-        <a class="headerCarrito" href="../pages/404.html">
+        <a class="headerCarrito" href="../pages/carrito.html">
           <img src="../assets/images/carrito blanco.png" alt="carrito" />
+          <span id="contadorCarrito">0</span>
           <p>VER CARRITO</p>
         </a>
       </menu>
@@ -334,8 +335,8 @@
       </div>
       <div class="grillaCategoria">
         <p class="tituloGris">Novedades</p>
-        <div class="grillaProductos">
-          <div class="card card-1 filtroMasculino">
+        <div class="grillaProductos" id="grillaProductosId">
+          <div class="card card-1 filtroMasculino filtroRecomendado">
             <img src="../assets/images/publ9.jpg" class="card-img-top" alt="tarjeta producto 1" />
             <div class="card-body">
               <h5 class="card-title">Remera HILFIGER manga corta azul, 100% algodón</h5>
@@ -348,7 +349,7 @@
               <h3 class="cardPrecio">
                 Precio: $1390
               </h3>
-              <a href="#" class="btn btn-primary"
+              <a href="#" class="btn btn-primary" id="buyButton"
                 ><img
                   class="imgCarritoBlanco"
                   src="../assets/images/carrito blanco.png"
@@ -641,6 +642,8 @@
         <p>© 2022 A Exclusive. Todos los derechos reservados.</p>
       </div>
     </footer>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/products.js"></script>
+    <script src="../assets/js/app.js"></script>
   </body>
-  <script src="../assets/js/bootstrap.bundle.min.js"></script>
 </html>

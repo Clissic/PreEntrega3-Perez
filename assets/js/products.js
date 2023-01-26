@@ -98,7 +98,7 @@ const prod7 = {
     edad: "adulto",
 }
 
-    //Función CONSTRUCTORA
+    //CLASE con FUNCIÓN CONSTRUCTORA
 class Producto {
     constructor(recomendado, masVendido, novedad, categoria, tipo, color, marca, precio, tamaño, sexo, edad) {
         this.recomendado = recomendado
@@ -113,13 +113,17 @@ class Producto {
         this.sexo = sexo
         this.edad = edad
 
-        // Método
+        // MÉTODO
         this.descuentoIva = function (precio) {
             this.precio = precio - (precio * 0.22)
             console.log("Este " + this.tipo + " con el descuento del IVA cuesta ahora " + this.precio)
         }
     }
 }
+
+// Array de PRODUCTOS
+
+let productos = []
 
 // Aplicando Función CONSTRUCTORA
 const prod8 = new Producto(false, false, false, "ropa", "buzo", "blanco", "lacoste", 3390, "s", "mujer", "adulto")

@@ -218,6 +218,11 @@ a:active {
       .headerCarrito img:hover {
         transition-duration: 1s;
         transform: rotate(360deg); }
+    .headerCarrito span {
+      text-align: center;
+      font-weight: 700;
+      color: red;
+      padding: 0 0 15px 5px; }
   .indexMenuLogoMobile {
     display: none; }
   /* ------------------ CODIGO CSS CARRUSEL ------------------ */
@@ -867,6 +872,98 @@ a:active {
     margin: 10vh auto 5vh auto;
     width: 65vw; } }
 
+/* ------------------ CODIGO CSS CARRITO ------------------ */
+.mainContentCarrito {
+  margin: 25vh 10vw 10vh 10vw;
+  display: grid;
+  grid-template-columns: 3.5fr 2fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "titulo titulo" "productos resumen";
+  column-gap: 50px; }
+
+.tituloPrincipalCarrito {
+  grid-area: titulo;
+  margin-bottom: 20px; }
+  .tituloPrincipalCarrito h2 {
+    font-size: 30px; }
+
+.itemsCarrito {
+  grid-area: productos;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px; }
+  .itemsCarrito .itemCarrito {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    column-gap: 15%;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    padding: 20px; }
+    .itemsCarrito .itemCarrito img {
+      width: 10vw;
+      margin: auto 0 auto 0; }
+    .itemsCarrito .itemCarrito .datosItemCarrito {
+      display: flex;
+      flex-direction: column; }
+      .itemsCarrito .itemCarrito .datosItemCarrito p {
+        font-weight: 700;
+        font-size: large; }
+      .itemsCarrito .itemCarrito .datosItemCarrito ul {
+        list-style: none;
+        padding: 0; }
+        .itemsCarrito .itemCarrito .datosItemCarrito ul li {
+          display: inline;
+          font-weight: 600;
+          margin: 0 10px 0 0; }
+        .itemsCarrito .itemCarrito .datosItemCarrito ul em {
+          font-weight: 400; }
+      .itemsCarrito .itemCarrito .datosItemCarrito .opcionesCarrito {
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px; }
+        .itemsCarrito .itemCarrito .datosItemCarrito .opcionesCarrito .sumarItemCarrito {
+          display: flex;
+          border: 1px solid rgba(128, 128, 128, 0.471);
+          border-radius: 30px;
+          align-items: center;
+          width: 200px;
+          height: 30px;
+          justify-content: center;
+          column-gap: 5px; }
+          .itemsCarrito .itemCarrito .datosItemCarrito .opcionesCarrito .sumarItemCarrito p {
+            margin: 0;
+            font-size: small;
+            color: darkblue; }
+          .itemsCarrito .itemCarrito .datosItemCarrito .opcionesCarrito .sumarItemCarrito button {
+            margin: auto;
+            border: none;
+            line-height: 1; }
+        .itemsCarrito .itemCarrito .datosItemCarrito .opcionesCarrito .borrarItemCarrito {
+          width: 10%; }
+
+.resumenCarrito {
+  background-color: whitesmoke;
+  border-radius: 30px;
+  padding: 20px; }
+  .resumenCarrito h3 {
+    margin-bottom: 20px; }
+  .resumenCarrito .itemResumenCarrito {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .resumenCarrito .totalResumen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .resumenCarrito button {
+    background-color: darkred;
+    color: white;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 20px; }
+
 /* DESKTOP CHICO */
 @media screen and (min-width: 769px) and (max-width: 1023px) {
   .indexMenu {
@@ -1066,6 +1163,11 @@ a:active {
       .headerCarrito img:hover {
         transition-duration: 1s;
         transform: rotate(360deg); }
+    .headerCarrito span {
+      text-align: center;
+      font-weight: 700;
+      color: red;
+      padding: 0 0 15px 5px; }
   .indexMenuLogoMobile {
     display: none; }
   /* ------------------ CODIGO CSS CARRUSEL ------------------ */
@@ -1899,6 +2001,7 @@ a:active {
     text-decoration: none;
     color: #ffffff; }
     .headerCarrito p {
+      font-size: 2.5vw;
       margin: 0 1vw 0 1vw; }
       .headerCarrito p:hover {
         text-decoration: underline; }
@@ -1907,6 +2010,11 @@ a:active {
       .headerCarrito img:hover {
         transition-duration: 1s;
         transform: rotate(360deg); }
+    .headerCarrito span {
+      text-align: center;
+      font-weight: 700;
+      color: red;
+      padding: 0 0 15px 5px; }
   /* ------------------ CODIGO CSS CARRUSEL ------------------ */
   .carousel,
   .slide {
@@ -2774,6 +2882,11 @@ a:active {
       .headerCarrito img:hover {
         transition-duration: 1s;
         transform: rotate(360deg); }
+    .headerCarrito span {
+      text-align: center;
+      font-weight: 700;
+      color: red;
+      padding: 0 0 15px 5px; }
   /* ------------------ CODIGO CSS CARRUSEL ------------------ */
   .carousel,
   .slide {
