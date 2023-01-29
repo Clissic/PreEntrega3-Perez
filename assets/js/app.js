@@ -6,7 +6,7 @@ function cargarProductos(productosElegidos) {
     div.id = "cardId";
     div.classList.add("card");
     div.innerHTML = `
-        <p class="alertaDescuentoNone" id="alertaDescuentoNone-${producto.id}">DESCUENTA 22% IVA</p>
+        <p class="alertaDescuentoNone" id="alertaDescuentoNone-${producto.id}">DESCUENTO 22% IVA</p>
         <img src="${producto.imagen}" class="card-img-top" alt="${producto.titulo}" />
         <div class="card-body">
           <h5 class="card-title">${producto.titulo}</h5>
@@ -42,16 +42,16 @@ function cargarProductos(productosElegidos) {
 cargarProductos(productos);
 
 // Aplicando Método:
-descuentoProd1 = prod1.descuentoIva(prod1.precio)
-descuentoProd5 = prod5.descuentoIva(prod5.precio)
+descuentoProd1 = prod1.descuentoIva(prod1.precio);
+descuentoProd5 = prod5.descuentoIva(prod5.precio);
 
-// Función para modificar el DOM:
+// Función para modificar el DOM del descuento:
 function aplicarDescuento(producto, descuento) {
-    precio = document.getElementById("cardPrecio-"+producto.id)
-    precio.innerText = `Precio: $${descuento}`
-    precioClass = document.getElementById("alertaDescuentoNone-"+producto.id);
-    precioClass.classList.remove("alertaDescuentoNone")
-    precioClass.classList.add("alertaDescuento")
+  precio = document.getElementById("cardPrecio-" + producto.id);
+  precio.innerText = `Precio: $${descuento}`;
+  precioClass = document.getElementById("alertaDescuentoNone-" + producto.id);
+  precioClass.classList.remove("alertaDescuentoNone");
+  precioClass.classList.add("alertaDescuento");
 }
-aplicarDescuento(prod1, descuentoProd1)
-aplicarDescuento(prod5, descuentoProd5)
+aplicarDescuento(prod1, descuentoProd1);
+aplicarDescuento(prod5, descuentoProd5);
