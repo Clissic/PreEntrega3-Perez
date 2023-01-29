@@ -1,4 +1,4 @@
-//Función CONSTRUCTORA
+//Clase con función CONSTRUCTORA
 class Producto {
   constructor(id,
     titulo,
@@ -30,14 +30,11 @@ class Producto {
     this.edad = edad;
 
     // Metodo
-    this.descuentoIva = function(precio) {
-      this.precio = precio - precio * 0.22;
-      console.log(
-        "Este " +
-        this.tipo +
-        " con el descuento del IVA cuesta ahora " +
-        this.precio
-      );
+    this.descuentoIva = function() {
+      this.precio = this.precio - this.precio * 0.22;
+      const cardPrecio = document.getElementById("cardPrecioId")
+/*       cardPrecio.innerText = "Precio: $" + this.precio */
+      document.getElementById("alertaDescuentoNone").id = "alertaDescuento";
     };
   }
 }
@@ -58,47 +55,3 @@ const prod9 = new Producto ("prod9", "Remera HILFIGER manga corta azul, 100% alg
 
 productos.push(prod1, prod2, prod3, prod4, prod5, prod6, prod7, prod8, prod9)
 
-// Aplicando el Método
-const prod8SinIva = prod1.descuentoIva(prod1.precio)
-console.log(prod1.precio)
-
-const containerProducto = document.getElementById("grillaProductosId");
-
-function cargarProductos(productosElegidos) {
-  productosElegidos.forEach((producto) => {
-    const div = document.createElement("div");
-    div.classList.add("card");
-    div.innerHTML = `
-        <img src="${producto.imagen}" class="card-img-top" alt="${producto.titulo}" />
-        <div class="card-body">
-          <h5 class="card-title">${producto.titulo}</h5>
-          <h6 class="cardMarca">
-            Marca: ${producto.marca}
-          </h6>
-          <div id="cardTalles">
-            <h6>Talles: ${producto.talle}</h6>
-            <select>
-              <option class="talle-${producto.talle[0]}" value="${producto.talle[0]}">${producto.talle[0]}</option>
-              <option class="talle-${producto.talle[1]}" value="${producto.talle[1]}">${producto.talle[1]}</option>
-              <option class="talle-${producto.talle[2]}" value="${producto.talle[2]}">${producto.talle[2]}</option>
-              <option class="talle-${producto.talle[3]}" value="${producto.talle[3]}">${producto.talle[3]}</option>
-              <option class="talle-${producto.talle[4]}" value="${producto.talle[4]}">${producto.talle[4]}</option>
-              <option class="talle-${producto.talle[5]}" value="${producto.talle[5]}">${producto.talle[5]}</option>
-            </select>
-          </div>
-          <h3 class="cardPrecio">
-            Precio: $${producto.precio}
-          </h3>
-          <a href="#" class="btn btn-primary"
-            ><img
-              class="imgCarritoBlanco"
-              src="../assets/images/carrito blanco.png"
-              alt="comprar"
-            />
-            COMPRAR</a>
-        `;
-    containerProducto.append(div);
-  });
-}
-
-cargarProductos(productos);
