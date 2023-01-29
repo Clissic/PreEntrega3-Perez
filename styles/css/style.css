@@ -721,7 +721,7 @@ a:active {
         .grillaCategoria .grillaProductos .card:hover {
           box-shadow: #b6b6b6 0px 0px 10px 2px;
           transition: 0.5s; }
-        .grillaCategoria .grillaProductos .card #alertaDescuento {
+        .grillaCategoria .grillaProductos .card .alertaDescuento {
           background-color: rgba(255, 0, 0, 0.5);
           color: white;
           font-weight: 700;
@@ -731,7 +731,7 @@ a:active {
           z-index: 1;
           position: absolute;
           width: 100%; }
-        .grillaCategoria .grillaProductos .card #alertaDescuentoNone {
+        .grillaCategoria .grillaProductos .card .alertaDescuentoNone {
           display: none; }
         .grillaCategoria .grillaProductos .card .btn .imgCarritoBlanco {
           width: 10%;
@@ -1691,14 +1691,17 @@ a:active {
         .grillaCategoria .grillaProductos .card:hover {
           box-shadow: #b6b6b6 0px 0px 10px 2px;
           transition: 0.5s; }
-        .grillaCategoria .grillaProductos .card #alertaDescuento {
-          background-color: red;
+        .grillaCategoria .grillaProductos .card .alertaDescuento {
+          background-color: rgba(255, 0, 0, 0.5);
           color: white;
           font-weight: 700;
           text-align: center;
           margin: 0;
-          padding: 10px; }
-        .grillaCategoria .grillaProductos .card #alertaDescuentoNone {
+          padding: 10px;
+          z-index: 1;
+          position: absolute;
+          width: 100%; }
+        .grillaCategoria .grillaProductos .card .alertaDescuentoNone {
           display: none; }
         .grillaCategoria .grillaProductos .card .btn .imgCarritoBlanco {
           width: 10%;
@@ -2675,14 +2678,17 @@ a:active {
         .grillaCategoria .grillaProductos .card:hover {
           box-shadow: #b6b6b6 0px 0px 10px 2px;
           transition: 0.5s; }
-        .grillaCategoria .grillaProductos .card #alertaDescuento {
-          background-color: red;
+        .grillaCategoria .grillaProductos .card .alertaDescuento {
+          background-color: rgba(255, 0, 0, 0.5);
           color: white;
           font-weight: 700;
           text-align: center;
           margin: 0;
-          padding: 10px; }
-        .grillaCategoria .grillaProductos .card #alertaDescuentoNone {
+          padding: 10px;
+          z-index: 1;
+          position: absolute;
+          width: 100%; }
+        .grillaCategoria .grillaProductos .card .alertaDescuentoNone {
           display: none; }
         .grillaCategoria .grillaProductos .card .btn .imgCarritoBlanco {
           width: 10%;
@@ -3661,14 +3667,17 @@ a:active {
         .grillaCategoria .grillaProductos .card:hover {
           box-shadow: #b6b6b6 0px 0px 10px 2px;
           transition: 0.5s; }
-        .grillaCategoria .grillaProductos .card #alertaDescuento {
-          background-color: red;
+        .grillaCategoria .grillaProductos .card .alertaDescuento {
+          background-color: rgba(255, 0, 0, 0.5);
           color: white;
           font-weight: 700;
           text-align: center;
           margin: 0;
-          padding: 10px; }
-        .grillaCategoria .grillaProductos .card #alertaDescuentoNone {
+          padding: 10px;
+          z-index: 1;
+          position: absolute;
+          width: 100%; }
+        .grillaCategoria .grillaProductos .card .alertaDescuentoNone {
           display: none; }
         .grillaCategoria .grillaProductos .card .btn .imgCarritoBlanco {
           width: 10%;

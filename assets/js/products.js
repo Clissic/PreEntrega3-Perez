@@ -1,19 +1,6 @@
 //Clase con función CONSTRUCTORA
 class Producto {
-  constructor(id,
-    titulo,
-    imagen,
-    recomendado,
-    masVendido,
-    novedad,
-    categoria,
-    tipo,
-    color,
-    marca,
-    precio,
-    talle,
-    sexo,
-    edad) {
+  constructor(id, titulo, imagen, recomendado, masVendido, novedad, categoria, tipo, color, marca, precio, talle, sexo) {
     this.id = id;
     this.titulo = titulo;
     this.imagen = imagen;
@@ -27,17 +14,20 @@ class Producto {
     this.precio = precio;
     this.talle = talle;
     this.sexo = sexo;
-    this.edad = edad;
-
-    // Metodo
-    this.descuentoIva = function() {
-      this.precio = this.precio - this.precio * 0.22;
-      const cardPrecio = document.getElementById("cardPrecioId")
-/*       cardPrecio.innerText = "Precio: $" + this.precio */
-      document.getElementById("alertaDescuentoNone").id = "alertaDescuento";
-    };
   }
+
+  descuentoIva = function (precio) {
+    let descuento = (this.precio = precio - precio * 0.22);
+    console.log(
+      "Este " +
+        this.tipo +
+        " con el descuento del IVA cuesta ahora " +
+        descuento
+    )
+    return descuento;
+  };
 }
+
 
 // PRODUCTOS
 
@@ -54,4 +44,3 @@ const prod8 = new Producto ("prod8", "Remera COCODRILO manga corta blanca, 100% 
 const prod9 = new Producto ("prod9", "Remera HILFIGER manga corta azul, 100% algodón", "../assets/images/publ9.jpg", true, true, true,  "ropa", "remera", "azul", "TOMMY HILFIGER", 1390, ["S"], "hombre", "adulto",);
 
 productos.push(prod1, prod2, prod3, prod4, prod5, prod6, prod7, prod8, prod9)
-

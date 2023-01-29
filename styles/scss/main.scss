@@ -1001,7 +1001,7 @@ a {
           box-shadow: $grisclaro 0px 0px 10px 2px;
           transition: 0.5s;
         }
-        #alertaDescuento {
+        .alertaDescuento {
           background-color: rgba(255, 0, 0, 0.5);
           color: white;
           font-weight: 700;
@@ -1012,7 +1012,7 @@ a {
           position: absolute;
           width: 100%;
         }
-        #alertaDescuentoNone {
+        .alertaDescuentoNone {
           display: none;
         }
         .btn {
@@ -2338,15 +2338,18 @@ a {
           box-shadow: $grisclaro 0px 0px 10px 2px;
           transition: 0.5s;
         }
-        #alertaDescuento {
-          background-color: red;
+        .alertaDescuento {
+          background-color: rgba(255, 0, 0, 0.5);
           color: white;
           font-weight: 700;
           text-align: center;
           margin: 0;
           padding: 10px;
+          z-index: 1;
+          position: absolute;
+          width: 100%;
         }
-        #alertaDescuentoNone {
+        .alertaDescuentoNone {
           display: none;
         }
         .btn {
@@ -3704,15 +3707,18 @@ a {
           box-shadow: $grisclaro 0px 0px 10px 2px;
           transition: 0.5s;
         }
-        #alertaDescuento {
-          background-color: red;
+        .alertaDescuento {
+          background-color: rgba(255, 0, 0, 0.5);
           color: white;
           font-weight: 700;
           text-align: center;
           margin: 0;
           padding: 10px;
+          z-index: 1;
+          position: absolute;
+          width: 100%;
         }
-        #alertaDescuentoNone {
+        .alertaDescuentoNone {
           display: none;
         }
         .btn {
@@ -5073,15 +5079,18 @@ a {
           box-shadow: $grisclaro 0px 0px 10px 2px;
           transition: 0.5s;
         }
-        #alertaDescuento {
-          background-color: red;
+        .alertaDescuento {
+          background-color: rgba(255, 0, 0, 0.5);
           color: white;
           font-weight: 700;
           text-align: center;
           margin: 0;
           padding: 10px;
+          z-index: 1;
+          position: absolute;
+          width: 100%;
         }
-        #alertaDescuentoNone {
+        .alertaDescuentoNone {
           display: none;
         }
         .btn {
