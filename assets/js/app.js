@@ -100,12 +100,17 @@ botonNovedades.addEventListener("click", (e) => {
 
 
 //Carrito
-const carrito = []
+const itemsCarritoLS = JSON.parse(localStorage.getItem("carrito"))
+if (itemsCarritoLS) {
+  carrito = itemsCarritoLS
+  actualizarContadorCarrito()
+} else {
+  carrito = []
+}
 
 function actualizarContadorCarrito() {
-  let numero = carrito.reduce((acc, producto) => acc + producto.cantidad, 0)
-  console.log(numero)
-  contadorCarrito.innerText = numero
+  let numeroContador = carrito.reduce((acc, producto) => acc + producto.cantidad, 0)
+  contadorCarrito.innerText = numeroContador
 }
 
 function actualizarBtnAgregar() {
@@ -116,6 +121,7 @@ function actualizarBtnAgregar() {
 }
 
 function agregarItemCarrito(e) {
+  
   e.preventDefault()
   const botonId = e.currentTarget.id
   const productoAgregado = productos.find(producto => producto.id === botonId)
