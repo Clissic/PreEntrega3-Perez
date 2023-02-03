@@ -42,7 +42,7 @@
         </div>
         <a class="headerCarrito" href="../pages/carrito.html">
           <img src="../assets/images/carrito blanco.png" alt="carrito" />
-          <span id="contadorCarrito">0</span>
+          <span id="contadorCarrito"></span>
           <p>VER CARRITO</p>
         </a>
       </menu>
@@ -182,11 +182,11 @@
             <div class="accordion-body">
               <div class="menuCategoriasMobile">
                 <ul class="menuListaCategorias">
-                  <li><a href="./tienda.html">NOVEDADES</a></li>
-                  <li><a href="./tienda.html">ROPA</a></li>
-                  <li><a href="./tienda.html">ACCESORIOS</a></li>
-                  <li><a href="./tienda.html">BOLSOS</a></li>
-                  <li><a href="./tienda.html">ROPA INTERIOR</a></li>
+                  <li><a class="botonesCategoria" id="novedadesIdMobile" href="./tienda.html">NOVEDADES</a></li>
+                  <li><a class="botonesCategoria" id="ropaIdMobile" href="./tienda.html">ROPA</a></li>
+                  <li><a class="botonesCategoria" id="accesoriosIdMobile" href="./tienda.html">ACCESORIOS</a></li>
+                  <li><a class="botonesCategoria" id="bolsosIdMobile" href="./tienda.html">BOLSOS</a></li>
+                  <li><a class="botonesCategoria" id="ropaInteriorIdMobile" href="./tienda.html">ROPA INTERIOR</a></li>
                 </ul>
               </div>
             </div>
@@ -330,16 +330,17 @@
       <div class="menuCategorias">
         <p class="tituloGris">Categorías</p>
         <ul class="menuListaCategorias">
-          <li><a href="./tienda.html">NOVEDADES</a></li>
-          <li><a href="./tienda.html">ROPA</a></li>
-          <li><a href="./tienda.html">ACCESORIOS</a></li>
-          <li><a href="./tienda.html">BOLSOS</a></li>
-          <li><a href="./tienda.html">ROPA INTERIOR</a></li>
+          <li><a class="botonNovedades" id="novedades" href="#">NOVEDADES</a></li>
+          <li><a class="botonesCategoria" id="ropa" href="#">ROPA</a></li>
+          <li><a class="botonesCategoria" id="accesorios" href="#">ACCESORIOS</a></li>
+          <li><a class="botonesCategoria" id="bolsos" href="#">BOLSOS</a></li>
+          <li><a class="botonesCategoria" id="ropaInterior" href="#">ROPA INTERIOR</a></li>
         </ul>
       </div>
       <div class="grillaCategoria">
         <p class="tituloGris">Novedades</p>
         <div class="grillaProductos" id="grillaProductosId">
+          <!-- Aca se cargan los productos con JS --> 
         </div>
         <nav class="paginacion" aria-label="Page navigation example">
           <ul class="pagination justify-content-center">

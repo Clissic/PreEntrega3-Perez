@@ -1,6 +1,11 @@
 const containerProducto = document.getElementById("grillaProductosId");
+const botonesCategoria = document.querySelectorAll(".botonesCategoria");
+const botonNovedades = document.getElementById("novedades")
+let btnAgregar = document.querySelectorAll(".btnAgregar")
+const contadorCarrito = document.getElementById("contadorCarrito")
 
 function cargarProductos(productosElegidos) {
+  containerProducto.innerHTML = "";
   productosElegidos.forEach((producto) => {
     const div = document.createElement("div");
     div.id = "cardId";
@@ -15,7 +20,7 @@ function cargarProductos(productosElegidos) {
           </h6>
           <div id="cardTalles">
             <h6>Talles:</h6>
-            <select>
+            <select id="selectTalle">
               <option class="talle-${producto.talle[0]}" value="${producto.talle[0]}">${producto.talle[0]}</option>
               <option class="talle-${producto.talle[1]}" value="${producto.talle[1]}">${producto.talle[1]}</option>
               <option class="talle-${producto.talle[2]}" value="${producto.talle[2]}">${producto.talle[2]}</option>
@@ -27,21 +32,22 @@ function cargarProductos(productosElegidos) {
           <h3 class="cardPrecio" id="cardPrecio-${producto.id}">
             Precio: $${producto.precio}
           </h3>
-          <a href="#" class="btn btn-primary"
+          <a href="#" class="btn btn-primary btnAgregar" id="${producto.id}"
             ><img
               class="imgCarritoBlanco"
               src="../assets/images/carrito blanco.png"
               alt="comprar"
             />
-            COMPRAR</a>
+            AGREGAR</a>
         `;
     containerProducto.append(div);
-  });
+  })
+  actualizarBtnAgregar();
 }
 
 cargarProductos(productos);
 
-// Aplicando Método:
+// Aplicando Método DESCUENTO:
 descuentoProd1 = prod1.descuentoIva(prod1.precio);
 descuentoProd5 = prod5.descuentoIva(prod5.precio);
 
@@ -53,5 +59,78 @@ function aplicarDescuento(producto, descuento) {
   precioClass.classList.remove("alertaDescuentoNone");
   precioClass.classList.add("alertaDescuento");
 }
+
 aplicarDescuento(prod1, descuentoProd1);
 aplicarDescuento(prod5, descuentoProd5);
+
+//Conducta de los botones CATEGORIA:
+botonesCategoria.forEach(boton => {
+  boton.addEventListener("click", (e) => {
+    e.preventDefault()
+    botonesCategoria.forEach(boton => {
+      boton.classList.remove("active")
+    })
+    e.currentTarget.classList.add("active")
+    botonNovedades.classList.remove("active")
+    
+    const categoriaProductos = productos.filter(producto => producto.categoria === e.currentTarget.id);
+    cargarProductos(categoriaProductos);
+
+    aplicarDescuento(prod1, descuentoProd1);
+    aplicarDescuento(prod5, descuentoProd5);
+  })
+})
+
+//Conducta del boton NOVEDADES
+botonNovedades.addEventListener("click", (e) => {
+  e.preventDefault()
+  botonesCategoria.forEach(boton => {
+    boton.classList.remove("active")
+  })
+  e.currentTarget.classList.add("active")
+
+  const categoriaNovedades = productos.filter(producto => producto.novedad == true)
+  cargarProductos(categoriaNovedades)
+  
+  aplicarDescuento(prod1, descuentoProd1);
+  aplicarDescuento(prod5, descuentoProd5);
+})
+
+
+
+
+//Carrito
+const carrito = []
+
+function actualizarContadorCarrito() {
+  let numero = carrito.reduce((acc, producto) => acc + producto.cantidad, 0)
+  console.log(numero)
+  contadorCarrito.innerText = numero
+}
+
+function actualizarBtnAgregar() {
+  btnAgregar = document.querySelectorAll(".btnAgregar")
+  btnAgregar.forEach(boton => {
+    boton.addEventListener("click", agregarItemCarrito)
+  })
+}
+
+function agregarItemCarrito(e) {
+  e.preventDefault()
+  const botonId = e.currentTarget.id
+  const productoAgregado = productos.find(producto => producto.id === botonId)
+  
+  const nuevoTalle = document.getElementById("selectTalle").value
+  console.log(nuevoTalle)
+  if (carrito.some(producto => producto.id === botonId)) {
+    productoAgregado.cantidad++
+  } else {
+    productoAgregado.talle = nuevoTalle
+    productoAgregado.cantidad = 1
+    carrito.push(productoAgregado)
+  }
+
+  actualizarContadorCarrito()
+
+  localStorage.setItem("carrito", JSON.stringify(carrito))
+}

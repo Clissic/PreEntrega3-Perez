@@ -702,10 +702,10 @@ a:active {
         font-weight: 500; }
         .menuCategorias ul li:hover {
           border-bottom: 2px solid darkblue; }
-        .menuCategorias ul li:active {
-          border-bottom: 2px solid darkblue; }
         .menuCategorias ul li a {
           color: black; }
+        .menuCategorias ul li .active {
+          border-bottom: 2px solid darkblue; }
   .grillaCategoria {
     grid-area: grillaCategoria; }
     .grillaCategoria p {
@@ -1671,7 +1671,7 @@ a:active {
         font-weight: 500; }
         .menuCategorias ul li:hover {
           border-bottom: 2px solid darkblue; }
-        .menuCategorias ul li:active {
+        .menuCategorias ul li .active {
           border-bottom: 2px solid darkblue; }
         .menuCategorias ul li a {
           color: black; }
@@ -2655,7 +2655,7 @@ a:active {
         font-weight: 500; }
         .menuCategorias ul li:hover {
           border-bottom: 2px solid darkblue; }
-        .menuCategorias ul li:active {
+        .menuCategorias ul li .active {
           border-bottom: 2px solid darkblue; }
         .menuCategorias ul li a {
           color: black; }
@@ -3643,7 +3643,7 @@ a:active {
         margin: 0vh 0.6vw 0 0.6vw; }
         .menuCategoriasMobile ul li:hover {
           border-bottom: 2px solid darkblue; }
-        .menuCategoriasMobile ul li:active {
+        .menuCategoriasMobile ul li .active {
           border-bottom: 2px solid darkblue; }
         .menuCategoriasMobile ul li a {
           color: black; }

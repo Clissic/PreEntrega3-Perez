@@ -974,11 +974,11 @@ a {
         &:hover {
           border-bottom: 2px solid darkblue;
         }
-        &:active {
-          border-bottom: 2px solid darkblue;
-        }
         a {
           color: black;
+        }
+        .active {
+          border-bottom: 2px solid darkblue;
         }
       }
     }
@@ -2310,7 +2310,7 @@ a {
         &:hover {
           border-bottom: 2px solid darkblue;
         }
-        &:active {
+        .active {
           border-bottom: 2px solid darkblue;
         }
         a {
@@ -3676,7 +3676,7 @@ a {
         &:hover {
           border-bottom: 2px solid darkblue;
         }
-        &:active {
+        .active {
           border-bottom: 2px solid darkblue;
         }
         a {
@@ -5047,7 +5047,7 @@ a {
         &:hover {
           border-bottom: 2px solid darkblue;
         }
-        &:active {
+        .active {
           border-bottom: 2px solid darkblue;
         }
         a {
