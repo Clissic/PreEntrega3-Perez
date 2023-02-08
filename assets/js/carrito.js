@@ -1,6 +1,6 @@
-let itemsCarrito = localStorage.getItem("carrito")
-itemsCarrito = JSON.parse(itemsCarrito)
-console.log(itemsCarrito)
+let carrito = localStorage.getItem("carrito")
+carrito = JSON.parse(carrito)
+console.log(carrito)
 const itemsCarritoId = document.getElementById("itemsCarritoId")
 const nombreProductoResumen = document.getElementById("itemsResumenCarrito")
 const totalResumen = document.getElementById("totalResumen")
@@ -11,8 +11,8 @@ function cargarProductosCarrito () {
     nombreProductoResumen.innerHTML = ""
     totalResumen.innerHTML = ""
     
-    if (itemsCarrito) {
-        itemsCarrito.forEach(producto => {
+    if (carrito) {
+        carrito.forEach(producto => {
             const div1 = document.createElement("div")
             const subtotal = producto.precio * producto.cantidad
             div1.innerHTML = `
@@ -44,13 +44,13 @@ function cargarProductosCarrito () {
         });
     }
     
-    if (itemsCarrito) {
-        itemsCarrito.forEach(producto  => {
+    if (carrito) {
+        carrito.forEach(producto  => {
             const div2 = document.createElement("div")
             const subtotal = producto.precio * producto.cantidad
             div2.classList.add("totalResumen")
             div2.innerHTML = `
-                <p class="nombreItemResumen">${producto.titulo} x${producto.cantidad}</p>
+                <p class="nombreItemResumen">${producto.titulo} - Talle: ${producto.talle} - x${producto.cantidad}</p>
                 <p class="subtotalResumen"><strong>$${subtotal}</strong></p>
             `;
             nombreProductoResumen.append(div2)
@@ -60,7 +60,7 @@ function cargarProductosCarrito () {
     actualizarTotal()
 }
 
-cargarProductosCarrito ()
+cargarProductosCarrito()
 
 
 function actualizarBtnEliminar() {
@@ -72,15 +72,15 @@ function actualizarBtnEliminar() {
 
 function eliminarItemCarrito(e) {
     const botonId = e.currentTarget.id
-    const indexProductoEliminado = itemsCarrito.findIndex(producto => producto.id === botonId)
-    itemsCarrito.splice(indexProductoEliminado, 1)
+    const indexProductoEliminado = carrito.findIndex(producto => producto.id === botonId)
+    carrito.splice(indexProductoEliminado, 1)
     cargarProductosCarrito()
-    console.log(itemsCarrito)
-    localStorage.setItem("carrito", JSON.stringify(itemsCarrito))
+    console.log(carrito)
+    localStorage.setItem("carrito", JSON.stringify(carrito))
 }
 
 function actualizarTotal() {
-    const productoTotal = itemsCarrito.reduce((acc, producto) => acc + (producto.precio * producto.cantidad), 0)
+    const productoTotal = carrito.reduce((acc, producto) => acc + (producto.precio * producto.cantidad), 0)
     const div3 = document.createElement("div")
     div3.classList.add("totalResumen")
     div3.innerHTML = `

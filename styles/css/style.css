@@ -970,7 +970,8 @@ a:active {
   .resumenCarrito .totalResumen {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; }
+    justify-content: space-between;
+    column-gap: 2vw; }
   .resumenCarrito #btnComprar {
     background-color: darkred;
     color: white;
@@ -1939,7 +1940,8 @@ a:active {
   .resumenCarrito .totalResumen {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; }
+    justify-content: space-between;
+    column-gap: 3vw; }
   .resumenCarrito #btnComprar {
     background-color: darkred;
     color: white;
@@ -2914,7 +2916,8 @@ a:active {
   .resumenCarrito .totalResumen {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; }
+    justify-content: space-between;
+    column-gap: 2vw; }
   .resumenCarrito #btnComprar {
     background-color: darkred;
     color: white;
@@ -3821,7 +3824,8 @@ a:active {
   .resumenCarrito .totalResumen {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; }
+    justify-content: space-between;
+    column-gap: 2vw; }
   .resumenCarrito #btnComprar {
     background-color: darkred;
     color: white;

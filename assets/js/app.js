@@ -20,7 +20,7 @@ function cargarProductos(productosElegidos) {
           </h6>
           <div id="cardTalles">
             <h6>Talles:</h6>
-            <select id="selectTalle">
+            <select id="selectTalle-${producto.id}">
               <option class="talle-${producto.talle[0]}" value="${producto.talle[0]}">${producto.talle[0]}</option>
               <option class="talle-${producto.talle[1]}" value="${producto.talle[1]}">${producto.talle[1]}</option>
               <option class="talle-${producto.talle[2]}" value="${producto.talle[2]}">${producto.talle[2]}</option>
@@ -32,7 +32,7 @@ function cargarProductos(productosElegidos) {
           <h3 class="cardPrecio" id="cardPrecio-${producto.id}">
             Precio: $${producto.precio}
           </h3>
-          <a href="#" class="btn btn-primary btnAgregar" id="${producto.id}"
+          <a href="../pages/carrito.html" class="btn btn-primary btnAgregar" id="${producto.id}"
             ><img
               class="imgCarritoBlanco"
               src="../assets/images/carrito blanco.png"
@@ -122,18 +122,20 @@ function actualizarBtnAgregar() {
 
 function agregarItemCarrito(e) {
   
-  e.preventDefault()
+/*   e.preventDefault() */
   const botonId = e.currentTarget.id
   const productoAgregado = productos.find(producto => producto.id === botonId)
-  
-  const nuevoTalle = document.getElementById("selectTalle").value
+  console.log(e.currentTarget.id)
+  const nuevoTalle = document.getElementById(`selectTalle-${e.currentTarget.id}`).value
   console.log(nuevoTalle)
-  if (carrito.some(producto => producto.id === botonId)) {
-    productoAgregado.cantidad++
+  const productoExistente = carrito.find(producto => producto.id === botonId && producto.talle === nuevoTalle)
+  
+  if (productoExistente) {
+    productoExistente.cantidad++
   } else {
-    productoAgregado.talle = nuevoTalle
     productoAgregado.cantidad = 1
-    carrito.push(productoAgregado)
+    productoAgregado.talle = nuevoTalle
+    carrito.push(productoAgregado);
   }
 
   actualizarContadorCarrito()
