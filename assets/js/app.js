@@ -123,10 +123,9 @@ function actualizarBtnAgregar() {
 function agregarItemCarrito(e) {
   const botonId = e.currentTarget.id
   const productoAgregado = productos.find(producto => producto.id === botonId)
-  console.log(e.currentTarget.id)
   const nuevoTalle = document.getElementById(`selectTalle-${e.currentTarget.id}`).value
-  console.log(nuevoTalle)
-  const productoExistente = carrito.find(producto => producto.id === botonId && producto.talle === nuevoTalle)
+  const botonId2 = e.currentTarget.id+nuevoTalle
+  const productoExistente = carrito.find(producto => producto.id === botonId2 && producto.talle === nuevoTalle)
 
   if (productoExistente) {
     productoExistente.cantidad++

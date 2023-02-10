@@ -71,10 +71,21 @@ function verVaciarCarrito() {
 
 btnVaciarCarrito.addEventListener("click", (e) => {
     e.preventDefault()
-    carrito.splice(0, carrito.length)
-    cargarProductosCarrito()
-    console.log(carrito)
-    localStorage.setItem("carrito", JSON.stringify(carrito))
+    swal({
+        title: "VACIAR CARRITO",
+        text: "¿Estas seguro que quieres vaciar todo el carrito de compras?", 
+        icon: "warning",
+        buttons: ["CANCELAR", "CONTINUAR"],
+        dangerMode: true,
+    })
+    .then ((borrarCarrito) => {
+        if (borrarCarrito) {
+            carrito.splice(0, carrito.length)
+            cargarProductosCarrito()
+            console.log(carrito)
+            localStorage.setItem("carrito", JSON.stringify(carrito))
+        }
+    })
 }) 
 
 
@@ -109,3 +120,4 @@ function actualizarTotal() {
     `;
     totalResumen.append(div3)
 }
+
