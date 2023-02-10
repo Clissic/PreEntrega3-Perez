@@ -5,6 +5,7 @@ const itemsCarritoId = document.getElementById("itemsCarritoId")
 const nombreProductoResumen = document.getElementById("itemsResumenCarrito")
 const totalResumen = document.getElementById("totalResumen")
 let btnEliminar = document.querySelectorAll(".btnEliminar")
+const btnVaciarCarrito = document.getElementById("btnVaciarCarritoId")
 
 function cargarProductosCarrito () {
     itemsCarritoId.innerHTML = ""
@@ -56,10 +57,28 @@ function cargarProductosCarrito () {
             nombreProductoResumen.append(div2)
         })
     }
+
     actualizarBtnEliminar()
     actualizarTotal()
 }
 
+function verVaciarCarrito() {
+    if (carrito.length >= 1) {
+        btnVaciarCarrito.classList.remove("inactive")
+    }
+}
+
+
+btnVaciarCarrito.addEventListener("click", (e) => {
+    e.preventDefault()
+    carrito.splice(0, carrito.length)
+    cargarProductosCarrito()
+    console.log(carrito)
+    localStorage.setItem("carrito", JSON.stringify(carrito))
+}) 
+
+
+verVaciarCarrito()
 cargarProductosCarrito()
 
 
@@ -71,6 +90,7 @@ function actualizarBtnEliminar() {
   }
 
 function eliminarItemCarrito(e) {
+    e.preventDefault()
     const botonId = e.currentTarget.id
     const indexProductoEliminado = carrito.findIndex(producto => producto.id === botonId)
     carrito.splice(indexProductoEliminado, 1)

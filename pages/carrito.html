@@ -53,26 +53,29 @@
         </a>
       </menu>
     </header>
-    <main class="mainContentCarrito">
-        <div class="tituloPrincipalCarrito">
-            <h2>Mi carrito</h2>
+    <main class="mainContentCarrito" id="mainContentCarrito">
+      <div class="tituloPrincipalCarrito">
+        <h2>Mi carrito</h2>
+      </div>
+      <div id="itemsCarritoId" class="itemsCarrito">
+        <!-- Esto se va a llenar con JS -->
+      </div>
+      <div id="itemResumenCarritoId" class="resumenCarrito">
+        <h3>Resumen del pedido</h3>
+        <div id="itemsResumenCarrito">
+          <!-- Esto se va a llenar con JS -->
         </div>
-        <div id="itemsCarritoId" class="itemsCarrito">
-            <!-- Esto se va a llenar con JS -->
+        <hr />
+        <div id="totalResumen">
+          <!-- Esto se va a llenar con JS -->
         </div>
-        <div id="itemResumenCarritoId" class="resumenCarrito">
-            <h3>Resumen del pedido</h3>
-            <div id="itemsResumenCarrito">
-            <!-- Esto se va a llenar con JS -->
-            </div>
-            <hr>
-            <div id="totalResumen">
-            <!-- Esto se va a llenar con JS -->
-            </div>
-            <hr>
-            <a href="#"><button id="btnComprar">FINALIZAR COMPRA</button></a>
-            <a href="../pages/tienda.html"><button id="btnContinuar">CONTINUAR COMPRANDO</button></a>
-        </div>
+        <hr />
+        <a href="#"><button id="btnComprar">FINALIZAR COMPRA</button></a>
+        <a href="../pages/tienda.html"
+          ><button id="btnContinuar">CONTINUAR COMPRANDO</button></a
+        >
+      </div>
+      <a href="#"><button id="btnVaciarCarritoId" class="btnVaciarCarrito inactive">VACIAR CARRITO</button></a>
     </main>
     <footer class="footer">
       <div class="footerClientes">

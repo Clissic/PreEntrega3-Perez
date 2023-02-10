@@ -121,15 +121,13 @@ function actualizarBtnAgregar() {
 }
 
 function agregarItemCarrito(e) {
-  
-/*   e.preventDefault() */
   const botonId = e.currentTarget.id
   const productoAgregado = productos.find(producto => producto.id === botonId)
   console.log(e.currentTarget.id)
   const nuevoTalle = document.getElementById(`selectTalle-${e.currentTarget.id}`).value
   console.log(nuevoTalle)
   const productoExistente = carrito.find(producto => producto.id === botonId && producto.talle === nuevoTalle)
-  
+
   if (productoExistente) {
     productoExistente.cantidad++
   } else {
@@ -139,6 +137,8 @@ function agregarItemCarrito(e) {
   }
 
   actualizarContadorCarrito()
+
+  productoAgregado.id = productoAgregado.id+productoAgregado.talle
 
   localStorage.setItem("carrito", JSON.stringify(carrito))
 }
