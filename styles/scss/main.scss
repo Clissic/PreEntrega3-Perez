@@ -1312,8 +1312,16 @@ a {
                 border-radius: 50px;
               }
             }
-            .borrarItemCarrito {
-              width: 20px;
+            .btnEliminar {
+              margin: 0;
+              .borrarItemCarrito {
+                width: 20px;
+              }
+            }
+            .listaPrecio {
+              li {
+                display: inline;
+              }
             }
           }
         }
@@ -1365,6 +1373,7 @@ a {
     }
     a {
       width: 40%;
+      margin-top: 15px;
       .btnVaciarCarrito {
         grid-area: productos;
         background-color: black;
@@ -1372,7 +1381,6 @@ a {
         height: 50px;
         border: none;
         border-radius: 20px;
-        margin: 15px 0 15px 0;
         width: 100%;
         &:hover {
           background-color: rgb(75, 75, 75);
@@ -2618,7 +2626,7 @@ a {
         background-color: rgb(245, 245, 245);
         border-radius: 30px;
         padding: 20px;
-        img {
+        .productoImagenCarrito {
           width: 10vw;
           margin: auto 0 auto 0;
         }
@@ -2666,8 +2674,11 @@ a {
                 border-radius: 50px;
               }
             }
-            .borrarItemCarrito {
-              width: 20px;
+            .btnEliminar {
+              margin: 0;
+              .borrarItemCarrito {
+                width: 20px;
+              }
             }
           }
         }
@@ -2724,6 +2735,7 @@ a {
   }
   a {
     width: 40%;
+    margin-top: 15px;
     .btnVaciarCarrito {
       grid-area: productos;
       background-color: black;
@@ -2732,7 +2744,6 @@ a {
       height: 50px;
       border: none;
       border-radius: 20px;
-      margin: 15px 0 15px 0;
       &:hover {
         background-color: rgb(75, 75, 75);
         color: white;
@@ -4010,37 +4021,60 @@ a {
         background-color: rgb(245, 245, 245);
         border-radius: 30px;
         padding: 20px;
-        img {
+        .productoImagenCarrito {
           width: 15vw;
           margin: auto 0 auto 0;
         }
-        .opcionesCarrito {
+        .datosItemCarrito {
           display: flex;
-          flex-direction: row;
-          column-gap: 20px;
-          .sumarItemCarrito {
-            display: flex;
-            border: 1px solid rgba(128, 128, 128, 0.471);
-            border-radius: 30px;
-            align-items: center;
-            width: 100px;
-            height: 30px;
-            justify-content: center;
-            column-gap: 5px;
-            p {
-              margin: 0;
-              font-size: small;
-              color: darkblue;
+          flex-direction: column;
+          p {
+            font-weight: 700;
+            font-size: 4vw;
+          }
+          ul {
+            list-style: none;
+            padding: 0;
+            li {
+              display: inline;
+              font-weight: 600;
+              margin: 0 10px 0 0;
             }
-            button {
-              margin: none;
-              border: none;
-              padding: 0 10px 0 10px;
-              border-radius: 50px;
+            em {
+              font-weight: 400;
             }
           }
-          .borrarItemCarrito {
-            width: 20px;
+          .opcionesCarrito {
+            display: flex;
+            flex-direction: row;
+            column-gap: 20px;
+            .sumarItemCarrito {
+              display: flex;
+              border: 1px solid rgba(128, 128, 128, 0.471);
+              border-radius: 30px;
+              align-items: center;
+              width: 100px;
+              height: 30px;
+              justify-content: center;
+              column-gap: 5px;
+              p {
+                margin: 0;
+                font-size: small;
+                color: darkblue;
+              }
+              button {
+                margin: none;
+                border: none;
+                padding: 0 10px 0 10px;
+                border-radius: 50px;
+              }
+            }
+            .btnEliminar {
+              margin: 0;
+              .borrarItemCarrito {
+                width: 20px;
+              }
+            }
           }
         }
       }
@@ -4093,23 +4127,25 @@ a {
         }
       }
     }
-    .btnVaciarCarrito {
-      grid-area: productos;
-      background-color: black;
-      color: white;
+    a {
       width: 100%;
-      height: 50px;
-      border: none;
-      border-radius: 20px;
-      margin: 15px 0 15px 0;
-      &:hover {
-        background-color: rgb(75, 75, 75);
+      margin-top: 15px;
+      .btnVaciarCarrito {
+        grid-area: productos;
+        background-color: black;
         color: white;
+        width: 100%;
+        height: 50px;
+        border: none;
+        border-radius: 20px;
+        &:hover {
+          background-color: rgb(75, 75, 75);
+          color: white;
+        }
       }
-    }
-  
-    .inactive {
-      display: none;
+      .inactive {
+        display: none;
+      }
     }
   }
 }
@@ -5312,37 +5348,60 @@ a {
         background-color: rgb(245, 245, 245);
         border-radius: 30px;
         padding: 20px;
-        img {
+        .productoImagenCarrito {
           width: 15vw;
           margin: auto 0 auto 0;
         }
-        .opcionesCarrito {
+        .datosItemCarrito {
           display: flex;
-          flex-direction: row;
-          column-gap: 20px;
-          .sumarItemCarrito {
-            display: flex;
-            border: 1px solid rgba(128, 128, 128, 0.471);
-            border-radius: 30px;
-            align-items: center;
-            width: 100px;
-            height: 30px;
-            justify-content: center;
-            column-gap: 5px;
-            p {
-              margin: 0;
-              font-size: small;
-              color: darkblue;
+          flex-direction: column;
+          p {
+            font-weight: 700;
+            font-size: 4vw;
+          }
+          ul {
+            list-style: none;
+            padding: 0;
+            li {
+              display: inline;
+              font-weight: 600;
+              margin: 0 10px 0 0;
             }
-            button {
-              margin: none;
-              border: none;
-              padding: 0 10px 0 10px;
-              border-radius: 50px;
+            em {
+              font-weight: 400;
             }
           }
-          .borrarItemCarrito {
-            width: 20px;
+          .opcionesCarrito {
+            display: flex;
+            flex-direction: row;
+            column-gap: 20px;
+            .sumarItemCarrito {
+              display: flex;
+              border: 1px solid rgba(128, 128, 128, 0.471);
+              border-radius: 30px;
+              align-items: center;
+              width: 100px;
+              height: 30px;
+              justify-content: center;
+              column-gap: 5px;
+              p {
+                margin: 0;
+                font-size: small;
+                color: darkblue;
+              }
+              button {
+                margin: none;
+                border: none;
+                padding: 0 10px 0 10px;
+                border-radius: 50px;
+              }
+            }
+            .btnEliminar {
+              margin: 0;
+              .borrarItemCarrito {
+                width: 20px;
+              }
+            }
           }
         }
       }
@@ -5395,23 +5454,25 @@ a {
         }
       }
     }
-    .btnVaciarCarrito {
-      grid-area: productos;
-      background-color: black;
-      color: white;
+    a {
       width: 100%;
-      height: 50px;
-      border: none;
-      border-radius: 20px;
-      margin: 15px 0 15px 0;
-      &:hover {
-        background-color: rgb(75, 75, 75);
+      margin-top: 15px;
+      .btnVaciarCarrito {
+        grid-area: productos;
+        background-color: black;
         color: white;
+        width: 100%;
+        height: 50px;
+        border: none;
+        border-radius: 20px;
+        &:hover {
+          background-color: rgb(75, 75, 75);
+          color: white;
+        }
       }
-    }
-    
-    .inactive {
-      display: none;
+      .inactive {
+        display: none;
+      }
     }
   }
 }
