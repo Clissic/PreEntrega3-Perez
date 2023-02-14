@@ -151,5 +151,26 @@ btnFinalizarCompra.addEventListener("click", (e) => {
     setTimeout(() => {
       location.reload();
     }, 2000);
+
+    const encodedParams = new URLSearchParams();
+    encodedParams.append("to", "+59898511770");
+    encodedParams.append("p", "BWxpguYBoArjy8rGqvcaOJ2MbIMA7HLFlwQDO7BSd4UvYk2cAY9c9b1d5ZttwoSj");
+    encodedParams.append("text", "¡Felicitaciones! Realizaste una venta por la web de $"+productoTotal+". Recuerda verificar el método de pago y envío para finalizar la entrega.");
+    
+    const options = {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/x-www-form-urlencoded',
+        'X-RapidAPI-Key': '1d4c35f79fmsh38531b067c0fbecp1527cajsn0916fc5210f7',
+        'X-RapidAPI-Host': 'sms77io.p.rapidapi.com'
+      },
+      body: encodedParams
+    };
+    
+    fetch('https://sms77io.p.rapidapi.com/sms', options)
+      .then(response => response.json())
+      .then(response => console.log(response))
+      .catch(err => console.error(err));
+
   });
 });

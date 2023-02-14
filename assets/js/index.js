@@ -5,6 +5,6 @@ swal({
   buttons: ["CONTINUAR", "IR A TIENDA"],
 }).then((irATienda) => {
   if (irATienda) {
-    location.href ="../pages/tienda.html";
+    location.href ="./pages/tienda.html";
   }
 });
