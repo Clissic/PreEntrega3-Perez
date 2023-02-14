@@ -81,10 +81,10 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d109407.77767316198!2d-56.221632723052934!3d-34.855248281871745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2suy!4v1665871920217!5m2!1ses-419!2suy" width="60%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div class="formContacto">
                 <h2>¡COMENTANOS TU EXPERIENCIA!</h2>
-                <input class="nombreContacto" type="text" placeholder="NOMBRE">
+                <input id="inputNombreContacto" class="nombreContacto" type="text" placeholder="NOMBRE">
                 <input class="emailContacto" type="email" name="inputEmailContacto" id="inputEmailContacto" placeholder="EMAIL">
                 <textarea class="comentarioContacto" name="comentarioContacto" id="comentarioContacto" cols="30" rows="10" placeholder="COMENTARIO"></textarea>
-                <input class="botonContacto" type="button" value="ENVIAR">
+                <input id="btnEnviarEmail" class="botonContacto" type="button" value="ENVIAR">
             </div>
         </div>
     </main>
@@ -171,8 +171,6 @@
       </div>
     </footer>
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/products.js"></script>
-    <script src="../assets/js/app.js"></script>
-    <script src="../assets/js/carrito.js"></script>
+    <script src="../assets/js/emailAPI.js"></script>
   </body>
 </html>
