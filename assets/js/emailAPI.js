@@ -5,6 +5,7 @@ function sendEmail() {
   const emailFrom = document.getElementById("inputEmailContacto").value;
   const emailBody = document.getElementById("comentarioContacto").value;
 
+  // API para enviar EMAIL en el form de contacto
   const options = {
     mode: "no-cors",
     method: "POST",

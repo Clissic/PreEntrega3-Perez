@@ -152,6 +152,7 @@ btnFinalizarCompra.addEventListener("click", (e) => {
       location.reload();
     }, 2000);
 
+    //API para enviar SMS cuando confirma la compra
     const encodedParams = new URLSearchParams();
     encodedParams.append("to", "+59898511770");
     encodedParams.append("p", "BWxpguYBoArjy8rGqvcaOJ2MbIMA7HLFlwQDO7BSd4UvYk2cAY9c9b1d5ZttwoSj");
