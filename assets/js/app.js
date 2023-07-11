@@ -42,10 +42,10 @@ function cargarProductos(productosElegidos) {
         `;
     containerProducto.append(div);
   })
-  actualizarBtnAgregar();
 }
 
 cargarProductos(productos);
+actualizarBtnAgregar();
 
 // Aplicando Método DESCUENTO:
 descuentoProd1 = prod1.descuentoIva(prod1.precio);
@@ -100,12 +100,14 @@ botonNovedades.addEventListener("click", (e) => {
 
 
 //Carrito
+
 const itemsCarritoLS = JSON.parse(localStorage.getItem("carrito"))
 if (itemsCarritoLS) {
   carrito = itemsCarritoLS
   actualizarContadorCarrito()
 } else {
   carrito = []
+  localStorage.setItem("carrito", JSON.stringify(carrito));
 }
 
 function actualizarContadorCarrito() {

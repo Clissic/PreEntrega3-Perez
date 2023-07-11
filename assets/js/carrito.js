@@ -1,4 +1,4 @@
-let carrito = localStorage.getItem("carrito");
+carrito = localStorage.getItem("carrito");
 carrito = JSON.parse(carrito);
 console.log(carrito);
 const itemsCarritoId = document.getElementById("itemsCarritoId");
@@ -64,29 +64,32 @@ function cargarProductosCarrito() {
 }
 
 function verVaciarCarrito() {
-  if (carrito.length >= 1) {
+  if (carrito && carrito.length >= 1) {
     btnVaciarCarrito.classList.remove("inactive");
+    addLogicVaciarCarritoBtn()
   }
 }
 
-btnVaciarCarrito.addEventListener("click", (e) => {
-  e.preventDefault();
-  swal({
-    title: "VACIAR CARRITO",
-    text: "¿Estas seguro que quieres vaciar todo el carrito de compras?",
-    icon: "warning",
-    buttons: ["CANCELAR", "CONTINUAR"],
-    dangerMode: true,
-  }).then((borrarCarrito) => {
-    if (borrarCarrito) {
-      carrito.splice(0, carrito.length);
-      cargarProductosCarrito();
-      console.log(carrito);
-      localStorage.setItem("carrito", JSON.stringify(carrito));
-      location.reload();
-    }
+function addLogicVaciarCarritoBtn() {
+  btnVaciarCarrito.addEventListener("click", (e) => {
+    e.preventDefault();
+    swal({
+      title: "VACIAR CARRITO",
+      text: "¿Estas seguro que quieres vaciar todo el carrito de compras?",
+      icon: "warning",
+      buttons: ["CANCELAR", "CONTINUAR"],
+      dangerMode: true,
+    }).then((borrarCarrito) => {
+      if (borrarCarrito) {
+        carrito.splice(0, carrito.length);
+        cargarProductosCarrito();
+        console.log(carrito);
+        localStorage.setItem("carrito", JSON.stringify(carrito));
+        location.reload();
+      }
+    });
   });
-});
+}
 
 verVaciarCarrito();
 cargarProductosCarrito();
